@@ -1,0 +1,2630 @@
+[ { "bio" : "Dan is a Principal Software Engineer at JBoss, by Red Hat. He serves as the JBoss Community liaison, founded the JBoss Testing Initiative and is a member of the Seam 3, Weld, Arquillian and ShrinkWrap projects.\r\n\r\nDan's known for his hard work and passion for Open Source technologies. His technical expertise spans the Java EE platform, testing frameworks, build tools and web development. He authored of Seam in Action (Manning 2008), served on the JSR-314 Expert Group (JSF 2.0), writes for IBM developerWorks and NFJS magazine and is an internationally recognized speaker. He's appeared at major industry conferences, including JavaOne, Devoxx, NFJS, JAX and Jazoon and has received recognition as a JavaOne Rock Star, a JBossWorld Top Presenter and a JAX Hall of Fame speaker.\r\n\r\nYou can keep up with Dan's activity by following him on Twitter (@mojavelinux) or reading his blog (http://community.jboss.org/people/dan.j.allen/blog).",
+    "company" : "Red Hat, Inc.",
+    "firstName" : "Dan",
+    "id" : 244,
+    "imageURI" : "https://cfp.devoxx.com/static/images/244/thumbnail.gif",
+    "lastName" : "Allen",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/278",
+          "title" : "Seam 3: State of the Union"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/349",
+          "title" : "Seam Gathering"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/379",
+          "title" : "The roots of Java EE 6: JSR-299 (CDI) and Weld extensions"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/459",
+          "title" : "Forge new Ground in Rapid Enterprise Java Development"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/664",
+          "title" : "Death of the Slow: 7 Reasons to Love JBoss AS 7"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/714",
+          "title" : "Seam Gathering"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/922",
+          "title" : "Java EE Gathering"
+        }
+      ]
+  },
+  { "bio" : "Dion Almaer is the director of developer relations at Palm where he has the pleasure of working with Ben Galbraith. The pair co-founded Ajaxian.com together, and they are now focused on delivering a fantastic developer experience on the mobile Web.\r\n\r\nDion has been a technologist and a developer writing web applications since it took over from Gopher. He has been fortunate enough to speak around the world, has published many articles, a book, and of course covers life, the universe, and everything on his blog at almaer.com/blog.\r\n\r\nHe has been called a human aggregator, and you can see that in full force if you follow him on Twitter @dalmaer.",
+    "company" : "Wallmart",
+    "firstName" : "Dion",
+    "id" : 290,
+    "imageURI" : "https://cfp.devoxx.com/static/images/290/thumbnail.gif",
+    "lastName" : "Almaer",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/342",
+          "title" : "The State of the Web"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/866",
+          "title" : "Web vs. Apps"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/951",
+          "title" : "Technical Discussion Panel"
+        }
+      ]
+  },
+  { "bio" : "Andres is a Java/Groovy developer and a Java Champion with more than 12 years of experience in software design and development. He has been involved in web and desktop application development since the early days of Java. He is a true believer in open source and has participated on popular projects like Groovy, Griffon, and DbUnit, as well as starting his own projects (Json-lib, EZMorph, GraphicsBuilder, JideBuilder). Founding member of the Griffon framework. Andres maintains a blog at http://jroller.com/aalmiray",
+    "company" : "Canoo",
+    "firstName" : "Andres",
+    "id" : 5,
+    "imageURI" : "https://cfp.devoxx.com/static/images/5/thumbnail.gif",
+    "lastName" : "Almiray",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/6",
+          "title" : "A desktop app in minutes? Griffon to the rescue"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/404",
+          "title" : "The Groovy Ecosystem"
+        },
+        { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/407",
+          "title" : "Fyling with Griffon"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/957",
+          "title" : "Hackergarten Hands-On Coding Event"
+        }
+      ]
+  },
+  { "bio" : "Max Rydahl Andersen is the project lead for JBoss Tools and Developer Studio and is a core developer on Hibernate and Seam.\r\n\r\nMax is employed by JBoss, a division of Red Hat, working as developer and consultant. Before joining JBoss, Max worked as a project lead and developer for a company working with large scale health care solutions. Max blogs about JBoss Tools, Eclipse and Hibernate at http://in.relation.to/Bloggers/Max",
+    "company" : "Red Hat",
+    "firstName" : "Max",
+    "id" : 170,
+    "imageURI" : "https://cfp.devoxx.com/static/images/170/thumbnail.gif",
+    "lastName" : "Andersen",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/401",
+          "title" : "JBoss Tools, the Deployment Ninja!"
+        },
+        { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/686",
+          "title" : "Deploy JEE applications to OpenShift"
+        }
+      ]
+  },
+  { "bio" : "Dimitris is the Manager of the JBoss Application Server group in the JBoss Division of Red Hat. He has been a JBoss addict and contributor from the early JBoss days and joined JBoss in 2004. He became the Lead of the JBoss AS project for three years since 2006. Previously he spent seven years at Intracom and Motorola in the areas of NMS/OSS, designing reusable frameworks and distributed systems. Dimitris studied computer science at the Technological Educational Institute of Athens and received an M.Sc. by research from University College Dublin, Ireland.",
+    "company" : "JBoss, by Red Hat",
+    "firstName" : "Dimitris",
+    "id" : 999,
+    "imageURI" : "https://cfp.devoxx.com/static/images/999/thumbnail.gif",
+    "lastName" : "Andreadis",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        } ]
+  },
+  { "bio" : "Chris Aniszczyk is the Open Source Manager at Twitter and tends to be all over the eclipse.org community by committing on various projects and helping new eclipse.org projects off the ground. He is the co-author of The Eclipse Rich Client Platform book and has been recognized by the Eclipse Community Awards as Top Ambassador and Top Committer in the past. He sits on the Eclipse Architecture Council, Eclipse Planning Council and has the honor to represent the committers on the Eclipse Foundation's Board of Directors. Chris's passions are modularity, running and open source.",
+    "company" : "Red Hat",
+    "firstName" : "Chris",
+    "id" : 9,
+    "imageURI" : "https://cfp.devoxx.com/static/images/9/thumbnail.gif",
+    "lastName" : "Aniszczyk",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/696",
+          "title" : "Code Review with Git and Gerrit"
+        } ]
+  },
+  { "bio" : "Jeanfrancois is currently leading the Atmosphere Frawework at Wordnik.com. He is the creator of Atmosphere, a framework for building powerful websocket and comet application. He is also the author of the Grizzly Framework, the powerful NIO front end used by the GlassFish Application Server. He is also the author if AHC, an asynchronous HTTP client library. Jeanfrancois is also contributed to Tomcat, Apache Commons, etc.",
+    "company" : "Wordnik",
+    "firstName" : "Jean-Francois",
+    "id" : 1100,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1100/thumbnail.gif",
+    "lastName" : "Arcand",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/934",
+          "title" : "Writing highly scalable WebSocket using the Atmosphere Framework in Scala"
+        } ]
+  },
+  { "bio" : "Hiro Asari is a JRuby Support Engineer at Engine Yard, a PaaS company specializing in Ruby on Rails hosting. He is an active committer to the JRuby project.",
+    "company" : "Engine Yard",
+    "firstName" : "Hirotsugu",
+    "id" : 877,
+    "imageURI" : "https://cfp.devoxx.com/static/images/877/thumbnail.gif",
+    "lastName" : "Asari",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/711",
+          "title" : "JRuby: Enhancing Java Developers' Lives"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/712",
+          "title" : "JRuby Birds of a Feather"
+        }
+      ]
+  },
+  { "bio" : "Richard Bair is the architect for the client Java platform at Oracle. He was an influential lead in the development of JavaFX UI controls and associated APIs. Prior to that he was the lead of the SwingLabs project, which was an open source community supported by Sun with a focus on enhancing and extending Swing. Before working at Sun, Blair was an application developer with a focus on data-oriented rich client applications backed by databases. He has a passion for graphics, performance, and developer productivity.",
+    "company" : "Oracle",
+    "firstName" : "Richard",
+    "id" : 264,
+    "imageURI" : "https://cfp.devoxx.com/static/images/264/thumbnail.gif",
+    "lastName" : "Bair",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/293",
+          "title" : "From Shabby to Chic"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/295",
+          "title" : "JavaFX"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/296",
+          "title" : "JavaFX 101"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/398",
+          "title" : "Physically Attractive"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/741",
+          "title" : "Java Rich Clients with JavaFX 2.0"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/745",
+          "title" : "JavaFX Under The Hood"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/748",
+          "title" : "Practical Experience Building JavaFX Rich Clients"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/762",
+          "title" : "JavaFX Open Mic"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/764",
+          "title" : "JavaFX 2.0 Hands On"
+        }
+      ]
+  },
+  { "bio" : "Paul is senior software engineer at Luminis Technologies where he works on the Amdatu platform, an open source, service-oriented application platform for web applications. \r\n\r\nHe has a background as trainer where he teached various Java related subjects. Paul is also a regular speaker on conferences and author for the Dutch Java Magazine.",
+    "company" : "Info Support",
+    "firstName" : "Paul",
+    "id" : 847,
+    "imageURI" : "https://cfp.devoxx.com/static/images/847/thumbnail.gif",
+    "lastName" : "Bakker",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/480",
+          "title" : "Building Next-generation Enterprise Applications in Java a.k.a. Duke’s Duct Tape Adventures"
+        } ]
+  },
+  { "bio" : "Eric is a Java and iOS developer as well as Home Automation and Home Theater specialist, always looking to push the boundaries.\r\n\r\nAs part of the Open Remote project, he draws on its practical experience in the automation field and knowledge of enterprise technologies to help design a truly open and modern platform that will unite a currently fragmented market and bring it into the \"cloud and internet of things\" age.\r\n\r\nIn a previous life he has acted as senior developer, architect or project manager for enterprise J2EE projects in the financial, banking and telecommunication sector.",
+    "company" : "OpenRemote",
+    "firstName" : "Eric",
+    "id" : 1252,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1252/thumbnail.gif",
+    "lastName" : "Bariaux",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/973",
+          "title" : "Having fun with Java and Home Automation"
+        } ]
+  },
+  { "bio" : "Michael Barker is currently a lead developer at London Multi-Asset eXchange (LMAX) where he spends most of his time scratching his head while thinking about simpler and faster solutions. \r\n\r\nIntermingled with travelling to various countries around the world, Michael's 10+ years of experience has been spent battling unnecessary complexity across a variety of industries (finance, telecoms, government) and in whatever technology that happens to have been hurled in his direction (Java/JavaEE, C++, .NET).  Michael is also a sporadic Open Source contributor having dropped patches into a number of OSS projects including PostgreSQL, JBoss, GNU Classpath and most recently Mono.",
+    "company" : "LMAX",
+    "firstName" : "Michael",
+    "id" : 62,
+    "imageURI" : "https://cfp.devoxx.com/static/images/62/thumbnail.gif",
+    "lastName" : "Barker",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/705",
+          "title" : "The Disruptor, High Performance Inter-Thread Messaging"
+        } ]
+  },
+  { "bio" : "Sonya Barry has been with Java.net since she was a graduate student intern at Sun Microsystems in 2006. She took over as Community Manager in February 2009 and has managed the site and Java community through the transition from Sun to Oracle.",
+    "company" : "Oracle",
+    "firstName" : "Sonya",
+    "id" : 1080,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1080/thumbnail.gif",
+    "lastName" : "Barry",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/908",
+          "title" : "Lessons from the Java.net Migration: Managing an Open Source Community through Major Change"
+        } ]
+  },
+  { "bio" : "Alan Bateman is an engineer in the JDK team in Oracle. For JDK 7 he has mostly been focused on the core libraries/APIs and lead JSR-203 that defined the new file system API and asynchronous I/O APIs that are new in JDK 7.",
+    "company" : "Oracle Corporation",
+    "firstName" : "Alan",
+    "id" : 241,
+    "imageURI" : "https://cfp.devoxx.com/static/images/241/thumbnail.gif",
+    "lastName" : "Bateman",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/634",
+          "title" : "The File System API in JDK 7"
+        } ]
+  },
+  { "bio" : "Lincoln Baxter, III is a Senior Software Engineer at JBoss, by Red Hat. He is the project-lead of JBoss Forge – a standards based rapid application development tool, the founder of OCPSoft.com, the creator of Rewrite, and also the well known PrettyFaces – URL-Rewriting and SEO extensions for Servlet, Java EE, and JSF. He is also the creator of PrettyTime – Social-style date & time formatting for Java, a member of the JBoss Seam Team, and a member of the JSF2 Expert Group.\r\n\r\nWhen he is not speaking at conferences, swimming, running, or playing Ultimate Frisbee, Lincoln is focused on improving the openness of Java, the Java Community Process(JCP), and bringing the J2EE platform to small businesses and freelancers. You can stay current on his latest open-source developments by following him on Twitter (@lincolnthree), or subscribing to his blog at http://ocpsoft.com/.",
+    "company" : "Red Hat, Inc.",
+    "firstName" : "Lincoln",
+    "id" : 71,
+    "imageURI" : "https://cfp.devoxx.com/static/images/71/thumbnail.gif",
+    "lastName" : "Baxter III",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/59",
+          "title" : "Beautiful Java EE: URL-rewriting for the next generation web-user"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/349",
+          "title" : "Seam Gathering"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/459",
+          "title" : "Forge new Ground in Rapid Enterprise Java Development"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        }
+      ]
+  },
+  { "bio" : "Emmanuel Bernard is data platform architect at JBoss by Red Hat and member of the Hibernate team.\r\nAfter graduating from Supelec (French \"Grande Ecole\"), Emmanuel has spent a few years in the retail industry as developer and architect where he started to be involved in the ORM space. He joined the Hibernate team in 2003.\r\nEmmanuel has lead the JPA implementation of Hibernate. He has founded and leads Hibernate Search, Hibernate Validator and the newcommer Hibernate OGM.\r\nEmmanuel is a member of the JPA 2.0 expert group and the spec lead of Bean Validation. He is a regular speaker at various conferences and JUGs, including JavaOne, JBoss World and Devoxx and the co-author of Hibernate Search in Action published by Manning. He is also founder and co-host of two podcasts: JBoss Community Asylum and Les Cast Codeurs Podcast.\r\nYou can follow him on twitter at @emmanuelbernard",
+    "company" : "JBoss by Red Hat",
+    "firstName" : "Emmanuel",
+    "id" : 117,
+    "imageURI" : "https://cfp.devoxx.com/static/images/117/thumbnail.gif",
+    "lastName" : "Bernard",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/92",
+          "title" : "What's new in Hibernate: a JPA 2 perspective"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/542",
+          "title" : "JPA on NoSQL: an approach with Hibernate OGM"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/622",
+          "title" : "CDI, what comes next?"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/922",
+          "title" : "Java EE Gathering"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/955",
+          "title" : "The Ceylon programming language"
+        }
+      ]
+  },
+  { "bio" : "Birgitta Boeckeler has been with Accenture Technology Solutions in Germany for 6 years. Her special focus lies on the design and implementation of model-driven development (MDD) approaches and tooling for Enterprise development, a topic she has presented at other technical conferences and events, including JAX. At Accenture, she has been working on large J2EE development projects as a developer, team lead and architect. In these roles, she gathered extensive experience in designing and implementing code generators, modeling languages and model editors for textual modeling languages and UML.",
+    "company" : "Accenture",
+    "firstName" : "Birgitta",
+    "id" : 1108,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1108/thumbnail.gif",
+    "lastName" : "Boeckeler",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/948",
+          "title" : "Code generation at large - techniques and lessons learned"
+        } ]
+  },
+  { "bio" : "Jonas Bonér is a entrepreneur, programmer, teacher, mentor, speaker, author and Java Champion who spends most of his time hacking on open source and lecturing and speaking at developer conferences world-wide. He has worked at Terracotta, the JRockit JVM at BEA and is an active contributor to the Open Source community; most notably created the Akka Project, AspectWerkz Aspect-Oriented Programming (AOP) framework, committer to the Terracotta JVM clustering technology and been part of the Eclipse AspectJ team. He blogs occasionally at: http://jonasboner.com",
+    "company" : "Typesafe",
+    "firstName" : "Jonas",
+    "id" : 807,
+    "imageURI" : "https://cfp.devoxx.com/static/images/807/thumbnail.gif",
+    "lastName" : "Bonér",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/438",
+          "title" : "Above the Clouds: Introducing Akka"
+        } ]
+  },
+  { "bio" : "Tim is a software developer and entrepreneur, currently working as Developer Advocate for Android at Google. He lives in Vancouver, Canada, and travels heavily. Tim co-founded Open Text Corporation and Antarctica Systems. Bray was Director of Web Technologies at Sun Microsystems from early 2004 to early 2010.",
+    "company" : "Google",
+    "firstName" : "Tim",
+    "id" : 1085,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1085/thumbnail.gif",
+    "lastName" : "Bray",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/918",
+          "title" : "Fireside Chat"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/930",
+          "title" : "Android Keynote"
+        }
+      ]
+  },
+  { "bio" : "Andrey is the lead language designer for Project Kotlin, he joined the JetBrains team in 2010.",
+    "company" : "JetBrains",
+    "firstName" : "Andrey",
+    "id" : 861,
+    "imageURI" : "https://cfp.devoxx.com/static/images/861/thumbnail.gif",
+    "lastName" : "Breslav",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/640",
+          "title" : "The Kotlin Programming Language"
+        } ]
+  },
+  { "bio" : "Nick is an Android Developer Advocate in Google's London office. He has a passion for mobile technologies and learned his trade in the gnarly world of Windows Mobile development. He is particularly interested in producing sublime mobile user interfaces & works with developers to make high quality Android apps. In his spare time he is an aspiring runner & triathlete.",
+    "company" : "Google",
+    "firstName" : "Nick",
+    "id" : 1082,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1082/thumbnail.gif",
+    "lastName" : "Butcher",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/910",
+          "title" : "Whatʼs new and important in Android"
+        } ]
+  },
+  { "bio" : "Lucas Cavalcanti is a lead developer of VRaptor, Scala Hibernate DSL and Restfulie Java. Consultant, developer and instructor at Caelum, working in many web projects and products using Java and Scala, focusing on writing testable, readable and, hence, maintainable code.",
+    "company" : "Caelum",
+    "firstName" : "Lucas",
+    "id" : 1076,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1076/avatar-small.png",
+    "lastName" : "Cavalcanti",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/648",
+          "title" : "Hibernate/JPA type safe query in Scala: an implicit help from the language"
+        } ]
+  },
+  { "bio" : "Bastiaan Ceuppens is working as a Consultant at Devoteam. With a team of colleagues, he is currently exploring Azure Interoperability, and more specifically on hybrid distributed solutions. The goal is to set up and promote a completely integrated enterprise environment, using .NET, JAVA and the Windows Azure Platform; the leading \"Platform as a Service\" offering from Microsoft. Bastiaan started out as an Appliation Server Engineer and Java Developer and is consulting clients on \"Service Oriented Architecture\" and \"Domain Driven Design\".",
+    "company" : "DevoTeam",
+    "firstName" : "Bastiaan",
+    "id" : 1258,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1258/",
+    "lastName" : "Ceuppens",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/977",
+          "title" : "Serving Java on the Windows Azure Cloud Platform"
+        } ]
+  },
+  { "bio" : "Michaël Chaize is a Flash Platform Evangelist at Adobe where he focuses on Rich Internet Application and Enterprise Integration. Based in Paris, he works with large accounts that need to understand the benefits of rich user interfaces, leverage the existing back-ends to add a rich presentation layer and measure the impact on the existing IT teams. He believes that intuitive user experiences in the Enterprise are key to successful developments of effective, efficient, engaging, easy to learn and error free applications. He loves to promote concepts such as “Productivity by design” or “User Experience oriented architectures”. In his previous role, Michael worked as a Technical Sales in France and assumed the promotion of the Flash Platform in front of large audiences of developers and IT managers. Before joining Adobe, Michael founded a software company and taught RIA languages such as Flex and PHP in IT engineering schools.",
+    "company" : "Adobe Systems",
+    "firstName" : "Michael",
+    "id" : 331,
+    "imageURI" : "https://cfp.devoxx.com/static/images/331/thumbnail.gif",
+    "lastName" : "Chaize",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/368",
+          "title" : "The latest innovations of the Adobe Flash Platform for Java developers"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/370",
+          "title" : "Meet the Adobe guys and discuss the role of RIA in the Enterprise"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/371",
+          "title" : "Develop Mobile applications with AIR 2.5"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/393",
+          "title" : "Making Real-Time Data Come Alive"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/941",
+          "title" : "Cross-platform RIAs and Mobile Applications connected to a Java back-end"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/942",
+          "title" : "Learn how to develop Flex Mobile applications for iOS, Android and QNX"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/943",
+          "title" : "Learn how to develop Flex Mobile applications for iOS, Android and QNX"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/944",
+          "title" : "How to develop cross-platform mobile applications connected to your Java back-end"
+        }
+      ]
+  },
+  { "bio" : "Ludovic Champenois is a software engineer working at Google on cloud technologies including the Google App Engine offering. In the past, he was one of the Sun/Oracle architects of the GlassFish Java EE 6 Application Server, a modular, elegant application server, based on OSGi and exposing the latest technologies of the Enterprise Platform: JPA2, JSF 2, CDI, Beans Validations, Servlet 3.0 etc. His focus was IDE tooling (Eclipse and NetBeans), modularity and comprehensive REST admin backend.",
+    "company" : "Google",
+    "firstName" : "Ludovic",
+    "id" : 195,
+    "imageURI" : "https://cfp.devoxx.com/static/images/195/thumbnail.gif",
+    "lastName" : "Champenois",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/186",
+          "title" : "Java EE 6: Tooling Status: what am I missing?"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/899",
+          "title" : "Cloud is such stuff as dreams are made on"
+        }
+      ]
+  },
+  { "bio" : "David Chandler works with the Google Web Toolkit Team in Atlanta. An electrical engineer by training, Chandler got hooked on developing database Web applications in the days of NCSA Mosaic and has since written Web applications professionally in a variety of languages, including C, perl, ksh, ColdFusion, Java, JSF, and GWT. Prior to joining Google, Chandler worked on Internet banking applications with Intuit and launched a non-profit startup built with GWT and AppEngine. Chandler holds a patent on a method of organizing hierarchical data in a relational database and blogs about Java Web development at turbomanage.wordpress.com.",
+    "company" : "Google",
+    "firstName" : "David",
+    "id" : 1093,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1093/thumbnail.gif",
+    "lastName" : "Chandler",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/927",
+          "title" : "These Aren't the Sites You're Looking For: Modern HTML5 Web Apps"
+        } ]
+  },
+  { "bio" : "Patrick Chanezon joined VMware in 2011 in San Francisco, to create the developer relations team, and make VMware and Cloud Foundry the first choice of developers moving their apps to the cloud. Previously he worked at Google from 2005 to 2011, where he managed the Cloud and Tools Developer Relations team and has been building and growing developer ecosystems for HTML5, OpenSocial, Google Checkout and the AdWords API, and worked as a software architect at Sun Microsystems, AOL, Netscape and Accenture.\r\nMore on his blog at http://wordpress.chanezon.com/ or his twitter stream at http://twitter.com/chanezon",
+    "company" : "VMware",
+    "firstName" : "Patrick",
+    "id" : 870,
+    "imageURI" : "https://cfp.devoxx.com/static/images/870/PatrickChanezon-2010-profile-square-100.jpg",
+    "lastName" : "Chanezon",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/899",
+          "title" : "Cloud is such stuff as dreams are made on"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/976",
+          "title" : "Cloud Foundry and Spring, a marriage made in heaven"
+        }
+      ]
+  },
+  { "bio" : "Anton Chechel is a software engineer at Sun Microsystems/Oracle. He is working on NetBeans Mobility and NetBeans JavaFX support for last 6 years.",
+    "company" : "Oracle",
+    "firstName" : "Anton",
+    "id" : 1021,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1021/thumbnail.gif",
+    "lastName" : "Chechel",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/767",
+          "title" : "Jackpot 3.0 - Large scale custom refactorings made easy"
+        } ]
+  },
+  { "bio" : "Stephen Chin is a technical expert in RIA technologies, and Chief Agile Methodologist at GXS where he led a large-scale Lean/Agile rollout and pioneered the practice of Agile Portfolio Kanban Planning. He is lead author of Pro Android Flash and coauthored the Apress Pro JavaFX Platform title, which is the current leading technical reference for JavaFX. In addition, Stephen supports the local developer community by running the Flash on Devices and Silicon Valley JavaFX User Groups. Finally, he is a Java Champion and an internationally recognized speaker featured at Devoxx, Jazoon, and JavaOne, where he received a Rock Star Award. Stephen can be followed on twitter @steveonjava and reached via his blog: http://steveonjava.com/",
+    "company" : "GXS",
+    "firstName" : "Stephen",
+    "id" : 98,
+    "imageURI" : "https://cfp.devoxx.com/static/images/98/steve-champion-100x110.png",
+    "lastName" : "Chin",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/376",
+          "title" : "JavaFX Your Way: Building JavaFX Applications with Alternative Languages"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/377",
+          "title" : "Visage Android Workshop"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/836",
+          "title" : "Moving to the Client - JavaFX and HTML5"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/837",
+          "title" : "JavaFX 2.0 - A Java Developer's Guide"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/957",
+          "title" : "Hackergarten Hands-On Coding Event"
+        }
+      ]
+  },
+  { "bio" : "Main focus on type-system area of javac/javafxc compilers, improving generics/wildcards support (actively improving JLS coverage in that area), improving javac error messages and enhancing interoperability between JavaFX and Java.",
+    "company" : "oracle",
+    "firstName" : "Maurizio",
+    "id" : 326,
+    "imageURI" : "https://cfp.devoxx.com/static/images/326/thumbnail.gif",
+    "lastName" : "Cimadamore",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/337",
+          "title" : "Project Coin: Small Language Changes in JDK 7"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/869",
+          "title" : "The Heads and Tails of Project Coin"
+        }
+      ]
+  },
+  { "bio" : "Christophe Coenraets is a Technical Evangelist for Adobe where he focuses on Mobile and Rich Internet Applications for the Enterprise. He has been working on Flex since the early days of the product in 2003. In his previous role at Macromedia, Christophe worked on JRun, the company’s J2EE application server. Before joining Macromedia, Christophe was managing Java and Internet applications Evangelism at Sybase and Powersoft. Christophe has been a regular speaker at conferences worldwide for the last 15 years. He blogs at http://coenraets.org.",
+    "company" : "Adobe",
+    "firstName" : "christophe",
+    "id" : 285,
+    "imageURI" : "https://cfp.devoxx.com/static/images/285/thumbnail.gif",
+    "lastName" : "coenraets",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/944",
+          "title" : "How to develop cross-platform mobile applications connected to your Java back-end"
+        } ]
+  },
+  { "bio" : "Adrian founded the open source project jclouds in March 2009, and is actively engaged in cloud interoperability and devops circles. Recent efforts include vCloud ecosystem engineering at VMware, Java integration at Opscode, and cloud portability efforts at Cloudsoft. Adrian's currently consulting under Cloud Conscious LLC.",
+    "company" : "Opscode, Inc.",
+    "firstName" : "Adrian",
+    "id" : 254,
+    "imageURI" : "https://cfp.devoxx.com/static/images/254/thumbnail.gif",
+    "lastName" : "Cole",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/357",
+          "title" : "Clustering the clouds in java"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/703",
+          "title" : "Hands on Cloud Storage"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/704",
+          "title" : "Portable Cloud Storage with jclouds"
+        }
+      ]
+  },
+  { "bio" : "Stephen Colebourne is a Java Champion and JavaOne Rock Star speaker.\r\n\r\nHe  has been working with Java since version 1.0 and contributing to open source software since 2000. He has made major contributions to Apache Commons and created the Joda open source projects including Joda-Time. He blogs on Java topics and is a frequent conference speaker. He is currently co-spec lead on JSR-310 and a contributor to discussions on language change such as Project Coin and Lambda.",
+    "company" : "OpenGamma",
+    "firstName" : "Stephen",
+    "id" : 335,
+    "imageURI" : "https://cfp.devoxx.com/static/images/335/thumbnail2.gif",
+    "lastName" : "Colebourne",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/388",
+          "title" : "The Next Big JVM Language"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/397",
+          "title" : "The Future of Java Discussion Panel"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/926",
+          "title" : "Is Fantom light years ahead of Scala?"
+        }
+      ]
+  },
+  { "bio" : "Sr. Java/Groovy Developer, Groovy and CodeNarc Committer \r\n\r\nHamlet D'Arcy has been writing software for over a decade, and has spent considerable time coding in Groovy, Java, and C++. He's passionate about learning new languages and different ways to think about problems. Hamlet is the founder of the Basel-based Hackergarten open source coding group, and regularly participates and speaks at local and international user groups and conferences. Hamlet is a committer on the Groovy and CodeNarc projects, and is a contributor on a few other open source projects (including JConch and the IDEA Groovy Plugin). He blogs regularly at http://hamletdarcy.blogspot.com and can be found on Twitter as HamletDRC.",
+    "company" : "Canoo Engineering AG",
+    "firstName" : "Hamlet",
+    "id" : 151,
+    "imageURI" : "https://cfp.devoxx.com/static/images/151/thumbnail.gif",
+    "lastName" : "D'Arcy",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/148",
+          "title" : "Groovy Code Generation"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/957",
+          "title" : "Hackergarten Hands-On Coding Event"
+        }
+      ]
+  },
+  { "bio" : "At Oracle Joe is currently the lead engineer of Project Coin, the effort to select and implement a set of small Java language changes for JDK 7. He also serves as a member of the JDK 7 release team. Concurrently, Joe continues to be the release manager, lead engineer, and quality lead for OpenJDK 6, an open source implementation of the Java SE 6 platform.  A longtime member of the JDK engineering group, Joe was previously specification lead for JSR 269, the Pluggable Annotation Processing API, which delivered a standardized annotation processing API and mirror-based language model into JDK 6 to supersede the earlier apt tool from JDK 5. Joe assisted in implementing the JDK 5 language changes with work spanning core reflection, javac hacking, and general library support.\r\n\r\nJoe holds a master's degree in computer science from UC Berkeley and a master's degree in applied math from Stanford University.",
+    "company" : "Oracle",
+    "firstName" : "Joe",
+    "id" : 282,
+    "imageURI" : "https://cfp.devoxx.com/static/images/282/thumbnail.gif",
+    "lastName" : "Darcy",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/337",
+          "title" : "Project Coin: Small Language Changes in JDK 7"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/355",
+          "title" : "The state of Java SE 7"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/869",
+          "title" : "The Heads and Tails of Project Coin"
+        }
+      ]
+  },
+  { "bio" : "Nigel is a principal member of technical staff at Oracle. He is a developer on Open Message Queue, part of GlassFish server, the reference implementation for Java EE. He is also the specification lead for JSR 343 which is defining JMS 2.0, the next version of the Java Message Service specification.",
+    "company" : "Oracle",
+    "firstName" : "Nigel",
+    "id" : 1071,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1071/thumbnail2.gif",
+    "lastName" : "Deakin",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/890",
+          "title" : "What's Coming in Java Message Service 2.0"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/922",
+          "title" : "Java EE Gathering"
+        }
+      ]
+  },
+  { "bio" : "Dirk Deridder is working for Smals as a research consultant, specializing in dynamic programming languages, software architecture, agile development and Extreme Transaction Processing architectures. He holds a PhD in computer science (VUB) and used to be working previously as a postdoctoral researcher at the Software Languages Lab.",
+    "company" : "Smals",
+    "firstName" : "Dirk",
+    "id" : 1229,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1229/thumbnail.gif",
+    "lastName" : "Deridder",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/965",
+          "title" : "Extreme Transaction Processing"
+        } ]
+  },
+  { "bio" : "Jerome Dochez is an experienced speaker with more than 11 years of speaking presence at JavaOne, 3 years at Jazoon et various Sun Tech Days events.\r\n\r\nHe is the GlassFish architect, who successfully lead the modularization effort of the monolithic GlassFish V2 implementation into more than 200 individually reusable OSGi bundles. \r\n\r\nDespite being an architect, Jerome still spends most of his days writing code.",
+    "company" : "Oracle Corporation",
+    "firstName" : "Jerome",
+    "id" : 50,
+    "imageURI" : "https://cfp.devoxx.com/static/images/50/thumbnail.gif",
+    "lastName" : "Dochez",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/326",
+          "title" : "The Future Roadmap of Java EE"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/354",
+          "title" : "The JavaEE BOF"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/382",
+          "title" : "HK2: Oracle WebLogic Server, Oracle GlassFish Server, and Beyond"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/873",
+          "title" : "Pragmatic Cloud and PaaS with Java EE 7 (and GlassFish)"
+        }
+      ]
+  },
+  { "bio" : "Hans Dockter is the founder and project lead of the open-source Gradle build system and the CEO of Gradleware, a company that provides training, support and consulting for Gradle and all forms of enterprise software project automation in general.\r\n\r\nHans has 13 years of experience as a software developer, team lead, architect, trainer, and technical mentor. He is a thought leader in the field of project automation and has successfully been in charge of numerous large-scale enterprise builds. He is also an advocate of Domain Driven Design, having taught classes and delivered presentations on this topic together with Eric Evans. In the earlier days, Hans was also a committer for the JBoss project and founded the JBoss-IDE.",
+    "company" : "Gradleware",
+    "firstName" : "Hans",
+    "id" : 958,
+    "imageURI" : "https://cfp.devoxx.com/static/images/958/thumbnail.gif",
+    "lastName" : "Dockter",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/957",
+          "title" : "Hackergarten Hands-On Coding Event"
+        } ]
+  },
+  { "bio" : "Xavier is the tech-lead for the Android SDK and Developer Tools. He joined Google in 2007 and holds a MS in Computer Science from EFREI, France.",
+    "company" : "Google Inc.",
+    "firstName" : "Xavier",
+    "id" : 1079,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1079/thumbnail.gif",
+    "lastName" : "Ducrohet",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/897",
+          "title" : "Android Development Tools"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/898",
+          "title" : "Android Tools in Action"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/906",
+          "title" : "Android Tools BOF"
+        }
+      ]
+  },
+  { "bio" : "Sam Dutton is a Developer Advocate for Chrome at Google in London. Sam has designed and coded numerous websites, but has also built applications with C++/Qt and has some experience of Symbian and Android. He is excited by the increasingly high base level of capability in browsers and (mobile) hardware. He previously worked for the BBC and ITN, is a governor at Ravenstone School in London, and cares passionately about the ICT school curriculum.",
+    "company" : "Google",
+    "firstName" : "Sam",
+    "id" : 1084,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1084/thumbnail.gif",
+    "lastName" : "Dutton",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/913",
+          "title" : "Working Off the Grid: HTML5 Offline"
+        } ]
+  },
+  { "bio" : "From deep into the Nice mountains, Stéphane works for Red Hat on the Ceylon project.\r\n\r\nPassionate hacker in Java, C, Perl or Scheme. A web standards and database enthusiast, he implemented among other things a WYSIWYG XML editor, a multi-threading library in C, a mobile-agent language in Scheme (compiler and virtual machines), and some Web 2.0 RESTful services and rich web interfaces with JavaScript and HTML 5.\r\n\r\nEager to share, he is a frequent speaker at various conferences such as the Scheme Workshop 2004, Nice Technical University in 2008, Polytech'Nice en 2009, Mars JUG, Paris JUG and Riviera Java User Group he founded with Nicolas Leroux. A long-time open-source user and advocate, he is committer on RESTEasy, author of jax-doclets, stamps.js and various Play! Framework modules, and committer on Ceylon for Red Hat.",
+    "company" : "JBoss",
+    "firstName" : "Stephane",
+    "id" : 1135,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1135/thumbnail.gif",
+    "lastName" : "Epardaud",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/955",
+          "title" : "The Ceylon programming language"
+        } ]
+  },
+  { "bio" : "Bert is a Fellow at Luminis in the Netherlands. Next to his customer assignments he is responsible for stimulating innovation, knowledge sharing, coaching, technology choices and presales activities. Besides his day job he is a Java User Group leader for NLJUG, the Dutch Java User Group (3500+ members). A frequent speaker on Java (SE/EE) and Software Architecture related topics as well as an author and member of the editorial advisory board for Dutch software development magazine: Java Magazine. In 2008, Bert was honored by being awarded the coveted title of Java Champion by an international panel of Java leaders and luminaries.",
+    "company" : "Luminis",
+    "firstName" : "Bert",
+    "id" : 845,
+    "imageURI" : "https://cfp.devoxx.com/static/images/845/thumbnail.gif",
+    "lastName" : "Ertman",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/480",
+          "title" : "Building Next-generation Enterprise Applications in Java a.k.a. Duke’s Duct Tape Adventures"
+        } ]
+  },
+  { "bio" : "Ben Evans has lived in \"Interesting Times\" in technology - he was the lead performance testing engineer for the Google IPO, worked on the initial UK trials of 3G networks with BT, built award-winning websites for some of Hollywood's biggest hits of the 90s, rearchitected and reimagined technology helping some of the most vulnerable people in the UK and has worked on everything from some of the UKs very first ecommerce sites, through to multi-billion dollar currency trading systems. He helps to run the London Java Community, and represents the JUG on the Java SE/EE Executive Committee. His first book \"The Well-Grounded Java Developer\" (with Martijn Verburg) has just been published by Manning.",
+    "company" : "Erzulie Technologies",
+    "firstName" : "Ben",
+    "id" : 930,
+    "imageURI" : "https://cfp.devoxx.com/static/images/930/thumbnail.gif",
+    "lastName" : "Evans",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/571",
+          "title" : "Less annoying Java standards"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/572",
+          "title" : "The Well-Grounded Java Developer"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/951",
+          "title" : "Technical Discussion Panel"
+        }
+      ]
+  },
+  { "bio" : "Dave Farley is co-author of the book \"Continuous Delivery\" which describes the use of high levels of automation and collaboration in the delivery process to ensure high quality software and a reduction in errors and late nights. Dave is also head of software development for LMAX Ltd who use these techniques to deliver a high-performance financial exchange.",
+    "company" : "LMAX",
+    "firstName" : "David",
+    "id" : 1104,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1104/thumbnail.gif",
+    "lastName" : "Farley",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/921",
+          "title" : "Continuous Delivery"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/946",
+          "title" : "Continuous Delivery"
+        }
+      ]
+  },
+  { "bio" : "Ben Forta is Adobe Inc.'s Director of Platform Evangelism, and has over two decades of experience in the computer industry in product development, support, training, and marketing. Ben is the author of the best-selling ColdFusion Web Application Construction Kit series, as well as multiple books on SQL, Regular Expressions, Java Server Pages, WAP, Windows development, and more. Over 1/2 million Ben Forta books have been printed in English, and titles have been translated into fifteen languages. Ben co-authored the official ColdFusion training material as well as the certification tests and study guides for those tests, writes regular columns on Internet application development, and now spends a considerable amount of time lecturing and speaking on application development worldwide.",
+    "company" : "Adobe",
+    "firstName" : "Ben",
+    "id" : 1086,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1086/thumbnail.gif",
+    "lastName" : "Forta",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/918",
+          "title" : "Fireside Chat"
+        } ]
+  },
+  { "bio" : "Mario joined the Java developers community during his studies at university, and has been a Java enthusiast since. He has a more than decennial experience as Java developer having been involved in (and often leading) many enterprise level successful projects in several industries ranging from media companies to the financial sector. Among his interests there are also the functional programming and languages, mostly Scala, and the development of Domain Specific Languages. By leveraging these 2 passions he also created the open source library lambdaj with the purposes of providing an internal Java DSL for manipulating collections and allowing a bit of functional programming in Java.",
+    "company" : "Red Hat",
+    "firstName" : "Mario",
+    "id" : 831,
+    "imageURI" : "https://cfp.devoxx.com/static/images/831/mario_small.jpg",
+    "lastName" : "Fusco",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/954",
+          "title" : "Crash Course into Scala"
+        } ]
+  },
+  { "bio" : "Ben Galbraith is a frequent technical speaker, occasional consultant, and author of several Java-related books. He is a co-founder of Ajaxian.com, an experienced CTO and Java Architect, and is presently a consultant specializing in Java Swing and Ajax development. Ben wrote his first computer program when he was six years old, started his first business at ten, and entered the IT workforce just after turning twelve. For the past few years, he’s been professionally coding in Java. Ben has delivered hundreds of technical presentations world-wide at venues including JavaOne, The Ajax Experience, JavaPolis, and the No Fluff Just Stuff Java Symposium series; he was the top-rated speaker at JavaOne 2006.",
+    "company" : "na",
+    "firstName" : "Ben",
+    "id" : 291,
+    "imageURI" : "https://cfp.devoxx.com/static/images/291/thumbnail.gif",
+    "lastName" : "Galbraith",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/342",
+          "title" : "The State of the Web"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/866",
+          "title" : "Web vs. Apps"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/951",
+          "title" : "Technical Discussion Panel"
+        }
+      ]
+  },
+  { "bio" : "Olivier Gaudin is co-founder and CEO at SonarSource, the company that develops and promotes the \r\nopen source platform Sonar to manage source code quality.\r\n\r\nOlivier started his carea in London, working on trading systems in the banking industry. He then managed IT for a startup, ran big projects such as off-shoring, CMMi and ran support and  development departments. Olivier has developed a strong sensibility to robustness of processes and  quality of delivery.\r\nIn 2007, Olivier starts contributing to Sonar and decides with Simon Brandhof and Freddy Mallet to \r\nsetup SonarSource, the company that develops and promotes Sonar while growing some business around the platform.",
+    "company" : "SonarSource",
+    "firstName" : "Olivier",
+    "id" : 1032,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1032/thumbnail.gif",
+    "lastName" : "Gaudin",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/813",
+          "title" : "Continuous Inspection with Sonar"
+        } ]
+  },
+  { "bio" : "David is the founder of Clarity Training, where he teaches software developers to implement web applications using HTML5, JavaServer Faces, and Google Web Toolkit. David is the co-founder of the HTML5 Denver Users Group, and the author of Core HTML5 Canvas, published by Pearson publishing.\r\n\r\nA prominent author, speaker, and consultant, David is the author of 6 Java books, four of which are best-sellers in their respective categories, including one of the best-selling Java book series of all time, Graphic Java. David is currently writing Core HTML5 for Prentice-Hall.\r\n\r\nDavid has worked on several open-source projects, and was the second committer for the venerable Struts web application framework. David served on Sun expert groups, helping to define technologies such as the JSP tag library, and JavaServer Faces. David is also a prolific speaker who has spoken at hundreds of conferences, and is a three-time JavaOne Rock Star.",
+    "company" : "Clarity Training, Inc.",
+    "firstName" : "David",
+    "id" : 231,
+    "imageURI" : "https://cfp.devoxx.com/static/images/231/thumbnail.gif",
+    "lastName" : "Geary",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/244",
+          "title" : "Google Web Toolkit, Take 2: Implementing Awesome Rich Internet Applications"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/497",
+          "title" : "HTML5 Game Development: The most fun you can have in a browser"
+        }
+      ]
+  },
+  { "bio" : "René Gielen is an independent senior software craftsman, consultant, trainer, lecturer and author, focused on the Java platform ecosystem, Web 2.0 and RIA technologies, agile development methodologies and enterprise grade database design and management solutions. In the last 10 years, he has helped clients ranging from startups to large multinational companies realizing software projects of any scale, in various roles like software architect, senior developer, project lead, trainer, mentor or technology enabler. \r\nWhenever possible, René tries to invest time in his open source activities. He is the project management committee (PMC) chair of the Apache Struts project and Vice President of The Apache Software Foundation. Besides other open source activities, he is and was active in the development and design of the Apache Struts 2 framework, as well as in the XWork and WebWork projects at the OpenSymphony Group.",
+    "company" : "IT-Neering.net",
+    "firstName" : "René",
+    "id" : 237,
+    "imageURI" : "https://cfp.devoxx.com/static/images/237/Profil100.gif",
+    "lastName" : "Gielen",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/487",
+          "title" : "Meet Agile ALM: Agile Application Lifecycle Management"
+        } ]
+  },
+  { "bio" : "Oliver Gierke is project lead of the Spring Data JPA module and involved into other Spring Data modules (e.g. MongoDB) as well. He has been into developing enterprise applications and open source projects for over 6 years now. His working focus is centered around software architecture, Spring and persistence technologies. He is regularly speaking at German and international conferences as well as author of articles.",
+    "company" : "SpringSource - a division of VMware",
+    "firstName" : "Oliver",
+    "id" : 54,
+    "imageURI" : "https://cfp.devoxx.com/static/images/54/thumbnail.gif",
+    "lastName" : "Gierke",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/39",
+          "title" : "Increasing developer productivity with Mylyn"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/544",
+          "title" : "Spring Data JPA - Repositories done right"
+        }
+      ]
+  },
+  { "bio" : "Fabrizio Giudici is a Senior Java Architect with a long Java experience in the industrial field. Fabrizio has been running Tidalwave.it, his own consultancy company, since 2001 and has been a technical speaker at JavaOne, JavaPolis, Jazoon, Jini Community Meetings and some italian Java conferences. He started working with Java since the old 1.0 times and after 1.3 he has been committed in demonstrating that Java performance is not an issue, really. After bringing Java to the world of Formula One telemetry, he believes he is on the right path. Today he's often helping customers in picking the right architecture, creating the best design and setting up the proper software factory for their products and services. Fabrizio is a member of the JUG Milano and the NetBeans Dream Team.",
+    "company" : "Tidalwave s.a.s.",
+    "firstName" : "Fabrizio",
+    "id" : 229,
+    "imageURI" : "https://cfp.devoxx.com/static/images/229/thumbnail2.gif",
+    "lastName" : "Giudici",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/862",
+          "title" : "Building Android apps with Maven"
+        } ]
+  },
+  { "bio" : "Brian Goetz has been a professional software developer for more than twenty years. Brian is the author of the very successful 'Java Concurrency in Practice', and has written over 75 articles on Java development. He is one of the primary members of the Java Community Process JSR 166 Expert Group (Concurrency Utilities), and has served on numerous other JCP Expert Groups. Brian is a Sr. Staff Engineer at Oracle.",
+    "company" : "Oracle",
+    "firstName" : "Brian",
+    "id" : 283,
+    "imageURI" : "https://cfp.devoxx.com/static/images/283/thumbnail.gif",
+    "lastName" : "Goetz",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/345",
+          "title" : "Project Lambda: To Multicore and Beyond"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/355",
+          "title" : "The state of Java SE 7"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/904",
+          "title" : "Language / Library co-evolution in Java SE 8"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/935",
+          "title" : "JDK 8"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/951",
+          "title" : "Technical Discussion Panel"
+        }
+      ]
+  },
+  { "bio" : "Anna Gos is an all-around software engineer, working primarily in Java. Since year 2006 she has worked for different clients,ranging from large internationals to public sector organization and local businesses. She is a big enthusiast of CQRS architecture  and Neo4j graph database. Beside day-to-day development she is strongly involved in Duchess organization, a global platform for female Java developers.",
+    "company" : "JTeam B.V.",
+    "firstName" : "Anna",
+    "id" : 1020,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1020/thumbnail3.gif",
+    "lastName" : "Gos",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/453",
+          "title" : "Women in Java an unconference"
+        } ]
+  },
+  { "bio" : "James Gosling received a B.Sc in Computer Science from the University of Calgary. In 1983, he earned a Ph.D in Computer Science from Carnegie Mellon University, and his doctoral thesis was titled \"The Algebraic Manipulation of Constraints\". While working towards his doctorate, he wrote a version of emacs (gosmacs), and before joining Sun Microsystems he built a multi-processor version of Unix while at Carnegie Mellon University, as well as several compilers and mail systems.\r\n\r\nBetween 1984 and 2010, Gosling was with Sun Microsystems. He is known as the father of the Java programming language. On April 2, 2010, Gosling left Sun Microsystems which had recently been acquired by the Oracle.",
+    "company" : "na",
+    "firstName" : "James",
+    "id" : 306,
+    "imageURI" : "https://cfp.devoxx.com/static/images/306/thumbnail.gif",
+    "lastName" : "Gosling",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/918",
+          "title" : "Fireside Chat"
+        } ]
+  },
+  { "bio" : "Software Architecture and Agility are my current main centers of interest, as levers allowing me to simplify I.T. not only for my own sake but also for my fellow coworkers, and for projects stakeholders.\r\n\r\nDuring the 10 years of my IT career, I've had the possibility to gradually take a few more steps back in order to see the big picture.\r\n\r\nI now try to leverage the best from what I've learned in order to (hopefully) achieve neat design and insightful software. On the side I participate and have started various Open-source projects, and occasionally give some training.",
+    "company" : "na",
+    "firstName" : "Pierre-Antoine",
+    "id" : 622,
+    "imageURI" : "https://cfp.devoxx.com/static/images/622/thumbnail.gif",
+    "lastName" : "Grégoire",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/532",
+          "title" : "Javascript REDUX"
+        } ]
+  },
+  { "bio" : "Sanne Grinovero is a member of the Infinispan and Hibernate teams at JBoss by Red Hat. He focuses on search engines and integration among projects, like Hibernate Search and Hibernate OGM. He lived in Holland, Italy, various places in Latin America, Portugal and currently resides in Newcastle Upon Tyne.\r\nSanne has been an early adopter of cloud deployments creating scalable Apache Lucene powered services on EC2 using Hibernate Search, worked as a consultant focusing on JBoss products and other open source technologies and spoke about those at conferences such as JUDCon, Java Day, OpenBlend, Agile Day, various JBug and JUG events in Italy and France. You can follow him on twitter as @SanneGrinovero.",
+    "company" : "Red Hat",
+    "firstName" : "Sanne",
+    "id" : 1234,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1234/thumbnail.gif",
+    "lastName" : "Grinovero",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/442",
+          "title" : "Real-world deep-dive into Infinispan - the open source data grid platform"
+        } ]
+  },
+  { "bio" : "Gerrit Grunwald is working as a team leader of a small group of software developers at Raith GmbH, where he work for around 10 years. His technical interests include desktop software development, preferably using modern, object-oriented and/or component based techniques, and specifically the subareas - Java Swing component development, HTML5 canvas and svg.\r\nHe's a decent-frequency blogger and the leader of the Java User Group in Münster (Germany), where he's living. In addition he is the author of the SteelSeries Java Swing component library and it's javascript counterpart.\r\nHe has been involved in the IT industry since 1996, when he started studying Applied Physics at the University of Applied Sciences Münster (Germany). In 2001, he joined Raith where he started to work as an application scientist, but soon started working in the software development group that he's leading now.",
+    "company" : "Raith GmbH",
+    "firstName" : "Gerrit",
+    "id" : 394,
+    "imageURI" : "https://cfp.devoxx.com/static/images/394/thumbnail.gif",
+    "lastName" : "Grunwald",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/408",
+          "title" : "From Java Swing to HTML5 Canvas"
+        } ]
+  },
+  { "bio" : "Laurent Guérin is National Practice Leader at Sogeti France, specialized in Java and Web technologies. He’s a senior consultant and has over 20 years of experience in the areas of databases, object development, code generation and project management.\r\n\r\nLaurent is the technical lead of the Telosys project (open source project hosted by the OW2 consortium).\r\n\r\nHe is also lecturer, part time professor (University of Nantes), Certified Scrum Master and Open Source supporter.",
+    "company" : "Sogeti",
+    "firstName" : "Laurent",
+    "id" : 961,
+    "imageURI" : "https://cfp.devoxx.com/static/images/961/thumbnail.gif",
+    "lastName" : "Guerin",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/632",
+          "title" : "A pragmatic scaffolding approach to build Java Web Applications in few minutes"
+        } ]
+  },
+  { "bio" : "Renato Guerra Cavalcanti is an independent senior analyst/developer particularly experienced in design and development of complex and multitiered applications. Having studied psychology (in Rio) and philosophy (in Paris), he started programming in 1999 to finance his studies. In 2002 he decided to dedicate himself full-time to programming.\r\n\r\nIn his free time, he is experimenting with new technologies, java frameworks and programming languages, specially Scala.\r\n\r\nIn 2011, Renato, together with Tim Romberg and Louis Jacomet, founded BeScala, the Belgium Scala Enthusiasts group with the objective to promote Scala adoption in Belgium. He's is also steering committee member of BeJUG, the Belgium Java User Group.",
+    "company" : "Xavena BVBA",
+    "firstName" : "Renato",
+    "id" : 1101,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1101/thumbnail.gif",
+    "lastName" : "Guerra Cavalcanti",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/936",
+          "title" : "Scala Enthusiasts Gathering"
+        } ]
+  },
+  { "bio" : "Arun Gupta is a Java evangelist working at Oracle. Arun has over 15 years of experience in the software industry working in the Java(TM) platform and several web-related technologies. In his current role, he works to create and foster the community around Java EE and GlassFish. He has been with the Java EE team since its inception and contributed to all releases. Arun has extensive world wide speaking experience on myriad of topics and loves to engage with the community, customers, partners, and Java User Groups everywhere to spread the goodness of Java.\r\n\r\nHe is a prolific blogger at http://blogs.oracle.com/arungupta with over 1200 blog entries and frequent visitors from all around the world with a cumulative page visits > 1.2 million. He is a passionate runner and always up for running in any part of the world. You can catch him at @arungupta.",
+    "company" : "Oracle",
+    "firstName" : "Arun",
+    "id" : 23,
+    "imageURI" : "https://cfp.devoxx.com/static/images/23/thumbnail.gif",
+    "lastName" : "Gupta",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/773",
+          "title" : "Building an end-to-end application using Java EE 6 and NetBeans"
+        } ]
+  },
+  { "bio" : "Romain Guy is a software engineer at Google. After spending years having fun with large UIs on the desktop and talking about them at conferences, in blogs, magazines and books, Romain decided to go for the small screen and joined the Android project, an Open Source operating system for mobile phones. He's now trying to make mobile phone UIs as fun and exciting as desktop ones.",
+    "company" : "Google",
+    "firstName" : "Romain",
+    "id" : 132,
+    "imageURI" : "https://cfp.devoxx.com/static/images/132/thumbnail.gif",
+    "lastName" : "Guy",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/126",
+          "title" : "Android Graphics and Animations"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/133",
+          "title" : "Dive into Android"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/351",
+          "title" : "Android Q&A"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/389",
+          "title" : "Android UI Development: Tips, Tricks, and Techniques"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/878",
+          "title" : "Android Awesomeness"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/879",
+          "title" : "Sticky GUIs"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/880",
+          "title" : "Graphics Goodies in Android"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/956",
+          "title" : "Android Tabletization"
+        }
+      ]
+  },
+  { "bio" : "Chet is a graphics geek. He has worked across the industry on various platforms and technologies that put the pixels on the screen. He worked on the Java desktop library at Sun Microsystems, on Java2D, Swing, and animation. He worked on the Flex SDK team at Adobe, writing the effects framework for Flex 4. And he now works at Google on the Android project.\r\nChet is a frequent speaker at conferences such as Devoxx and JavaOne, on topics ranging from graphics to, well, graphics.\r\nChet is the author of the book \"Flex 4 Fun,\" about the graphical and animated side of the Flex 4 SDK.\r\nChet is the co-author, with Romain Guy, of Filthy Rich Clients: Developing Animated and Graphical Effects for Java Desktop applications.\r\nFinally, and irrelevantly, Chet also wrote the book \"When I am King...\", based on his comedy blog writings at http://chetchat.blogspot.com.",
+    "company" : "Google",
+    "firstName" : "Chet",
+    "id" : 129,
+    "imageURI" : "https://cfp.devoxx.com/static/images/129/thumbnail.gif",
+    "lastName" : "Haase",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/119",
+          "title" : "Flex 4 Fun"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/126",
+          "title" : "Android Graphics and Animations"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/133",
+          "title" : "Dive into Android"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/351",
+          "title" : "Android Q&A"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/389",
+          "title" : "Android UI Development: Tips, Tricks, and Techniques"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/878",
+          "title" : "Android Awesomeness"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/879",
+          "title" : "Sticky GUIs"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/880",
+          "title" : "Graphics Goodies in Android"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/956",
+          "title" : "Android Tabletization"
+        }
+      ]
+  },
+  { "bio" : "Johan Haleby is a Swedish developer, speaker, and writer with a profound interest in software engineering and testability in particular. He has founded and contributed to numerous open source projects such as PowerMock, REST Assured and Awaitility and has spoken at conferences and user groups in Sweden and Denmark.",
+    "company" : "Jayway",
+    "firstName" : "Johan",
+    "id" : 928,
+    "imageURI" : "https://cfp.devoxx.com/static/images/928/thumbnail.gif",
+    "lastName" : "Haleby",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/568",
+          "title" : "Stop sleeping, start awaiting!"
+        } ]
+  },
+  { "bio" : "Michael Heinrichs has been part of the JavaFX development team right from its early days in 2008. During the early access phase until the release of JavaFX 1.0, he was part of the JavaFX Compiler team. After that he joined the JavaFX Mobile team where he was mainly responsible for performance tuning. In 2010 he became the technical lead for the core components of JavaFX:  JavaFX Beans and Properties, the Binding API, the new collections and the Animation API.",
+    "company" : "Oracle",
+    "firstName" : "Michael",
+    "id" : 1008,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1008/thumbnail.gif",
+    "lastName" : "Heinrichs",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/692",
+          "title" : "JavaFX Properties & Bindings for Experts (and those who want to become experts)"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/693",
+          "title" : "Animation: Bringing your User Interfaces to Life"
+        },
+        { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/694",
+          "title" : "Complete guide to writing custom bindings in JavaFX 2.0"
+        }
+      ]
+  },
+  { "bio" : "Frederik is a Software Engineer at Alfresco, working as a core developer on the Activiti BPM engine. Before joining Alfresco, he was active as a JEE consultant, working in high-profile and demanding environments. Later on his focussed shifted towards ECM. He is an enthusiast of the Open Source eco-system, which he believes is the true and only way how software should be created.",
+    "company" : "Alfresco",
+    "firstName" : "Frederik",
+    "id" : 978,
+    "imageURI" : "https://cfp.devoxx.com/static/images/978/foto-frederik-devoxx.jpg",
+    "lastName" : "Heremans",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/630",
+          "title" : "Activiti and Vaadin, A match made in heaven"
+        } ]
+  },
+  { "bio" : "Petter Holmström has been working for Vaadin Ltd since October 2009. He currently works as a software architect, specializing in integrating the Vaadin Framework with different backend technologies. His primary interests are software architectures in general, distributed software systems, service oriented applications and different ways of storing data. He holds a master of science degree in computer technology.",
+    "company" : "Vaadin Ltd",
+    "firstName" : "Petter",
+    "id" : 980,
+    "imageURI" : "https://cfp.devoxx.com/static/images/980/thumbnail.gif",
+    "lastName" : "Holmström",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/630",
+          "title" : "Activiti and Vaadin, A match made in heaven"
+        } ]
+  },
+  { "bio" : "Roland Huss is a software architect and head of research and development at ConSol Software, a consulting company focused on Java development and IT services. He has been developing in Java for fifteen years but never forgot his roots as system administrator and keeps a strong focus on  manageability of his projects.\r\n\r\nRoland is the lead of the Jolokia project and loves chili pepper as much as JMX.",
+    "company" : "ConSol",
+    "firstName" : "Roland",
+    "id" : 767,
+    "imageURI" : "https://cfp.devoxx.com/static/images/767/roland.gif",
+    "lastName" : "Huss",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/484",
+          "title" : "Jolokia - JMX on Capsaicin"
+        } ]
+  },
+  { "bio" : "Iran Hutchinson currently serves as Product Manager at InterSystems with a focus on driving global product strategy and development on the Java Platform. Prior to joining InterSystems, Iran held lead roles in enterprise architecture and development in companies such as IBM, where he led the development strategy for enterprise integration and evolution of global projects using: JavaEE5, Distributed Computing, CICS, Flex, SOA and Web Services.  He focuses on understanding diverse architectures and technologies to lead the way to next-generation solutions surrounding high performance computing, distributed computing and complex data interactions.   \r\nRecently, Iran has taken a more active role is in presenting and debating technology in the hopes of learning and spurring innovative solutions.  You can find him presenting at various events around the world and on the technology blogs at InterSystems.com.",
+    "company" : "InterSystems",
+    "firstName" : "Iran",
+    "id" : 1241,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1241/thumbnail.gif",
+    "lastName" : "Hutchinson",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/969",
+          "title" : "NoSQL, Big Data ... so what?"
+        } ]
+  },
+  { "bio" : "Dipl.-Wirt.-Inf. Michael Hüttermann (Java Champion, SCJA, SCJP, SCJD, SCWCD) is freelance developer, architect, coach, author and tutor for Java/JEE, ALM/SCM and agile software development. He speaks at international conferences, was responsible stage producer of the tooling track of Agile 2009, is driver of the Java User Group Cologne, java.net JUGs Community Leader, member of Agile Alliance, in board of the JetBrains Academy, committer to FEST as well as Java contributor. His work-life-balance also consists of writing books and articles. Further information: http://huettermann.net.",
+    "company" : "Systemtechnologie Hüttermann",
+    "firstName" : "Michael",
+    "id" : 238,
+    "imageURI" : "https://cfp.devoxx.com/static/images/238/thumbnail.gif",
+    "lastName" : "Hüttermann",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/399",
+          "title" : "Agile ALM in a nutshell"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/486",
+          "title" : "Pimp your ALM, with task-based development"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/487",
+          "title" : "Meet Agile ALM: Agile Application Lifecycle Management"
+        }
+      ]
+  },
+  { "bio" : "Richard is a Developer Advocate for Android at Google in the UK. He has enjoyed over 10 years in the mobile industry, including experience running a VC funded mobile start up, working for a large mobile operator and a few years consulting. With his J2ME and XHTML years behind him, Richard now supports Android developers bringing excellent apps to the Android Market.",
+    "company" : "Google",
+    "firstName" : "Richard",
+    "id" : 1081,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1081/thumbnail2.gif",
+    "lastName" : "Hyndman",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/909",
+          "title" : "Android Market for Developers"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/910",
+          "title" : "Whatʼs new and important in Android"
+        }
+      ]
+  },
+  { "bio" : "Louis Jacomet has been perfecting his knowledge of enterprise Java for nearly 10 years. Initially as a developer, his role evolved over the last years as technical team leader or coach. As an avid learner, Louis is now getting to know Scala and its ecosystem as a new challenge.\r\nIn addition to the bits and bytes, Louis is interested in people management skills mandatory to create a productive project team.\r\nDiscovering Agile 5 years ago was a revelation and has underpinned all his work since, whether on an Agile project or not.\r\nLouis works in Belgium as a freelance contractor.",
+    "company" : "Freelancer",
+    "firstName" : "Louis",
+    "id" : 459,
+    "imageURI" : "https://cfp.devoxx.com/static/images/459/thumbnail.gif",
+    "lastName" : "Jacomet",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/936",
+          "title" : "Scala Enthusiasts Gathering"
+        } ]
+  },
+  { "bio" : "Stephan Janssen is a serial entrepreneur that has founded several successful organizations such as the Belgian Java User Group (BeJUG) in 1996, JCS Int. in 1998, JavaPolis (now Devoxx) in 2001 and recently Parleys.com in 2006.\r\n\r\nHe has been using Java since its early releases in 1995 with experience of developing and implementing real world Java solutions in the finance and manufacturing industries.\r\n\r\nHe was selected by BEA Systems as the first European (independent) BEA Technical Director.\r\n\r\nHe has also been recognized by the Server Side as one of the 54 Who is Who in Enterprise Java 2004.\r\n\r\nSun has recognized in 2005 his efforts for the Java Community and has engaged Stephan in the Java Champion project.\r\n\r\nHe has spoken at numerous Java and JUG conferences around the world.",
+    "company" : "Devoxx",
+    "firstName" : "Stephan",
+    "id" : 2,
+    "imageURI" : "https://cfp.devoxx.com/static/images/2/thumbnail.gif",
+    "lastName" : "Janssen",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/319",
+          "title" : "The annual Java User Group BOF"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/332",
+          "title" : "Welcome and Intro"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/353",
+          "title" : "What's new in Parleys.com Version 4"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/896",
+          "title" : "The annual Java User Group BOF"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/925",
+          "title" : "Welcome and Announcements"
+        }
+      ]
+  },
+  { "bio" : "Jevgeni Kabanov is the founder and CTO of ZeroTurnaround (www.zeroturnaround.com), a development tools company that focuses on productivity. He wrote the first version of the ZeroTurnaround flagship product, JRebel, a class-reloading JVM plugin.\r\n\r\nJevgeni has been speaking at international conferences for over 5 years, including JavaPolis/Devoxx, JavaZone, JAOO, QCon, TSSJS, JFokus and so on. He has an active research interest in programming languages, types and virtual machines, publishing several papers on topics ranging from category theoretical notions to typesafe Java DSLs.\r\n\r\nJevgeni is on the Expert Group for the JSR 342 (Java EE 7). He has started two open-source projects -- Aranea and Squill. You can follow Jevgeni on Twitter as @ekabanov. See http://lanyrd.com/people/ekabanov/ for conference history and schedule.",
+    "company" : "ZeroTurnaround OÜ",
+    "firstName" : "Jevgeni",
+    "id" : 142,
+    "imageURI" : "https://cfp.devoxx.com/static/images/142/thumbnail.gif",
+    "lastName" : "Kabanov",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/140",
+          "title" : "Instant Updates and Rollbacks in Production Applications"
+        },
+        { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/734",
+          "title" : "Too much email? Track your project, app and team with Twitter!"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/961",
+          "title" : "How Can We Fix Production Updates?"
+        }
+      ]
+  },
+  { "bio" : "Masoud Kalali has been working on software development projects since 1998. He has experience with  variety of technologies on diverse platforms. His experience is in software architecture, design, and server-side development. Masoud has published several articles at Java.net and DZone. He is also author of GlassFish Security book which covers GlassFish v3 security and Java EE 6 security. Masoud is member of the JMS 2.0 expert group.",
+    "company" : "Informatics Matters",
+    "firstName" : "Masoud",
+    "id" : 26,
+    "imageURI" : "https://cfp.devoxx.com/static/images/26/DSC_0601.jpg",
+    "lastName" : "Kalali",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/890",
+          "title" : "What's Coming in Java Message Service 2.0"
+        } ]
+  },
+  { "bio" : "Mattias spends most of his time working with software development in the financial sector as well as leading a Java User Group in Stockholm, Sweden. The JUG holds 8-10 fully booked meetings per year with more then 200 participants at every meeting. Mattias has worked with OO software development since 1993. Through the years he has gained experience from many different roles, including developer, architect, team leader, coach, manager, and teacher. Mattias also wrote a chapter in the \"97 Things Every Programmer Should Know\" about Code Reviews\r\n\r\nIn his spare time, Mattias can be found playing with his children or riding his motorcycle, as well as changing underprivileged people's lives by building houses with Habitat for Humanity. Mattias leads a JUG Kiva team. Kiva is a person to person micro-loan organization. Join his effort to improve the world at http://www.kiva.org/team/jug.",
+    "company" : "Avega Group",
+    "firstName" : "Mattias",
+    "id" : 617,
+    "imageURI" : "https://cfp.devoxx.com/static/images/617/thumbnail.gif",
+    "lastName" : "Karlsson",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/561",
+          "title" : "Code Reviews - One Thing Every Programmer Should Know"
+        } ]
+  },
+  { "bio" : "Werner Keil is an Agile Coach, Principal Consultant and Distinct Architect for a Financial Services company. Helping Global 500 Enterprises across all industries, as well as IT vendors like Oracle or IBM. He designed micro-format based tags for a leading online music portal. He has worked for more than 20 years as project manager, SW architect, and consultant for Banking, Insurance, Telco/Mobile, Media and Public sector. Werner develops enterprise systems using Java, JEE, Oracle, IBM or Microsoft, does Web design and development using Adobe, Ajax/JavaScript, other dynamic or functional languages. Besides that, runs and supports open-source projects, writes song lyrics, screenplays, books and articles. Werner is Committer at Eclipse Foundation, UOMo Project Lead and active member of the Java Community Process, including membership in JSRs like 321 (Trusted Java), 331, 333, 342 (Java EE 7), 344, 346 (CDI 1.1) or 348 (JCP.next) and only Individual Member of the Executive Committee (SE/EE)",
+    "company" : "Creative Arts & Technologies",
+    "firstName" : "Werner",
+    "id" : 962,
+    "imageURI" : "https://cfp.devoxx.com/static/images/962/thumbnail.gif",
+    "lastName" : "Keil",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/922",
+          "title" : "Java EE Gathering"
+        } ]
+  },
+  { "bio" : "I joined JBoss in 2004 and am a Principal Software Engineer at JBoss by Red Hat. In my time at JBoss I've lead the JBoss AOP project, and the other main JBoss teams I have been a part of have been: EJB 3.0, JBoss Microcontainer, and currently JBoss Application Server 7.",
+    "company" : "JBoss by Red Hat",
+    "firstName" : "Kabir",
+    "id" : 1031,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1031/thumbnail.gif",
+    "lastName" : "Khan",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        } ]
+  },
+  { "bio" : "Frank Kim is the founder and principal consultant with ThinkSec as well as the curriculum lead for application security at the SANS Institute. Frank has over 13 years experience in software development, information technology and security. He has designed and developed applications for large health care, technology, insurance, and consulting companies. Frank currently focuses on developing software security programs and integrating security into the software development life cycle by doing penetration testing, security assessments, architecture reviews, code reviews, and training. Frank is also a SANS certified instructor and author of DEV541: Secure Coding in Java.",
+    "company" : "ThinkSec",
+    "firstName" : "Frank",
+    "id" : 919,
+    "imageURI" : "https://cfp.devoxx.com/static/images/919/thumbnail.gif",
+    "lastName" : "Kim",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/940",
+          "title" : "Securing Java EE Web Apps"
+        } ]
+  },
+  { "bio" : "Paul is a Developer Advocate on Google Chrome and he focuses on HTML5, open web technologies and the Chrome Web Store. He is passionate about working closely with developers to help them bring awesome applications to the web (because that is the future). Prior to Google he used to earn a living off building apps that used Google's Infrastructure - and whilst he wasn't doing that he built Fraud Detection applications for the worlds largest telecoms, banking and insurance companies.",
+    "company" : "Google",
+    "firstName" : "Paul",
+    "id" : 1083,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1083/thumbnail.gif",
+    "lastName" : "Kinlan",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/912",
+          "title" : "Bleeding Edge HTML5"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/914",
+          "title" : "Next-gen web apps with Web Intents"
+        }
+      ]
+  },
+  { "bio" : "JBoss, Red Hat - Arquillian project lead Aslak Knutsen is currently a Senior Software Engineer at JBoss, by Red Hat where he is working on projects such as Arquillian, ShrinkWrap, Weld and Seam 3, one of the founders of the JBoss Testing initiative and a speaker at major industry conferences including Devoxx, Jazoon, JFokus, Geecon, JUDCon and JBoss World. Previously, Aslak was a Senior Consultant at Conduct AS (working with JBoss related technologies) and Senior Developer at EDB ASA (working with electronic billing/banking systems).",
+    "company" : "Red Hat",
+    "firstName" : "Aslak",
+    "id" : 166,
+    "imageURI" : "https://cfp.devoxx.com/static/images/166/thumbnail.gif",
+    "lastName" : "Knutsen",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/627",
+          "title" : "Arquillian - The Extendable Enterprise Test Platform"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        }
+      ]
+  },
+  { "bio" : "Scott Kovatch is the lead engineer for the Mac OS X port of the Java platform at Oracle. He has also been the technical lead of Apple's Java team, and developed the first implementation of Java Web Start for Mac OS X. And, demonstrating that he doesn't play favorites, he has also been a committer on the Eclipse SWT project while at Adobe and at IBM.",
+    "company" : "Oracle",
+    "firstName" : "Scott",
+    "id" : 1130,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1130/thumbnail.gif",
+    "lastName" : "Kovatch",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/950",
+          "title" : "Java on Mac OS X: Now What?"
+        } ]
+  },
+  { "bio" : "Christian is Developer Advocate for the Google TV Android Platform. He is working with Android Developers to create the next killer app for the living room!\r\nHe is an Open Source enthusiast, committer in the Eclipse Foundation and has been working at the intersection of Linux and Java since Linux 0.92 and Java 1.0.2. \r\nPrior to Google, Christian worked in Motorola's Mobile Phone and Set-top Box divisions. Before that, Christian was at SUN working on Java for Embedded Systems. He holds a Dipl. Inf. degree from Univ. Erlangen, Germany, and an MBA from Santa Clara University.",
+    "company" : "Google",
+    "firstName" : "Christian",
+    "id" : 1253,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1253/thumbnail.gif",
+    "lastName" : "Kurzke",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/974",
+          "title" : "Google TV: Open for Android Developers"
+        } ]
+  },
+  { "bio" : "Guillaume Laforge is the project lead of Groovy, the highly popular and successful dynamic language for the JVM. He co-authored Manning's best seller \"Groovy in Action\" with Dierk König, and is working for SpringSource (a division of VMWare) where he's hacking full time on cool and Groovy stuff. You can meet Guillaume at conferences around the world where he evangelizes the Groovy dynamic language, Domain-Specific Languages in Groovy, the agile Grails web framework or the Gaelyk lightweight toolkit for Google App Engine.",
+    "company" : "SpringSource",
+    "firstName" : "Guillaume",
+    "id" : 6,
+    "imageURI" : "https://cfp.devoxx.com/static/images/6/thumbnail.gif",
+    "lastName" : "Laforge",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/284",
+          "title" : "Groovy update, ecosystem, and skyrocketing to the cloud with App Engine and Gaelyk!"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/350",
+          "title" : "Groovy/Grails Get Together"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/448",
+          "title" : "What's new in Groovy 1.8 and beyond?"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/899",
+          "title" : "Cloud is such stuff as dreams are made on"
+        }
+      ]
+  },
+  { "bio" : "Jan Lahoda is a software engineer at Oracle, working on the Java language support in the NetBeans IDE.",
+    "company" : "Oracle Czech",
+    "firstName" : "Jan",
+    "id" : 1024,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1024/thumbnail.gif",
+    "lastName" : "Lahoda",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/767",
+          "title" : "Jackpot 3.0 - Large scale custom refactorings made easy"
+        } ]
+  },
+  { "bio" : "Costin is a senior software engineer at SpringSource, VMware. His interests include data access and aspect oriented programming.\r\nWith significant development experience, Costin is involved in the development of Spring framework, Pitchfork, Spring Modules and Spring JavaConfig. Leads Spring Dynamic Modules (Spring OSGi) project and the Spring-inspired, OSGi 4.2 Blueprint Service RI.\r\n\r\nSpeaker at various editions of EclipseCon/OSGi DevCon, Javapolis, JavaZone, SpringOne, SpringOne2GX, TSSJS, TSE on Java/Spring/OSGi related topics.",
+    "company" : "SpringSource, division of VMware",
+    "firstName" : "Costin",
+    "id" : 37,
+    "imageURI" : "https://cfp.devoxx.com/static/images/37/thumbnail.gif",
+    "lastName" : "Leau",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/28",
+          "title" : "Spring 3 Java Config"
+        },
+        { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/29",
+          "title" : "Standard DI with @Inject and JSR-330"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/180",
+          "title" : "Improve the performance of your Spring app"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/682",
+          "title" : "Productivity Enhancements in Spring 3.1"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/683",
+          "title" : "Spring BOF"
+        }
+      ]
+  },
+  { "bio" : "Joonas Lehtinen is one of the core developers of Vaadin, a Java-based framework for building business-oriented Rich Internet Applications (RIAs). Joonas has been developing applications for the web since 1995 with a strong focus on Ajax and Java. He is the founder and CEO of Vaadin Ltd.",
+    "company" : "Vaadin Ltd.",
+    "firstName" : "Joonas",
+    "id" : 240,
+    "imageURI" : "https://cfp.devoxx.com/static/images/240/thumbnail.gif",
+    "lastName" : "Lehtinen",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/261",
+          "title" : "Vaadin - Rich Web Applications in Java without Plug-ins or JavaScript"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/917",
+          "title" : "Vaadin Meetup"
+        }
+      ]
+  },
+  { "bio" : "Nicolas Leroux is a senior architect and Technical Director at Lunatech, having joined in 2001. Nicolas is an expert early adopter of the Java Enterprise platform as well as the open-source technologies that gravitate around it. He applies this experience and technical expertise of the middleware platform on Lunatech's projects and for Lunatech's clients Nicolas is also an open source enthousiast and more specifically a Java enthusiast. He is the co-founder of the Benelux JBoss User Group and the Riviera Java User Group . He also contributes to the open source frameworks he uses by committing patches. Since 2009, Nicolas has had a passion for the Play framework and is now a core developer of its open-source project.",
+    "company" : "Lunatech Research",
+    "firstName" : "Nicolas",
+    "id" : 39,
+    "imageURI" : "https://cfp.devoxx.com/static/images/39/thumbnail.gif",
+    "lastName" : "Leroux",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/667",
+          "title" : "Let's Play! with Scala"
+        } ]
+  },
+  { "bio" : "Brian LeRoux is the lead software architect at Nitobi Inc. where he\r\nfocuses on delivering web and mobile apps and helping developers all\r\nover the world write their apps. He is a contributor to the popular\r\nPhoneGap open source framework and is the creator of XUI and\r\nLawnchair. Suffice to say, Brian believes that the future of the Web\r\nis mobile and will depend on web standards, open source and hackers,\r\nlike you.",
+    "company" : "Nitobi",
+    "firstName" : "Brian",
+    "id" : 1063,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1063/thumbnail.gif",
+    "lastName" : "LeRoux",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/868",
+          "title" : "PhoneGap for Hybrid App Development"
+        } ]
+  },
+  { "bio" : "Rafael Liu has a BS in Computer Science and works with Java since 2005, having worked in software development as a engineer and architect, as well as in consultancy field with middlewares in this platform. Currently he is working for Red Hat Brazil, where he is specialist in Enterprise Portals and SOA solutions of JBoss stack. He is an Oper Source enthusiast and a Linux fan.",
+    "company" : "Red Hat",
+    "firstName" : "Rafael",
+    "id" : 818,
+    "imageURI" : "https://cfp.devoxx.com/static/images/818/P13006162.JPG",
+    "lastName" : "Liu",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/590",
+          "title" : "Make it test-driven with CDI!"
+        } ]
+  },
+  { "bio" : "Josh Long is the Spring developer advocate. Josh is the author of Apress’ Spring Recipes, 2nd Edition, and Pro Spring Integration, and a SpringSource committer and contributor. When he's not hacking on code, he can be found at the local Java User Group or at the local coffee shop. Josh likes solutions that push the boundaries of the technologies that enable them. His interests include scalability, BPM, grid processing, mobile computing and so-called \"smart\" systems. He blogs at blog.springsource.org or joshlong.com.",
+    "company" : "SpringSource",
+    "firstName" : "Josh",
+    "id" : 921,
+    "imageURI" : "https://cfp.devoxx.com/static/images/921/thumbnail.gif",
+    "lastName" : "Long",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/556",
+          "title" : "Socializing Your Spring Applications"
+        },
+        { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/560",
+          "title" : "The Quickie Prototype, or, Getting the Job Done Before Lunch"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/562",
+          "title" : "Spring into the Cloud"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/976",
+          "title" : "Cloud Foundry and Spring, a marriage made in heaven"
+        }
+      ]
+  },
+  { "bio" : "Nicolas De Loof has been a Java Architect for 14 years in French IT Services companies. Techno-addict and opensource developer, he joined the Apache Maven team in 2007, and especially focused on Google Web Toolkit plugin. With many relations in French Java community, he launched in 2008 a Java User Group at Rennes : the BreizhJUG. He also has spoken on conferences about Maven and Software Factory, and actively supports the Java community. He joined CloudBees in June to contribute an awesome project : run the software factory on the cloud, from code to production.",
+    "company" : "cloudbees",
+    "firstName" : "nicolas",
+    "id" : 998,
+    "imageURI" : "https://cfp.devoxx.com/static/images/998/thumbnail.gif",
+    "lastName" : "loof",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/787",
+          "title" : "Jenkins user meeting"
+        } ]
+  },
+  { "bio" : "Greg founded Ehcache in 2003. He regularly speaks at conferences, writes and codes. He has also founded and maintains the JPam and Spnego open source projects, which are security focused. Prior to joining Terracotta in 2009, Greg was Chief Architect at Wotif.com where he provided technical leadership as the company went from a single product startup to a billion dollar public company with multiple product lines. Before that Greg was a consultant for ThoughtWorks with engagements in the US and Australia in the travel, health care, geospatial, banking and insurance industries. Before doing programming, Greg managed IT. He was CIO at Virgin Blue, Tempo Services, Stamford Hotels and Resorts and Australian Resorts. He is a Chartered Accountant, and spent 7 years with KPMG in small business and insolvency. \r\nGreg holds a Bachelor of Commerce and a Masters in Information Technology.",
+    "company" : "Terracotta",
+    "firstName" : "Greg",
+    "id" : 380,
+    "imageURI" : "https://cfp.devoxx.com/static/images/380/thumbnail2.gif",
+    "lastName" : "Luck",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/391",
+          "title" : "The essence of Caching"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/858",
+          "title" : "JSR107—What the New Java Caching Standard Has in Store For You"
+        }
+      ]
+  },
+  { "bio" : "Mircea Markus has joined JBoss's clustering team in 2007 as a core engineer. He has been working on various clustering components, such as JBossCache, PojoCache or JGoups. He is one of the founders of Infinispan project on on which he has been concentrating his efforts for the last three years. He has also the founder of project Radargun - a benchmarking framework data grids.",
+    "company" : "redhat",
+    "firstName" : "Mircea",
+    "id" : 814,
+    "imageURI" : "https://cfp.devoxx.com/static/images/814/thumbnail.gif",
+    "lastName" : "Markus",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/442",
+          "title" : "Real-world deep-dive into Infinispan - the open source data grid platform"
+        } ]
+  },
+  { "bio" : "Nicolas Martignole is a freelance, blog author of \"le Touilleur Express\" and a member of the Paris JUG team.\r\nAfter 4 years in startups, 6 years in the financial industry, he started to work as a freelance in 2008. He shares his time between the web application development for its clients and the organization of the events of Paris JUG. He is a Play! Framework Evangelist since end of 2009, and did a lot of presentation with the Play! Framework development team.",
+    "company" : "Le Touilleur Express",
+    "firstName" : "Nicolas",
+    "id" : 1089,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1089/thumbnail.gif",
+    "lastName" : "Martignole",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/667",
+          "title" : "Let's Play! with Scala"
+        } ]
+  },
+  { "bio" : "Maudrit Martinez is manager in the Accenture's Advance Systems and Technology Innovation organization, where he focuses on technology architecture, custom enterprise application development and emerging technologies. He currently leads Accenture Foundation Platform for JavaTM (AFP-J) and has key responsibilities with Accenture’s Java Community of Practice.\r\n\r\nMaudrit has more than 17 years of professional experience in software design and development across multiple industries, including financial services, telecommunication, media and entertainment.  An active member of the Java community; he is the founder and former lead of the Miami Java User Group and a regular speaker at technical conference including SpringOne2GX.  You can follow @maudrit on twitter.",
+    "company" : "Accenture",
+    "firstName" : "Maudrit",
+    "id" : 347,
+    "imageURI" : "https://cfp.devoxx.com/static/images/347/thumbnail.gif",
+    "lastName" : "Martinez",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/948",
+          "title" : "Code generation at large - techniques and lessons learned"
+        } ]
+  },
+  { "bio" : "Maxim Mazin is a senior developer at JetBrains working on the YouTrack project. He obtained a PhD in computer science and has spend the last eight years building web applications and frameworks. Maxim is one of the experts behind MPS domain specific languages for web and for database development, which form the foundation of YouTrack as well as other MPS-based applications. He is a strong believer in the concept of language oriented programming as the next dominating software development paradigm.",
+    "company" : "JetBrains",
+    "firstName" : "Maxim",
+    "id" : 1245,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1245/thumbnail.gif",
+    "lastName" : "Mazin",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/968",
+          "title" : "Are you talking my language?"
+        } ]
+  },
+  { "bio" : "Creator & Maintainer of Hammersmith & Casbah Scala + MongoDB Libraries, MongoDB Engineer",
+    "company" : "10Gen",
+    "firstName" : "Brendan",
+    "id" : 1099,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1099/thumbnail.gif",
+    "lastName" : "McAdams",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/216",
+          "title" : "Building Web Applications with MongoDB"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/933",
+          "title" : "Building Web Applications with MongoDB"
+        }
+      ]
+  },
+  { "bio" : "Nikolche Mihajlovski is a software developer, architect and engineer who always seeks for improvements of the commonly established processes, practices and technologies. He has over 14 years of programming experience in various programming languages, paradigms and technologies, diverging from experimental research and pet projects to serious enterprise applications. His main fields of interest include Programming Languages, Software Engineering and Cloud Computing.\r\nNikolche is the author of JAnnocessor, a modern technology for annotation-based code generation and validation, as well as RDXPL, an experimental multi-paradigm dynamic programming language. He is an active member of the local Java User Group.",
+    "company" : "Tricode",
+    "firstName" : "Nikolche",
+    "id" : 111,
+    "imageURI" : "https://cfp.devoxx.com/static/images/111/nikolce2.png",
+    "lastName" : "Mihajlovski",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/771",
+          "title" : "JAnnocessor - Innovative Annotation-Based Code Generator"
+        } ]
+  },
+  { "bio" : "Alex Miller is a Senior Engineer with Revelytix, building federated semantic web query technology. Prior to Revelytix, Alex was technical lead at Terracotta, an engineer at BEA Systems, and Chief Architect at MetaMatrix. His interests include Java, concurrency, distributed systems, languages, and software design. Alex enjoys tweeting as @puredanger and blogging at http://tech.puredanger.com. In St. Louis, Alex is the founder of the Strange Loop developer conference and the Lambda Lounge group for the study of functional and dynamic languages. He likes nachos.",
+    "company" : "Revelytix",
+    "firstName" : "Alex",
+    "id" : 15,
+    "imageURI" : "https://cfp.devoxx.com/static/images/15/thumbnail.gif",
+    "lastName" : "Miller",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/699",
+          "title" : "Stream Execution with Clojure and Fork/Join"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/967",
+          "title" : "Cracking Clojure"
+        }
+      ]
+  },
+  { "bio" : "Philip worked on APIs for the J2SE platform at Sun from 1996 - 2001. In 2001 he returned to England as the CTO of DrKW (now Commerzbank). In 2011 he came back to engineering; joining the Android framework team at Google in Mountain View, CA. \r\n\r\nSome say that he has spent too long working on Java APIs and that this is the cause of his unhealthy interest in functional programming. \r\n\r\nPhilip holds a PhD in Computer Science/Mathematics and is the co-founder of mindsilver.com.",
+    "company" : "Google",
+    "firstName" : "Philip",
+    "id" : 1221,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1221/thumbnail.gif",
+    "lastName" : "Milne",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/878",
+          "title" : "Android Awesomeness"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/879",
+          "title" : "Sticky GUIs"
+        }
+      ]
+  },
+  { "bio" : "Ir. Charles Moulliard is a Senior Solution Architect with more than 15 years of expertise in design of solution based on J2EE / .NET technologies. As an architect, he has been involved in system integration of client projects in Financial and Banking world. The skills (Methodology, UML, RUP, Project Management - Prince2, Telecommunication, Network, Security, Perl, Java, c#, CORBA, Web Development, RDBMS, Middleware) that he acquires during its career path have help him to address business, functional, security and infrastructure requirements and transpose them into operable and efficient solutions. He is also fascinated to train people on new emerging technologies like SOA, OSGI and ESB and provide consultancy for FUSE clients. As an Apache Committer he contributes since several years on the projects Apache Camel, Karaf and ServiceMix and uses those technologies as standards for integration project.",
+    "company" : "Progress",
+    "firstName" : "Charles",
+    "id" : 902,
+    "imageURI" : "https://cfp.devoxx.com/static/images/902/thumbnail.gif",
+    "lastName" : "Moulliard",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/931",
+          "title" : "Hands on with Apache ActiveMQ, ServiceMix, Camel and CXF"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/932",
+          "title" : "Introduction to Apache ActiveMQ, ServiceMix, Camel and CXF"
+        }
+      ]
+  },
+  { "bio" : "Java EE and GlassFish developer advocate at Sun Microsystems (soon-to-be Oracle)",
+    "company" : "Sun Microsystems",
+    "firstName" : "Alexis",
+    "id" : 182,
+    "imageURI" : "https://cfp.devoxx.com/static/images/182/thumbnail.gif",
+    "lastName" : "Moussine-Pouchkine",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/134",
+          "title" : "Java EE 6 Tutorial. Reloaded!"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/177",
+          "title" : "The future of the GlassFish community"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/179",
+          "title" : "From zero to Java EE 6 in 30 minutes and zero slides"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/354",
+          "title" : "The JavaEE BOF"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/773",
+          "title" : "Building an end-to-end application using Java EE 6 and NetBeans"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/915",
+          "title" : "GlassFish, 2 years into Java EE 6 at Oracle (real-world use-cases included)"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/922",
+          "title" : "Java EE Gathering"
+        }
+      ]
+  },
+  { "bio" : "Brussels GTUG Leader",
+    "company" : "GTUG Brussels",
+    "firstName" : "Friedger",
+    "id" : 1138,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1138/thumbnail.gif",
+    "lastName" : "Müffke",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/958",
+          "title" : "Social Coding with GTUGs"
+        } ]
+  },
+  { "bio" : "Pete Muir leads the JSR-346 (CDI 1.1) specification, and works on Infinispan (an open source data-grid written in Java). Previously, Pete led the development of Seam 2, Weld 1 projects, and founded the Arquillian and Seam 3 projects. Pete has worked on a number of past specifications including JSF 2.0, AtInject 1.0 and CDI 1.0, and is currently working on JSR-107 (Java Cache API), JSR-347 (Data Grids for the Java Platform) and JSR-345 (EJB 3.2).\r\n\r\nPete is a regular speaker at JUGs and conferences such as Devoxx, JAX, JavaBlend, JSFDays and JUDCon, and JBoss World.\r\n\r\nPete is currently employed by Red Hat Inc. working on JBoss open source projects.",
+    "company" : "Red Hat, Inc.",
+    "firstName" : "Pete",
+    "id" : 295,
+    "imageURI" : "https://cfp.devoxx.com/static/images/295/thumbnail.gif",
+    "lastName" : "Muir",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/278",
+          "title" : "Seam 3: State of the Union"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/349",
+          "title" : "Seam Gathering"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/442",
+          "title" : "Real-world deep-dive into Infinispan - the open source data grid platform"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/622",
+          "title" : "CDI, what comes next?"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/922",
+          "title" : "Java EE Gathering"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/947",
+          "title" : "Java EE in the Cloud: JBoss AS 7 on OpenShift"
+        }
+      ]
+  },
+  { "bio" : "Marian Muller is a software engineer at Serli (based in France), involved in the development of open-source Java EE servers GlassFish and JOnAS. He is also particularly interested in software security matters.",
+    "company" : "SERLI",
+    "firstName" : "Marian",
+    "id" : 1094,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1094/thumbnail.gif",
+    "lastName" : "Muller",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/928",
+          "title" : "GlassFish :  Application versioning and high-availability rolling upgrade"
+        } ]
+  },
+  { "bio" : "Technical Director at encription limited.  A CESG CHECK Green Light company providing penetration testing services to Government, the nuclear industry as well as MoD clients.\r\n\r\nDirector of the TigerScheme, secretary to the Technical Panel, member of the management committee and soon to succeed as Chair of the Technical Panel.  \r\n\r\n“The Tiger Scheme provides a means of independently certifying the skills of vulnerability test (penetration test) engineers.  Our qualifications and memberships are graduated and progressive, ranging from Associate Membership to the Senior Security Tester qualification which has been assessed by CESG as equivalent to the CHECK Team Leader Assault Course.”\r\n\r\n44con [ www.44con.com ] crew and industry liaison officer.",
+    "company" : "Encription Limited",
+    "firstName" : "Cambell",
+    "id" : 1069,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1069/thumbnail.gif",
+    "lastName" : "Murray",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/877",
+          "title" : "Meh!  It's only cross site scripting what's the big deal?"
+        } ]
+  },
+  { "bio" : "Henri Muurimaa has been a professional developer and team leader since 1997, and over the years he has used many Java technologies and tools in several projects of various scopes and sizes. Lately he has been exploring Scala and how to use it to build desktop-like rich internet applications. He has been a member of the Vaadin team since 2002.",
+    "company" : "Vaadin Ltd",
+    "firstName" : "Henri",
+    "id" : 874,
+    "imageURI" : "https://cfp.devoxx.com/static/images/874/thumbnail.gif",
+    "lastName" : "Muurimaa",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/519",
+          "title" : "Using Vaadin to create HTML5-enabled web apps in pure Scala"
+        } ]
+  },
+  { "bio" : "Kevin is a Java Champion and speaker at Conferences such as JavaOne, Devoxx, JAX, and AjaxWorld. Kevin is the author of Web 2.0 Fundamentals. Kevin is the leader of the Silicon Valley Web Developer Java User Group, Silicon Valley Google Technology User Group and Silicon Valley JavaScript Meetup. When not busy working with the community Kevin is a Principal Architect at E*Trade Financial.",
+    "company" : "E*Trade Financial",
+    "firstName" : "Kevin",
+    "id" : 1060,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1060/thumbnail2.gif",
+    "lastName" : "Nilson",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/836",
+          "title" : "Moving to the Client - JavaFX and HTML5"
+        } ]
+  },
+  { "bio" : "Tor Norbye is an engineer on the Android SDK team working on visual tools for Android development. Prior to Google he worked on tools for 14 years at Sun Microsystems.",
+    "company" : "Google",
+    "firstName" : "Tor",
+    "id" : 1062,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1062/thumbnail.gif",
+    "lastName" : "Norbye",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/772",
+          "title" : "Java Posse Live"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/897",
+          "title" : "Android Development Tools"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/898",
+          "title" : "Android Tools in Action"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/906",
+          "title" : "Android Tools BOF"
+        }
+      ]
+  },
+  { "bio" : "Joe is best known in the software technology world as a co-host of the popular podcast \"The Java Posse\". By day, Joe is a UI designer for Tesla Motors, and is working on the in-car user interface for the new Model S. He's also a race driving instructor and avid photographer. Before Tesla, he held significant positions at several top-tier Silicon Valley technology companies including Apple, Sun, Navigenics, Borland, and more than his fair share of startups.",
+    "company" : "The Java Posse",
+    "firstName" : "Joe",
+    "id" : 298,
+    "imageURI" : "https://cfp.devoxx.com/static/images/298/thumbnail.gif",
+    "lastName" : "Nuxoll",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/338",
+          "title" : "JavaPosse Live"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/772",
+          "title" : "Java Posse Live"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/964",
+          "title" : "Rules for Good U/X Design"
+        }
+      ]
+  },
+  { "bio" : "Martin Odersky is a professor in the programming research group at EPFL. Previously he has held positions at IBM Research, Yale University, University of Karlsruhe and University of South Australia, after having obtained his doctorate in 1989 from ETH Zuerich. He is associate editor of the Journal of Functional Programming and member of IFIP WG 2.8. He is also member of the expert groups JSR 14 and JSR 65 on the future evolution of the Java programming language. Martin's interests cover fundamental as well as applied aspects of programming languages. They include semantics, type systems, programming language design, and compiler construction.",
+    "company" : "Scala Solutions and EPFL",
+    "firstName" : "Martin",
+    "id" : 304,
+    "imageURI" : "https://cfp.devoxx.com/static/images/304/thumbnail.gif",
+    "lastName" : "Odersky",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/352",
+          "title" : "Scala"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/360",
+          "title" : "Future-proofing collections: from mutable to persistent to parallel"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/872",
+          "title" : "Scala Update"
+        }
+      ]
+  },
+  { "bio" : "Bruno is a Developer Programs Engineer at Google. Based in Sao Paulo, Brazil, he works closely with developers in order to grow and engage the online community around Google developer products, with special emphasis on fostering the involvement of Brazilian developers. His focus areas are Orkut/OpenSocial and Android.",
+    "company" : "Google",
+    "firstName" : "Bruno",
+    "id" : 1088,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1088/thumbnail.gif",
+    "lastName" : "Oliveira",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/919",
+          "title" : "Building Android Applications for Performance and Usability"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/952",
+          "title" : "Android User Experience Lab"
+        }
+      ]
+  },
+  { "bio" : "Brian Oliver is an Architect at Oracle. He works with the Coherence and Messaging Engineering teams predominantly focusing on high-performance computing and architectures for scalability.\r\n\r\nOver the past 10 years he's been leading the development of large-scale multi-language and multi-currency Web, E-Commerce, Sports Gaming and Financial systems making extensive use of Java technologies. He's the founder of the Coherence SIG, one of the only regularly meeting Data Grid Special Interest Groups in the world, and the Coherence Incubator, a site dedicated to providing reference implementations of architectural patterns on top of Oracle Coherence.\r\n\r\nHe's been using Java since 1996. He opens an IDE every couple of days to cook up new distributed computing solutions. \r\n----8<----",
+    "company" : "Oracle",
+    "firstName" : "Brian",
+    "id" : 1247,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1247/thumbnail.gif",
+    "lastName" : "Oliver",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/972",
+          "title" : "Bringing Objects to Life: The Live Object Pattern"
+        } ]
+  },
+  { "bio" : "After working for years on transactional systems, Ludovic Orban wrote the Bitronix JTA Transaction Manager. He then joined Terracotta as a software engineer to work on Ehcache and the Quartz enterprise scheduler.",
+    "company" : "Terracotta",
+    "firstName" : "Ludovic",
+    "id" : 1061,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1061/thumbnail.gif",
+    "lastName" : "Orban",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/858",
+          "title" : "JSR107—What the New Java Caching Standard Has in Store For You"
+        } ]
+  },
+  { "bio" : "Addy Osmani is a popular JavaScript Blogger and a UI Developer for AOL based in London, England. He is also a member of the jQuery [Bug Triage/Docs/Front-end] teams where he assists with bugs, documentation and community updates. His free book, ‘Essential JavaScript Design Patterns’ has been downloaded over 130,000 times in the past year and continues to be expanded in his spare time.",
+    "company" : "AOL",
+    "firstName" : "Addy",
+    "id" : 1078,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1078/thumbnail.gif",
+    "lastName" : "Osmani",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/907",
+          "title" : "The jQuery Essentials"
+        } ]
+  },
+  { "bio" : "James is a technologist, writer, developer & entrepreneur who has been working with the mobile web for over a decade. He is Senior Director of Developer Relations at Sencha. Previously he was the CTO at dotMobi and has a background in mobile startups, telecoms infrastructure and management consultancy. He speaks extensively on the topic of mobile web development, and has written books for both Wiley and Wrox.James led the development of mobiForge, DeviceAtlas and ready.mobi, and is the creator of tinySrc, the WordPress Mobile Pack, and WhitherApps. He has declared every year since 1997 to be \"The Year of the Mobile Web\" - and feels like he might finally be right.",
+    "company" : "Sencha",
+    "firstName" : "James",
+    "id" : 1214,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1214/thumbnail.gif",
+    "lastName" : "Pearce",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/960",
+          "title" : "A snapshot of the mobile HTML5 revolution"
+        } ]
+  },
+  { "bio" : "Václav is a programming enthusiast who's constantly seeking ways to make development more effective and enjoyable. He's particularly interested in server-side Java technologies, distributed systems, parallel programming, agile methodologies, modern programming languages and DSLs.\r\nHe works for JetBrains as a senior software developer and a technology evangelist. On the side, he's leading the GPars project (http://gpars.codehaus.org), an opensource concurrency library, investigates the domains of neural networks, evolutionary programming and data mining.",
+    "company" : "JetBrains",
+    "firstName" : "Václav",
+    "id" : 69,
+    "imageURI" : "https://cfp.devoxx.com/static/images/69/Vaclav_Devoxx.gif",
+    "lastName" : "Pech",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/415",
+          "title" : "Groovy actors and concurrent dataflow with GPars"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/968",
+          "title" : "Are you talking my language?"
+        }
+      ]
+  },
+  { "bio" : "Kirk Pepperdine works as an independent consultant offering Java performance-related services. Prior to focusing on Java, Kirk developed and tuned systems written in C/C++, Smalltalk, and a variety of other languages. Kirk has written many articles and spoken at several conferences on the subject of performance tuning. He helped evolve http://www.javaperformancetuning.com as a resource for performance tuning tips and information.",
+    "company" : "Kodewerk Ltd",
+    "firstName" : "Kirk",
+    "id" : 355,
+    "imageURI" : "https://cfp.devoxx.com/static/images/355/thumbnail.gif",
+    "lastName" : "Pepperdine",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/390",
+          "title" : "Extending VisualVM"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/916",
+          "title" : "Are your GC logs speaking to you?"
+        }
+      ]
+  },
+  { "bio" : "Sven is software geek working as an ambassador for Atlassian in Germany. He has been developing JavaEE applications for over 11 years and leading small teams using lean methodologies. Sven likes well written and readable source code for keeping legacy code maintainable.",
+    "company" : "Atlassian",
+    "firstName" : "Sven",
+    "id" : 841,
+    "imageURI" : "https://cfp.devoxx.com/static/images/841/thumbnail.gif",
+    "lastName" : "Peters",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/743",
+          "title" : "When code gets older – Tips for keeping maintenance projects alive and kicking"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/970",
+          "title" : "Meet The Atlassians"
+        }
+      ]
+  },
+  { "bio" : "An early believer in the ability of Java to deliver \"enterprise-grade\" software, Andrew quickly focused on the development of high-throughput, resilient and scalable Java EE applications. Specializing in concurrency and high performance development, Andrew gained substantial experience of the intricacies, complexity and challenges of enterprise application environments while working for a succession of multinationals. \r\n\r\nContinuously focused on effectively integrating promising new developments in the JVM space into corporate software development, Andrew joined XebiaLabs in March 2009, where he is responsible for product management of their deployment automation product Deployit. \r\n\r\nAmongst others, he worked on Multiverse, the open-source Java STM implementation behind Akka, and contributes to jclouds, the leading Java cloud library. He's also enjoying the wide variety of JVM offerings, especially Clojure and Scala.",
+    "company" : "jclouds",
+    "firstName" : "Andrew",
+    "id" : 937,
+    "imageURI" : "https://cfp.devoxx.com/static/images/937/ap.gif",
+    "lastName" : "Phillips",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/703",
+          "title" : "Hands on Cloud Storage"
+        } ]
+  },
+  { "bio" : "Peter Pilgrim is professional software developer, designer and architect. Since 1998 he has worked in the financial services industry, investment banking mainly, developing Information Technology for clients. He is a well known specialist in Java Enterprise Edition (Java EE) technology, focused on the server-side and the implementation of electronic commerce. Peter has built professional Java EE/J2EE apps for top-tier investment banks for Lloyds Banking Group, UBS, Credit Suisse, Royal Bank of Scotland and Deutsche Bank.\r\nPeter is the 91st Oracle Java Champion (Feb 2007). Peter is aCertified SCRUM Master from Martine Devos (May 2010).\r\n\r\nAs well as extensive Java development experience, Peter is an early adopter of technologies and leading light for progression on the Java platform, especially by influencing the wider community. Peter gained\r\nvaluable experience in alternative JVM languages such as JavaFX, Groovy and Scala. He developed a number of a JavaFX experimental custom controls.",
+    "company" : "N/A",
+    "firstName" : "Peter",
+    "id" : 1106,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1106/thumbnail.gif",
+    "lastName" : "Pilgrim",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/837",
+          "title" : "JavaFX 2.0 - A Java Developer's Guide"
+        } ]
+  },
+  { "bio" : "Steffen Pingel is a software architect at Tasktop Technologies in beautiful Vancouver, BC. He enjoys working on tools that keep developers focused and productive and regularly speaks at conferences and user groups. He earned commit rights on the Eclipse Mylyn project in 2006 while completing his degree in Software Engineering at the University of Stuttgart. Since, he has become a member of the Eclipse Architecture Council and the Mylyn PMC and now leads several Mylyn sub-projects on Eclipse.org. Steffen is fascinated by the quality and extensibility of the Eclipse platform which keeps inspiring him to improve the Mylyn framework.",
+    "company" : "Tasktop Technologies",
+    "firstName" : "Steffen",
+    "id" : 918,
+    "imageURI" : "https://cfp.devoxx.com/static/images/918/steffen-100x110.jpg",
+    "lastName" : "Pingel",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/554",
+          "title" : "Eclipse Mylyn: Connecting Agile, ALM and the IDE"
+        } ]
+  },
+  { "bio" : "David Pollak founded the Lift Web Framework open source project. Lift is an expressive and elegant framework for writing secure, scalable, interactive web applications on the Java Virtual Machine. David is a consultant in San Francisco.\r\n\r\nDavid also wrote the first real-time spreadsheet and the worlds highest performance spreadsheet engine. As CTO of CMP Media, David oversaw the first large-scale deployment of WebLogic. David was CTO and VP Engineering at Cenzic and helped define best practices for web application security testing.",
+    "company" : "N/A",
+    "firstName" : "David",
+    "id" : 850,
+    "imageURI" : "https://cfp.devoxx.com/static/images/850/thumbnail.gif",
+    "lastName" : "Pollak",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/482",
+          "title" : "Building interactive stuff for real people"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/951",
+          "title" : "Technical Discussion Panel"
+        }
+      ]
+  },
+  { "bio" : "Marek Potociar is a Principal Software Engineer at Oracle. He's been involved with web services development for the last eight years. At present, Marek is a specification lead of Java EE RESTful web services API (JAX-RS) as well as the development lead of the next major JAX-RS reference implementation release. Previous to this role Marek was leading development on Metro - The open-source SOAP web services framework for Java.",
+    "company" : "Oracle",
+    "firstName" : "Marek",
+    "id" : 1246,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1246/thumbnail.gif",
+    "lastName" : "Potociar",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/971",
+          "title" : "JAX-RS 2.0: RESTful Java on Steroids"
+        } ]
+  },
+  { "bio" : "Jasper Potts is the Developer Experience Architect for the Java Client Group at Oracle. Responsible for technical design for everything thats sis on the core platform including Controls, Tools, Samples and Blueprints. Formally a lead engineer on the JavaFX & Swing teams working on the new JavaFX UI Controls and Graphics frameworks. Also responsible for designing, developing and presenting demos during the keynotes at JavaOne and Devoxx. A JavaOne Rockstar presenter having presented many sessions on JavaFX and Swing at many conferences. Prior to Sun he founded Xerto a desktop applications company developing Imagery a Java professional photo management application.",
+    "company" : "Oracle",
+    "firstName" : "Jasper",
+    "id" : 317,
+    "imageURI" : "https://cfp.devoxx.com/static/images/317/PAR-4_01-Jasper-Potts-100x110.png",
+    "lastName" : "Potts",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/293",
+          "title" : "From Shabby to Chic"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/295",
+          "title" : "JavaFX"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/296",
+          "title" : "JavaFX 101"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/398",
+          "title" : "Physically Attractive"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/741",
+          "title" : "Java Rich Clients with JavaFX 2.0"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/748",
+          "title" : "Practical Experience Building JavaFX Rich Clients"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/762",
+          "title" : "JavaFX Open Mic"
+        },
+        { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/764",
+          "title" : "JavaFX 2.0 Hands On"
+        }
+      ]
+  },
+  { "bio" : "Jeff Potts, Chief Community Officer, has been a recognized and award-winning leader in the Alfresco community for several years. He has over 18 years of content management and collaboration experience, most of that having come from senior leadership positions in consulting organizations.\r\n\r\nJeff has made many contributions to the Alfresco community since he started working with Alfresco in 2005. Examples range from code, to tutorials and informative blog posts, to code camps, meetups, and conference sessions. In 2008, Jeff wrote the Alfresco Developer Guide, the first developer-focused book on Alfresco. He has also been active in the Apache Chemistry project where he leads the development of cmislib, the Python API for CMIS.",
+    "company" : "Alfresco",
+    "firstName" : "Jeff",
+    "id" : 1225,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1225/thumbnail.gif",
+    "lastName" : "Potts",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/963",
+          "title" : "Relational Won't Cut It: Architecting Content-Centric Applications for Java"
+        } ]
+  },
+  { "bio" : "Cameron Purdy is Vice President of Development at Oracle. Prior to joining Oracle, Mr. Purdy was the CEO of Tangosol, whose revolutionary Coherence Data Grid product provides reliable and scalable data management across the enterprise. Mr. Purdy has been working with Java and Java-related technology since 1996, regularly participates in industry standards development and is a specification lead for the Java Community Process. As a software visionary and industry leader, Mr. Purdy is a frequent presenter at industry conferences and has received a number of awards in recognition of his contribution to the Java community, including three times being named as a JavaOne RockStar and being recognized in TheServerSide's \"Who's Who in Enterprise Java\".",
+    "company" : "Oracle",
+    "firstName" : "Cameron",
+    "id" : 1087,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1087/thumbnail.gif",
+    "lastName" : "Purdy",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/918",
+          "title" : "Fireside Chat"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/923",
+          "title" : "Java EE Keynote"
+        }
+      ]
+  },
+  { "bio" : "Carl Quinn, member of the JavaPosse",
+    "company" : "Java Posse",
+    "firstName" : "Carl",
+    "id" : 297,
+    "imageURI" : "https://cfp.devoxx.com/static/images/297/thumbnail.gif",
+    "lastName" : "Quinn",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/338",
+          "title" : "JavaPosse Live"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/772",
+          "title" : "Java Posse Live"
+        }
+      ]
+  },
+  { "bio" : "Matt Raible has been building web applications for most of his adult life. He started tinkering with the web before Netscape 1.0 was even released. For over 14 years, Matt has helped companies adopt open source technologies (Spring, Hibernate, Apache, Struts, Tapestry, Grails) and use them effectively. Matt has been a speaker at many conferences worldwide, including ApacheCon, JavaZone, Devoxx, No Fluff Just Stuff, and a host of others.\r\n\r\nMatt is an author (Spring Live and Pro JSP), and an active \"kick-ass technology\" evangelist on http://raibledesigns.com. He is the founder of AppFuse, a project which allows you to get started quickly with Java frameworks, as well as a committer on the Apache Roller and Apache Struts projects.\r\n\r\nMatt has had quite a ride in the past few years, serving as the Lead UI Architect for LinkedIn, the UI Architect for Evite.com and the Chief Architect of Web Development at Time Warner Cable. He recently enjoyed an awesome ski season in Utah while consulting at Overstock.com.",
+    "company" : "Raible Designs",
+    "firstName" : "Matt",
+    "id" : 20,
+    "imageURI" : "https://cfp.devoxx.com/static/images/20/thumbnail.gif",
+    "lastName" : "Raible",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/97",
+          "title" : "Comparing JVM Web Frameworks"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/447",
+          "title" : "HTML5 with Play/Scala, CoffeeScript and Jade"
+        }
+      ]
+  },
+  { "bio" : "George Reese is the author of several books on cloud computing, Java, and MySQL. His most recent book is O’Reilly’s Cloud Application Architectures. Professionally, he is the founder and CTO of enStratus, the only infrastructure management solution supporting enterprise security and governance for the hybrid cloud. George has also led a number of Open Source projects, including several MUD libraries and the mSQL-JDBC JDBC driver. He is the primary maintainer of Dasein Cloud, a cloud abstraction API for Java.\r\n\r\nGeorge holds a BA from Bates College in Maine and an MBA from the Kellogg School of Management at Northwestern University.",
+    "company" : "enStratus",
+    "firstName" : "George",
+    "id" : 153,
+    "imageURI" : "https://cfp.devoxx.com/static/images/153/thumbnail.gif",
+    "lastName" : "Reese",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/155",
+          "title" : "Designing Java Systems to Operate at a Cloud Scale"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/708",
+          "title" : "Dasein Cloud: The JDBC for Cloud Programming"
+        }
+      ]
+  },
+  { "bio" : "Mark Reinhold is Chief Architect of the Java Platform Group at Oracle, where he works on the Java Platform, Standard Edition, and OpenJDK.  His past contributions to the platform include character-stream readers  and writers, reference objects, shutdown hooks, the NIO high-performance I/O APIs, library generification, and service loaders. Mark was the lead engineer for the 1.2 and 5.0 releases and the specification lead for Java SE 6.  He is currently leading the Jigsaw and JDK 7 Projects in the OpenJDK Community.  Mark holds a Ph.D. in Computer Science from the Massachusetts Institute of Technology.",
+    "company" : "Oracle",
+    "firstName" : "Mark",
+    "id" : 279,
+    "imageURI" : "https://cfp.devoxx.com/static/images/279/thumbnail.gif",
+    "lastName" : "Reinhold",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/333",
+          "title" : "Java SE: The Road Ahead"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/334",
+          "title" : "The Modular Java Platform"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/355",
+          "title" : "The state of Java SE 7"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/397",
+          "title" : "The Future of Java Discussion Panel"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/891",
+          "title" : "JDK 7, 8 and 9"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/901",
+          "title" : "Jigsaw: Putting It Together"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/935",
+          "title" : "JDK 8"
+        }
+      ]
+  },
+  { "bio" : "Impressed by the cross-platform possibilities of Java 1.0.2, Neil joined IBM's  Java Technology Centre in 1997 to help the industry-wide adoption and  enhancement of Java. He has worked in many areas of the core SDK, including  several years as the lead developer (and team leader) for IBM's Java SE ORB  implementation, providing the core technology underpinning RMI-IIOP and  Java EE EJB. He is now working in OpenJDK to help the platform towards  Programming Nirvana, one step at a time.",
+    "company" : "IBM",
+    "firstName" : "Neil",
+    "id" : 1070,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1070/thumbnail.gif",
+    "lastName" : "Richards",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/900",
+          "title" : "OpenJDK experiences"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/935",
+          "title" : "JDK 8"
+        }
+      ]
+  },
+  { "bio" : "Chris Richardson is a developer and architect with over 25 years of experience. He is a Java Champion, a frequent speaker at international software development conferences, and the author of POJOs in Action, which describes how to build enterprise Java applications with POJOs and frameworks such as Spring and Hibernate. Chris is the founder of CloudFoundry.com, which is a Java PaaS, and works at VMware. He has a computer science degree from the University of Cambridge in England and lives in Oakland, CA with his wife and three children.",
+    "company" : "SpringSource/VMware",
+    "firstName" : "Chris",
+    "id" : 55,
+    "imageURI" : "https://cfp.devoxx.com/static/images/55/thumbnail.gif",
+    "lastName" : "Richardson",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/471",
+          "title" : "NoSQL for Java developers"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/562",
+          "title" : "Spring into the Cloud"
+        }
+      ]
+  },
+  { "bio" : "Silicon Valley Geek, Hatha Yogi and Serial Community Organizer",
+    "company" : "Google",
+    "firstName" : "Van",
+    "id" : 1096,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1096/thumbnail.gif",
+    "lastName" : "Riper",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/929",
+          "title" : "Google Technology User Group BOF"
+        } ]
+  },
+  { "bio" : "Tim has been active for 15 years as developer, researcher, and consultant with a focus on Enterprise Collaboration and Healthcare, in Germany and Belgium. His experience with MVC dates back to an ERP-related assignment on an early version of Borland Delphi.",
+    "company" : "Creaficiency SPRL",
+    "firstName" : "Tim",
+    "id" : 853,
+    "imageURI" : "https://cfp.devoxx.com/static/images/853/thumbnail.gif",
+    "lastName" : "Romberg",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/936",
+          "title" : "Scala Enthusiasts Gathering"
+        } ]
+  },
+  { "bio" : "Advocate for and speaker on testable enterprise Java development, author of \"Enterprise JavaBeans 3.1\" from O'Reilly Media.  Member of the JBoss Application Server development team and technical lead of the ShrinkWrap project.  Proudly employed by JBoss / Red Hat.",
+    "company" : "JBoss by Red Hat",
+    "firstName" : "Andrew",
+    "id" : 7,
+    "imageURI" : "https://cfp.devoxx.com/static/images/7/alrubinger-devoxx.gif",
+    "lastName" : "Rubinger",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/664",
+          "title" : "Death of the Slow: 7 Reasons to Love JBoss AS 7"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        }
+      ]
+  },
+  { "bio" : "Giorgio Sardo is a Sr. Technical Evangelist at Microsoft, focused on HTML5 and Windows 8. Winner of the Imagine Cup worldwide championship, nominated as Best Consultant of the Year from the British Computer Society, Giorgio moved in early 2009 to the Microsoft headquarters in Redmond to focus on the future of the Web. Giorgio is a popular speaker worldwide and in the last 5 years he has presented at hundreds of conferences around the globe. He is the mind behind many beautiful HTML5 applications and games at www.beautyoftheweb.com.",
+    "company" : "Microsoft",
+    "firstName" : "Giorgio",
+    "id" : 1131,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1131/thumbnail.gif",
+    "lastName" : "Sardo",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/951",
+          "title" : "Technical Discussion Panel"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/953",
+          "title" : "HTML5 and Beyond"
+        }
+      ]
+  },
+  { "bio" : "Dr Stefan Schmidt has been a Software Engineer with SpringSource / VMware since early 2008. He is currently based in the Sydney, Australia office, where he has been a key Spring Roo engineer since the project began. Besides Roo core enhancements, Stefan's work on Roo focuses on many of the most popular add-ons as well as RooBot - Roo’s OSGi-based add-on distribution service.\r\n\r\nStefan has been developing Java enterprise applications since 2003. Prior to his work at SpringSource, Stefan has been teaching various Enterprise Java subjects at the University of Technology in Sydney. He mentored hundreds of students in the design of enterprise software architectures with focus on scalability, separation of concerns and design patterns using enterprise Java technologies.\r\n\r\nStefan frequently speaks at international conferences such as Devoxx, SpringOne, StrangeLoop, YOW, Vmware vForum, Japan Developers Summit, etc. In terms of publications, Stefan recently authored the «Spring Roo: Making Java Fun Again» refcard at DZone. He also authored two major tutorials on enterprise Java web services at IBM developerWorks. \r\n\r\nStefan blogs at stsmedia.net and actively tweets about open source technology at twitter.com/schmidtstefan.",
+    "company" : "VMware (SpringSource division)",
+    "firstName" : "Stefan",
+    "id" : 294,
+    "imageURI" : "https://cfp.devoxx.com/static/images/294/thumbnail.gif",
+    "lastName" : "Schmidt",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/341",
+          "title" : "Extreme Productivity with Spring Roo"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/364",
+          "title" : "Spring BOF"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/683",
+          "title" : "Spring BOF"
+        }
+      ]
+  },
+  { "bio" : "Working with software development the last 20 years Senger founded Globalcode, the largest Brazilian educational center specialized in software development. Senger had presented more than 200 talks about Software Development, Java, Java EE and open-source hardware and nowadays is investing in a new company for open-source home automation and educational robotics.",
+    "company" : "Globalcode",
+    "firstName" : "Vinicius",
+    "id" : 1251,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1251/thumbnail.gif",
+    "lastName" : "Senger",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/973",
+          "title" : "Having fun with Java and Home Automation"
+        } ]
+  },
+  { "bio" : "Guilherme Silveira works with Java for 10 years, mostly EE technologies and open sources counterparts. Head instructor at Caelum, a brazilian training company, technical editor for the brazilian java magazine \"Mundo Java\" and creator of Restfulie, co-founder of the most accessed and largest online portuguese-speaking java user group, guj.com.br. Currently focuses on aspects of good code and how to write maintainable software in Java, Scala and Ruby.\r\n\r\nLucas Cavalcanti is a lead developer of VRaptor, Scala Hibernate DSL and\r\nRestfulie Java. Consultant, developer and instructor at Caelum,\r\nworking in many web projects and products using Java and Scala, focusing on\r\nwriting testable, readable and, hence, maintainable code.",
+    "company" : "Caelum",
+    "firstName" : "Guilherme",
+    "id" : 123,
+    "imageURI" : "https://cfp.devoxx.com/static/images/123/thumbnail.gif",
+    "lastName" : "Silveira",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/125",
+          "title" : "Restfulie: quit pretending, use the web for real"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/648",
+          "title" : "Hibernate/JPA type safe query in Scala: an implicit help from the language"
+        }
+      ]
+  },
+  { "bio" : "John is an experienced consultant and trainer specialising in Enterprise Java, Web Development, and Open Source technologies, based in Sydney, Australia. Well known in the Java community for his many published articles, and as author of Java Power Tools, John helps organisations around the world to optimize their Java development processes and infrastructures and provides training and mentoring in open source technologies, SDLC tools, and agile development processes. John is CEO of Wakaleo Consulting, a company that provides consulting, training and mentoring services in Enterprise Java and Agile Development. John is the author of 'Java Power Tools' and of the recently published 'Jenkins: The Definitive Guide'",
+    "company" : "Wakaleo Consulting",
+    "firstName" : "John",
+    "id" : 268,
+    "imageURI" : "https://cfp.devoxx.com/static/images/268/thumbnail.gif",
+    "lastName" : "Smart",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/302",
+          "title" : "Continuous Deployment - automated build pipelines with Maven, Nexus and Hudson"
+        },
+        { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/597",
+          "title" : "Jenkins: From Continuous Integration to Continuous Delivery"
+        }
+      ]
+  },
+  { "bio" : "Shaun Smith is a Principal Product Manager for Oracle TopLink and an active member of the Eclipse community. He's Ecosystem Development Lead for the EclipseLink project and a committer on the Eclipse Gemini Enterprise Modules, and the Dali Java Persistence Tools projects. He’s currently working on OSGi persistence in the Eclipse Gemini project and Oracle TopLink Grid, which integrates Oracle Coherence with EclipseLink JPA to provide “JPA on the Grid”.",
+    "company" : "ORACLE",
+    "firstName" : "Shaun",
+    "id" : 1005,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1005/thumbnail.gif",
+    "lastName" : "Smith",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/966",
+          "title" : "JPA Multi-Tenancy & Extensibility: Blazing the Trail to JPA 2.1 in EclipseLink"
+        } ]
+  },
+  { "bio" : "Matthias Sohn is co-leading the Eclipse EGit and JGit projects, is a committer on Mylyn Reviews and contributes to Gerrit Code Review. He works at SAP as a scrum product owner in the Java technology area leading a team introducing Git and Gerrit Code Review at SAP. Matthias is passionate about Open Source communities, Open Source tools like Git and Gerrit and the transformational productivity gains they enable.",
+    "company" : "SAP AG",
+    "firstName" : "Matthias",
+    "id" : 1010,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1010/thumbnail.gif",
+    "lastName" : "Sohn",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/696",
+          "title" : "Code Review with Git and Gerrit"
+        } ]
+  },
+  { "bio" : "Alex Soto discovered Java during second year of his studies in computer science and wrote his Master's Thesis on Emergent Intelligence applied to Data Mining, winning the second prize of Hermano Salvador González contest. During his 11 years of software development, Alex has worked in several companies as technical consultant, and currently is working as technical analyst at a major international pharmaceutical developing in-vitro medical devices meeting FDA standards. Alex also works as tutor at Open University of Catalonia (UOC), teaching Compilers course. He spends his free time to write in his blog where some posts are published in sites like dzone, theserverside and springsource.",
+    "company" : "Diagnostic Grifols",
+    "firstName" : "Alex",
+    "id" : 859,
+    "imageURI" : "https://cfp.devoxx.com/static/images/859/devoxx.gif",
+    "lastName" : "Soto",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/569",
+          "title" : "Speeding Up Javascript & CSS Download Times With Aggregation and Minification"
+        } ]
+  },
+  { "bio" : "Henrik Stahl is a Senior Director of Product Management at Oracle, and oversees planning and strategy for the Java Platform, tasked with moving Java forward in a way that benefits the overall Java community as well as Oracle and its customers and partners.\r\n\r\nHenrik joined Oracle as part of the BEA acquisition where he served in a similar position with responsibility for the JRockit family of products, which sums up to about 10 years working with JVM and Java strategy and development. Prior to BEA, Henrik has among other things been co-founder and CTO of Swedish consultancy Omegapoint AB, the lead developer of the Swedish BankID service for issuing digital IDs to Swedish citizens and in general with IT security, system architecture and development, network engineering and support.\r\n\r\nMr. Stahl holds a Master of Science in Engineering Physics from the Royal Institute of Technology in Sweden.",
+    "company" : "Oracle",
+    "firstName" : "Henrik",
+    "id" : 1091,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1091/thumbnail.gif",
+    "lastName" : "Ståhl",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/924",
+          "title" : "Java SE Keynote"
+        } ]
+  },
+  { "bio" : "Justen’s is the product manager for the DVCS code collaboration site Bitbucket. Before being purchased by Atlassian, he founded Authentisoft, where he developed Crowd, a SSO and LDAP framework.",
+    "company" : "Atlassian",
+    "firstName" : "Justen",
+    "id" : 1254,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1254/thumbnail.gif",
+    "lastName" : "Stepka",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/975",
+          "title" : "DVCS For Agile Teams"
+        } ]
+  },
+  { "bio" : "Manik Surtani is a core R&D engineer at JBoss, a division of Red Hat. He is the founder of the Infinispan project, which he currently leads. He is also the spec lead of JSR 347 (Data Grids for the Java Platform), and represents Red Hat on the Expert Group of JSR 107 (Temporary caching for Java).\r\n\r\nHis interests lie in cloud and distributed computing, autonomous systems and highly available computing. He has a background in artificial intelligence and neural networks, a field he left behind when he moved from academic circles to the commercial world. Since then, he's been working with Java-related technologies, first for a startup focusing on knowledge management and information exchange, and later for a large London-based consultancy as a tech lead focused on e-commerce applications on large Java EE and peer-to-peer technology.\r\n\r\nManik is a strong proponent of open source development methodologies, ethos, and collaborative processes, and has been involved in open source since his first forays into computing.",
+    "company" : "JBoss by Red Hat",
+    "firstName" : "Manik",
+    "id" : 120,
+    "imageURI" : "https://cfp.devoxx.com/static/images/120/thumbnail.gif",
+    "lastName" : "Surtani",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/96",
+          "title" : "Hacking Infinispan: the new open source data grid meets NoSQL"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/678",
+          "title" : "JBoss Application Server 7 - Community BOF"
+        }
+      ]
+  },
+  { "bio" : "Works at the Spring Roo team in Australia.",
+    "company" : "VMware",
+    "firstName" : "Andrew",
+    "id" : 1064,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1064/thumbnail.gif",
+    "lastName" : "Swan",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/895",
+          "title" : "Spring Roo: Instant Productivity"
+        } ]
+  },
+  { "bio" : "Regina is a senior Java developer for iProfs and a Java Champion, with 10 plus years of Java experience mainly on enterprise applications. Regina is the current president of JDuchess, and as such has the responsibility for the site and community. Duchess is a global organization for women in Java technology, currently with 350 members in over 50 countries. Duchess provides a platform through which women who work with Java can connect with each other and get involved in the greater Java community. It aims to make women's role and the individual women's contributions visible in the Java community and to teach the benefits of diversity in any team environment - whether corporate or open-source.",
+    "company" : "JDuchess",
+    "firstName" : "Regina",
+    "id" : 219,
+    "imageURI" : "https://cfp.devoxx.com/static/images/219/thumbnail.gif",
+    "lastName" : "ten Bruggencate",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/272",
+          "title" : "Women in IT an unconference"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/453",
+          "title" : "Women in Java an unconference"
+        }
+      ]
+  },
+  { "bio" : "Lilli is a Game Developer Advocate for Google. Prior to 2008, she worked as a game programmer on a number of XBox, PlayStation, and PC titles, and also helped to develop the COLLADA file format.",
+    "company" : "Google",
+    "firstName" : "Lilli",
+    "id" : 1213,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1213/thumbnail.gif",
+    "lastName" : "Thompson",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/959",
+          "title" : "Cross Platform Game Programming with PlayN"
+        } ]
+  },
+  { "bio" : "Software architecture and development. His areas of expertise include advanced visualization components development on the Java and .NET platform as well as rich internet applications (RIA) developments in Ajax, Dojo, Microsoft Silverlight and Adobe Flex.",
+    "company" : "IBM",
+    "firstName" : "Emmanuel",
+    "id" : 1218,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1218/thumbnail.gif",
+    "lastName" : "Tissandier",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/962",
+          "title" : "Building Mobile Web application with Open Web standards and the Dojo Toolkit"
+        } ]
+  },
+  { "bio" : "Dalibor Topic lives and works in Hamburg, Germany, as Sun's Java F/OSS Ambassador. In collaboration with the OpenJDK community and GNU/Linux distributions, he is occupied accelerating the evolution of Open Source software stacks based on Java technology and GNU/Linux.",
+    "company" : "Oracle",
+    "firstName" : "Dalibor",
+    "id" : 345,
+    "imageURI" : "https://cfp.devoxx.com/static/images/345/thumbnail.gif",
+    "lastName" : "Topic",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/381",
+          "title" : "OpenJDK"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/949",
+          "title" : "The OpenJDK Community BOF"
+        }
+      ]
+  },
+  { "bio" : "James Tyrrell is a Software Engineer with VMware and a member of the Spring Roo team. Since joining the team James has worked closely with Google on the GWT add-on, created the Cloud Foundry add-on, and provided a number of core enhancements to Roo. He enjoys getting his hands dirty with advanced code and is currently working on a new type analysis, parsing and generation engine.\r\n\r\nPrior to coming to VMware, James worked extensively with GWT and has developed a number of applications using the technology. He has presented at a number of developer events on topics including Spring Roo, GWT and Cloud Foundry.\r\n\r\nJames can be found on the web at populationjim.com and twitter.com/jimbotyrrell",
+    "company" : "VMware",
+    "firstName" : "James",
+    "id" : 1065,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1065/thumbnail.gif",
+    "lastName" : "Tyrrell",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/895",
+          "title" : "Spring Roo: Instant Productivity"
+        } ]
+  },
+  { "bio" : "Filip van Laenen is Chief Engineer at the Norwegian software company Computas. He has over ten years of experience in the software industry, ranging from being a developer to lead developer and architect. He has held presentations at conferences like OOP, ACCU, Javazone, ROOTS and NDC.",
+    "company" : "Computas",
+    "firstName" : "Filip",
+    "id" : 1004,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1004/thumbnail.gif",
+    "lastName" : "Van Laenen",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/681",
+          "title" : "Introduction to Scalable Vector Graphics (SVG)"
+        } ]
+  },
+  { "bio" : "Roy van Rijn, a software Craftsman at JPoint (http://www.jpoint.nl). Before starting JPoint, Roy was Java Software Architect at Ordina, working on miscellaneous projects and giving roadshow presentations around the Netherlands. He was also co-author of the book \"Software Ontwikkeling in Java EE\". He has regularly given trainings during his career, including Spring, Sofware Architecture, Testing and Agile/Lean courses. Currently he is involved with the HaMIS project by the Port of Rotterdam. A very succesful Scrum project, which hasn't just changed the development team, but the whole project management structure underneath resulting in a hyper-productive project.",
+    "company" : "JPoint",
+    "firstName" : "Roy",
+    "id" : 284,
+    "imageURI" : "https://cfp.devoxx.com/static/images/284/profilePic_devoxx2.gif",
+    "lastName" : "van Rijn",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/606",
+          "title" : "What Shazam doesn't want you to know"
+        } ]
+  },
+  { "bio" : "Koen Vanderkimpen is working for Smals as a reasearch consultant, tracking object oriented methodologies, programming languages and version control technologies and developing innovative applications. He holds an engineering degree (K.U.Leuven) in computer science.",
+    "company" : "Smals",
+    "firstName" : "Koen",
+    "id" : 1235,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1235/thumbnail.gif",
+    "lastName" : "Vanderkimpen",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/965",
+          "title" : "Extreme Transaction Processing"
+        } ]
+  },
+  { "bio" : "Pieter-Jan co-organizes the Brussels GTUG. With his Java background, he has been on the Android track from the beginning, developing apps in his spare time. And having a keen interest in extending the open source platform at its base, through patching, sharing common tools and building blocks, building communities and making contributions to OpenIntents, he tries to steer where this train is going as well.",
+    "company" : "Unknown",
+    "firstName" : "Pieter-Jan",
+    "id" : 1242,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1242/thumbnail.gif",
+    "lastName" : "Vandormael",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/958",
+          "title" : "Social Coding with GTUGs"
+        } ]
+  },
+  { "bio" : "Independent technology researcher and developer.",
+    "company" : "FuseSource",
+    "firstName" : "Gert",
+    "id" : 1098,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1098/thumbnail.gif",
+    "lastName" : "Vanthienen",
+    "talks" : [ { "event" : "Hands-on Labs",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/931",
+          "title" : "Hands on with Apache ActiveMQ, ServiceMix, Camel and CXF"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/932",
+          "title" : "Introduction to Apache ActiveMQ, ServiceMix, Camel and CXF"
+        }
+      ]
+  },
+  { "bio" : "Martijn Verburg (aka 'the Diabolical Developer') herds Cats in the Java/open source communities and is constantly humbled by the creative power to be found there. Currently he resides in London where he co-leads the London JUG (a JCP EC member), runs a couple of open source projects & drinks too much beer at his local pub. You can find him online moderating at the Javaranch or discussing (ranting?) subjects on the Prgorammers Stack Exchange site. Most recently he's become a regular speaker at conferences on Java, open source and software development and has recently wrapped up his first Manning title - \"The Well-Grounded Java Developer\" with his co-author Ben Evans.",
+    "company" : "N/A",
+    "firstName" : "Martijn",
+    "id" : 405,
+    "imageURI" : "https://cfp.devoxx.com/static/images/405/529dd6111421e230eedb34d96a473f85.png",
+    "lastName" : "Verburg",
+    "talks" : [ { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/571",
+          "title" : "Less annoying Java standards"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/572",
+          "title" : "The Well-Grounded Java Developer"
+        }
+      ]
+  },
+  { "bio" : "Lars Vogel maintains the website vogella.de with many Android and Eclipse related tutorials and with more then 24 000 daily visitors. \r\n\r\nHe works as an independent Android and Eclipse trainer and as employee of SAP AG in the role of a product owner. He is a regular speaker at international conferences, as for example EclipseCon, EclipseSummitEurope, Java Forum Stuttgart, MobilTechCon and Droidcon. \r\n\r\nLars received 2010 the \"Eclipse Top Contributor Award\".",
+    "company" : "Self",
+    "firstName" : "Lars",
+    "id" : 99,
+    "imageURI" : "https://cfp.devoxx.com/static/images/99/thumbnail.gif",
+    "lastName" : "Vogel",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/469",
+          "title" : "Android Jumpstart - Introduction to Android App development"
+        } ]
+  },
+  { "bio" : "Dick Wall, member of the JavaPosse, Partner with Escalate Software",
+    "company" : "The Java Posse",
+    "firstName" : "Dick",
+    "id" : 272,
+    "imageURI" : "https://cfp.devoxx.com/static/images/272/thumbnail.gif",
+    "lastName" : "Wall",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/318",
+          "title" : "What's New in Scala 2.8?"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/338",
+          "title" : "JavaPosse Live"
+        },
+        { "event" : "BOF",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/352",
+          "title" : "Scala"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/772",
+          "title" : "Java Posse Live"
+        },
+        { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/775",
+          "title" : "Courage in Software Development"
+        }
+      ]
+  },
+  { "bio" : "Gabriel Walt is an Enterprise Community Evangelist at Adobe, based in Basel, Switzerland, who's passionate about Web Development, User Experience, and Open Source. Having implemented several projects using the Adobe Digital Enterprise Platform (ADEP) and the Web Experience Management (WEM) solution, he has a good understanding of how these technologies offer ideal options for enterprises to rapidly build and deploy rich applications that integrate with existing architectures.",
+    "company" : "Adobe",
+    "firstName" : "Gabriel",
+    "id" : 1103,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1103/thumbnail.gif",
+    "lastName" : "Walt",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/945",
+          "title" : "How Open Web Standards shape Adobe's Web Experience Management"
+        } ]
+  },
+  { "bio" : "James Ward (www.jamesward.com) is a Pricipal Developer Evangelist at salesforce.com. Today he focuses on teaching developers about running Java on the Cloud. James frequently presents at conferences around the world such as JavaOne, Devoxx, and many other Java get-togethers. Along with Bruce Eckel, James co-authored First Steps in Flex. He has also published numerous screencasts, blogs, and technical articles. Starting with Pascal and Assembly in the 80′s, James found his passion for writing code. Beginning in the 90′s he began doing web development with HTML, Perl/CGI, then Java. After building a Flex and Java based customer service portal in 2004 for Pillar Data Systems he became a Technical Evangelist for Flex at Adobe. You can find him tweeting as @_JamesWard, answering questions on StackOverflow.com and posting code at github.com/jamesward.",
+    "company" : "Heroku",
+    "firstName" : "James",
+    "id" : 993,
+    "imageURI" : "https://cfp.devoxx.com/static/images/993/thumbnail.gif",
+    "lastName" : "Ward",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/939",
+          "title" : "Deploying Java & Play Framework Apps to the Cloud"
+        } ]
+  },
+  { "bio" : "Patrycja Wegrzynowicz is a software visionary and expert specialized in automated software engineering and Java technologies. She is the founder and CTO of Yonita, Inc., a California-based start-up that focuses on automated detection of software defects, including security vulnerabilities, performance and concurrency anti-patterns, and database issues.\r\n\r\nShe is also associated with Warsaw University of Technology, where she serves as Technical Manager of Passim/Synat, an intelligent search platform. Patrycja is finalizing PhD in Computer Science at University of Warsaw. She is a regular speaker at top academic as well as industrial conferences, including JavaOne, Devoxx, OOPSLA, ASE, and others.\r\n\r\nPatrycja’s interests focus on patterns and anti-patterns in software along with automated software engineering, particularly static and dynamic analysis techniques to support program verification, comprehension, and optimization.\r\n\r\nYou can follow her on Twitter at @YonLabs.",
+    "company" : "Yonita, Inc.",
+    "firstName" : "Patrycja",
+    "id" : 136,
+    "imageURI" : "https://cfp.devoxx.com/static/images/136/pw-web-100x110.jpg",
+    "lastName" : "Wegrzynowicz",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/820",
+          "title" : "Performance Anti-Patterns in Hibernate"
+        } ]
+  },
+  { "bio" : "Geertjan Wielenga is a principal product manager in Oracle for NetBeans and has been a member of the NetBeans Team for the past 7 years.",
+    "company" : "NetBeans",
+    "firstName" : "Geertjan",
+    "id" : 208,
+    "imageURI" : "https://cfp.devoxx.com/static/images/208/thumbnail.gif",
+    "lastName" : "Wielenga",
+    "talks" : [ { "event" : "Tools in Action",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/719",
+          "title" : "What's In Your Toolbox for JDK 7?"
+        } ]
+  },
+  { "bio" : "James Williams is a developer based in Silicon Valley and frequent conference speaker. He is a co-creator of the Griffon project, a rich desktop framework for Java applications. He and his team WalkIN, created a product on a coach bus while riding to South By Southwest Interactive(SXSWi), and were crowned winners of StartupBus 2011 competition. He is the author of the upcoming book \"Learning HTML5 Game Programming...\" for Addison-Wesley. He blogs at http://jameswilliams.be/blog and tweets as @ecspike.",
+    "company" : "N/A",
+    "firstName" : "James",
+    "id" : 114,
+    "imageURI" : "https://cfp.devoxx.com/static/images/114/thumbnail.gif",
+    "lastName" : "Williams",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/540",
+          "title" : "Intro to HTML5 Game Programming - WebGL Edition"
+        },
+        { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/870",
+          "title" : "Intro to HTML5 Game Development"
+        }
+      ]
+  },
+  { "bio" : "Long time Java (and now Scala) developer, with strong recognition in the Scala community.  Wide ranging experience of various industries.  Passionate about clearing obstacles that get in a developers way, whether they be tools, processes or languages.",
+    "company" : "Scala Technology",
+    "firstName" : "Kevin",
+    "id" : 780,
+    "imageURI" : "https://cfp.devoxx.com/static/images/780/thumbnail.gif",
+    "lastName" : "Wright",
+    "talks" : [ { "event" : "University",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/954",
+          "title" : "Crash Course into Scala"
+        } ]
+  },
+  { "bio" : "John is a member of the JavaFX team. John studied animation at the UCLA Film School, where he received his Master of Fine Arts in Animation/Film. Prior to working at Oracle, John worked in the animation industry as a Character Technical Director at Disney Animation and DreamWorks Animation on such films as \"Chicken Little\", \"Meet the Robinsons\", \"Shrek Forever After\", and \"How to Train Your Dragon\".",
+    "company" : "Oracle",
+    "firstName" : "John",
+    "id" : 1074,
+    "imageURI" : "https://cfp.devoxx.com/static/images/1074/thumbnail.gif",
+    "lastName" : "Yoon",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/693",
+          "title" : "Animation: Bringing your User Interfaces to Life"
+        } ]
+  }
+]

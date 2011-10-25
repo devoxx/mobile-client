@@ -1,0 +1,21 @@
+Devoxx 2011 Schedule application for Android
+Copyright 2011 Peter Kuterna
+
+Based on the Google I/O Schedule App for Android
+(http://code.google.com/p/iosched/) which is released 
+under the Apache License 2.0.
+
+This product includes software developed at
+Google Inc. (http://www.google.com/).
+
+This product contains code from the Android Open
+Source Project. (http://source.android.com)
+
+This product contains code developed by
+Jake Wharton (http://www.actionbarsherlock.com)
+https://github.com/JakeWharton/ActionBarSherlock
+
+This product contains code developed by
+Johan Nilsson (http://markupartist.com)
+https://github.com/johannilsson/android-pulltorefresh
+

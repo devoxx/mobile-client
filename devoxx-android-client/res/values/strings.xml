@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Google Inc.
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Devoxx 2011</string>
+
+    <string name="maps_api_key">INSERT_YOUR_MAPS_API_KEY_HERE</string>
+    
+    <string name="description_search">Search</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="description_settings">Settings</string>
+    <string name="description_star">Star</string>
+    <string name="description_now">Go to Now</string>
+    <string name="description_share">Share</string>
+    <string name="description_map">Map</string>
+
+    <string name="title_now_playing">Now Playing</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_tracks">Tracks</string>
+    <string name="title_search">Search</string>
+    <string name="title_sessions">Sessions</string>
+    <string name="title_sessions_for">Sessions for \'<xliff:g id="title">%1$s</xliff:g>\'</string>
+    <string name="title_sessions_of">Sessions of <xliff:g id="title">%1$s</xliff:g></string>
+    <string name="title_sessions_in">Sessions in <xliff:g id="title">%1$s</xliff:g></string>
+    <string name="title_session_detail">Session Information</string>
+    <string name="title_starred">Starred</string>
+    <string name="title_twitter_stream">Twitter Stream</string>
+    <string name="title_speakers">Speakers</string>
+    <string name="title_map">Map</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_new_sessions">New Sessions</string>
+    <string name="title_bulletin">Bulletin</string>
+
+    <string name="title_session_tracks">Session tracks</string>
+
+    <string name="title_share">Share using</string>
+
+    <string name="title_search">Search</string>
+    <string name="title_search_query">Search for \'<xliff:g id="query">%1$s</xliff:g>\'</string>
+
+    <string name="btn_schedule">Schedule</string>
+    <string name="btn_map">Map</string>
+    <string name="btn_sessions">Sessions</string>
+    <string name="btn_starred">Starred</string>
+    <string name="btn_speakers">Speakers</string>
+    <string name="btn_announcements">Bulletin</string>
+
+    <string name="all_sessions_title">All sessions</string>
+    <string name="all_sessions_subtitle">Tap to filter sessions by track.</string>
+
+    <string name="empty_tracks">No tracks found</string>
+    <string name="empty_twitter_results">No twitter results found</string>
+    <string name="empty_bulletin_results">No Devoxx news items found</string>
+    <string name="empty_sessions">No sessions found</string>
+    <string name="empty_session_detail">No session details found</string>
+    <string name="empty_speakers">No speakers found</string>
+    <string name="empty_links">No links available</string>
+    <string name="empty_presentations">No presentations found</string>
+
+    <string name="session_summary">Summary</string>
+    <string name="session_notes">Notes</string>
+    <string name="session_links">Links</string>
+    <string name="session_parleys">Parleys.com</string>
+    <string name="session_parallel">In parallel</string>
+    <string name="session_keywords">Keywords</string>
+    <string name="session_abstract">Abstract</string>
+    <string name="session_experience">Experience</string>
+    <string name="session_speakers">Speakers</string>
+    <string name="session_more">More</string>
+    <string name="session_less">Less</string>
+
+    <string name="session_link_main">Web link</string>
+
+    <string name="session_subtitle"><xliff:g id="day">%1$s</xliff:g>, <xliff:g id="time">%2$s</xliff:g> in <xliff:g id="room">%3$s</xliff:g></string>
+
+    <string name="starred_sessions">Sessions</string>
+    <string name="starred_speakers">Speakers</string>
+
+    <string name="search_sessions">Sessions</string>
+    <string name="search_speakers">Speakers</string>
+    <string name="search_label">Devoxx</string>
+    <string name="search_hint">Search keywords</string>
+
+    <plurals name="whats_on_countdown_title">
+        <item quantity="zero"><xliff:g id="remaining_time">%2$s</xliff:g>\nuntil Devoxx.</item>
+        <item quantity="one"><xliff:g id="number_of_days">%1$s</xliff:g> day, <xliff:g id="remaining_time">%2$s</xliff:g>\nuntil Devoxx.</item>
+        <item quantity="other"><xliff:g id="number_of_days">%1$s</xliff:g> days, <xliff:g id="remaining_time">%2$s</xliff:g>\nuntil Devoxx.</item>
+    </plurals>
+
+    <string name="whats_on_stream_title">Twitter\nStream</string>
+    <string name="whats_on_now_playing_title">Now Playing</string>
+    <string name="whats_on_thank_you_title">See you next year!</string>
+
+    <string name="toast_now_not_visible">Press this button during Devoxx to show the current time.</string>
+
+    <!-- Notes integration -->
+    <string name="notes_catch_powered_by">Notes are powered by <a href="http://www.catch.com/">Catch.com</a>.</string>
+    <string name="notes_catch_market_title">Install Catch Notes</string>
+    <string name="notes_catch_market_subtitle">You can take notes for Devoxx sessions using the latest version of Catch Notes, available from Android Market.</string>
+    <string name="notes_catch_new_title">Create a new note</string>
+    <string name="notes_catch_view_title">View track notes</string>
+    <string name="toast_notes_error_invoking">Error invoking Catch Notes.</string>
+
+    <string name="share_template">Checking out \'<xliff:g id="title">%1$s</xliff:g>\' at <xliff:g id="hashtags">%2$s</xliff:g> <xliff:g id="url">%3$s</xliff:g></string>
+
+    <string name="note_template">Session: <xliff:g id="title">%1$s</xliff:g>\n\n\n\n__________\nTags: <xliff:g id="hashtags">%2$s</xliff:g></string>
+    
+    <string name="settings_sync">Syncing</string>
+	<string name="settings_background_updates">Background updates</string>
+	<string name="settings_auto_update_wifi_only">Auto-update WiFi only</string>
+	<string name="settings_sync_google_account">Google Account</string>
+    <string name="settings_google_account">Google Account</string>
+    <string name="settings_no_google_account">No account selected</string>
+    <string name="settings_disconnect_google_account">Disconnect Google Account</string>
+    <string name="settings_connecting_account">Connecting account...</string>
+    <string name="settings_disconnecting_account">Disconnecting account...</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_google_plus">https://plus.google.com/103201318769928627978/</string>
+    <string name="settings_about_blog">http://blog.peterkuterna.net/</string>
+    <string name="settings_about_twitter">http://twitter.com/peterkuterna/</string>
+    <string name="settings_about_source_code">http://code.google.com/p/devoxx-schedule/</string>
+    <string name="settings_version">Version Information</string>
+	<string name="settings_version_info">Version %1$s build %2$d</string>
+	
+	<string name="map_level0">Level 0</string>
+	<string name="map_level1">Level 1</string>
+	<string name="map_satellite">Satellite</string>
+	
+	<string name="sync_error">An error occurred while connecting your account.</string>
+	
+	<string name="new_sessions_notification_text">New Devoxx session(s).</string>
+	<string name="new_news_items_notification_text">New Devoxx news.</string>
+
+	<string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+	<string name="pull_to_refresh_release_label">Release to refresh...</string>
+	<string name="pull_to_refresh_refreshing_label">Loading...</string>
+	<string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    
+</resources>

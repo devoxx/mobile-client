@@ -1,0 +1,80 @@
+/*
+ * Copyright 2011 Peter Kuterna
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package net.peterkuterna.android.apps.devoxxsched.ui.widget;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.TextView;
+
+public class ExpandableTextView extends TextView {
+
+	private int mMaxlines;
+	private boolean mExpanded = false;
+	private boolean mFirstDraw = false;
+	private OnFirstDrawListener mOnFirstDrawListener = null;
+
+	public ExpandableTextView(Context context) {
+		super(context);
+	}
+
+	public ExpandableTextView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+	}
+
+	public ExpandableTextView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+	}
+
+	@Override
+	public void setMaxLines(int maxlines) {
+		super.setMaxLines(maxlines);
+		this.mMaxlines = maxlines;
+	}
+
+	public boolean isExpanded() {
+		return mExpanded;
+	}
+
+	public void toggleExpand() {
+		if (mMaxlines > 0) {
+			mExpanded = !mExpanded;
+			super.setMaxLines(mExpanded ? getLineCount() : mMaxlines);
+		}
+	}
+
+	@Override
+	public void draw(Canvas canvas) {
+		super.draw(canvas);
+		if (!mFirstDraw && mOnFirstDrawListener != null) {
+			mOnFirstDrawListener.onFirstDraw(this);
+			mFirstDraw = true;
+		}
+	}
+
+	public void setOnFirstDrawListener(OnFirstDrawListener onFirstDrawListener) {
+		this.mOnFirstDrawListener = onFirstDrawListener;
+	}
+
+	public interface OnFirstDrawListener {
+
+		void onFirstDraw(View v);
+
+	}
+
+}

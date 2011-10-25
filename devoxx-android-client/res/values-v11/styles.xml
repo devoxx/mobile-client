@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Google Inc.
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources>
+    <style name="Theme.DevoxxSched" parent="Theme.Sherlock.Light">
+        <item name="android:windowBackground">@drawable/background_home</item>
+
+    	<item name="abBackground">@color/actionbar_overlay</item>
+    	<item name="abDisplayOptions">showHome|homeAsUp|showTitle|useLogo</item>
+    	<item name="abLogo">@drawable/actionbar_logo_icon</item>
+		<item name="abTitleTextStyle">@style/ActionBarText</item>
+        <item name="homeAsUpIndicator">@drawable/ic_home_up</item>
+		
+        <!-- custom attributes -->
+        <item name="textHeaderMaxLines">@integer/text_header_maxlines</item>
+        <item name="trackAbstractMaxLines">@integer/track_abstract_maxlines</item>
+    </style>
+    
+    <style name="Theme.DevoxxSched.Home" parent="Theme.DevoxxSched">
+    	<item name="abDisplayOptions"></item>
+    </style>
+
+    <style name="ActionBarText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_icons</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListItemContainerBase">
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:background">?android:attr/activatedBackgroundIndicator</item>
+    </style>
+
+</resources>

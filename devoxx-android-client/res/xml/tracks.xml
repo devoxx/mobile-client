@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Google Inc.
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<tracks>
+
+    <track>
+    	<id>12</id>
+        <name>Architecture</name>
+        <color>#0075B6</color>
+        <description>Architecture and design.</description>
+        <hashtag>architecture</hashtag>
+    </track>
+
+    <track>
+    	<id>13</id>
+        <name>Java EE</name>
+        <color>#FFCF53</color>
+        <description>Java Enterprise Edition.</description>
+        <hashtag>javaee</hashtag>
+    </track>
+
+    <track>
+    	<id>9</id>
+        <name>Java SE</name>
+        <color>#0FABFF</color>
+        <description>Includes also JavaFX.</description>
+        <hashtag>javase</hashtag>
+    </track>
+
+    <track>
+    	<id>5</id>
+        <name>New languages on the JVM</name>
+        <color>#999999</color>
+        <description>Languages that are build on top of the JVM.</description>
+        <hashtag>newlang</hashtag>
+    </track>
+
+    <track>
+    	<id>6</id>
+        <name>Methodology</name>
+        <color>#CC0033</color>
+        <description>Methodology and anything related.</description>
+        <hashtag>methodology</hashtag>
+    </track>
+
+    <track>
+    	<id>10</id>
+        <name>Mobile</name>
+        <color>#A4C639</color>
+        <description>This includes Android and mobile web.</description>
+        <hashtag>mobile</hashtag>
+    </track>
+
+    <track>
+    	<id>11</id>
+        <name>Security</name>
+        <color>#009939</color>
+        <description>Security</description>
+        <hashtag>security</hashtag>
+    </track>
+
+    <track>
+    	<id>14</id>
+        <name>Web</name>
+        <color>#00658a</color>
+        <description>This includes HTML5, CSS3 and RIA technologies.</description>
+        <hashtag>web</hashtag>
+    </track>
+    
+</tracks>

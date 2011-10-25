@@ -1,0 +1,7 @@
+.gwt/
+gwt-unitCache/
+war/dataMessagingToken.txt
+war/devoxxschedule/
+war/WEB-INF/appengine-generated/
+war/WEB-INF/classes/net/
+war/WEB-INF/deploy/

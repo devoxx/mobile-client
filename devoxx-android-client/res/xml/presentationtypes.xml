@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<presentationtypes>
+
+    <presentationtype>
+    	<id>CONFERENCE</id>
+        <name>Conference</name>
+        <description>Each conference talk is 60 minutes long, these are recorded for Parleys.com and take place on Wednesday, Thursday and Friday. Conference speakers receive a full 5 day pass.</description>
+    </presentationtype>
+
+    <presentationtype>
+    	<id>UNIVERSITY</id>
+        <name>University</name>
+        <description>University talks are in depth presentations of 2 x 75 minutes with a 30 minute break in between.  They are scheduled on Monday and Tuesday and are recorded for Parleys.com. University speakers receive a full 5 day pass.</description>
+    </presentationtype>
+
+    <presentationtype>
+    	<id>TOOLS_IN_ACTION</id>
+        <name>Tools in Action</name>
+        <description>Tools in Action are 30 minute presentations demonstrating a programming tool. They're scheduled on Monday and Tuesday and are recorded for Parleys.com. Tools in Action speakers receive a full 5 day pass.</description>
+    </presentationtype>
+
+    <presentationtype>
+    	<id>BOF</id>
+        <name>BOF</name>
+        <description>BOF sessions are 60 minutes long, scheduled in the evening and are informal. These are the only sessions which are not recorded and where you don't need an entrance pass.</description>
+    </presentationtype>
+
+    <presentationtype>
+    	<id>QUICKIE</id>
+        <name>Quickie</name>
+        <description>Short 15 minute presentations during Lunch breaks and scheduled on Tuesday, Wednesday and Thursday.  They take place in the big cinema rooms but are not recorded. Quickie speakers need a valid entrance pass!</description>
+    </presentationtype>
+
+    <presentationtype>
+    	<id>LABS</id>
+        <name>Hands-on Labs</name>
+        <description>3 hour hands-on sessions, scheduled on Monday, Tuesday, Wednesday and Thursday.   They are organized in the BOF rooms during the day but are not recorded for Parleys.com. Hands-on instructors receive a full 5 day entrance pass.</description>
+    </presentationtype>
+    
+</presentationtypes>
