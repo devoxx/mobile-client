@@ -735,13 +735,13 @@
     "toTime" : "2011-11-15 13:15:00.0",
     "type" : "Quickie"
   },
-  { "code" : "DV11_Q_15_04_1",
+  { "code" : "DV11_Q_15_06_1",
     "fromTime" : "2011-11-15 13:00:00.0",
     "id" : 392,
     "kind" : "Talk",
     "partnerSlot" : false,
     "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/686",
-    "room" : "Room 4",
+    "room" : "Room 6",
     "speaker" : "Max Andersen",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/170",
     "speakers" : [ { "speaker" : "Max Andersen",
@@ -798,11 +798,7 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/23",
     "speakers" : [ { "speaker" : "Arun Gupta",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/23"
-        },
-        { "speaker" : "Alexis Moussine-Pouchkine",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/182"
-        }
-      ],
+        } ],
     "title" : "Building an end-to-end application using Java EE 6 and NetBeans",
     "toTime" : "2011-11-15 16:30:00.0",
     "type" : "Hands-on Labs"
@@ -1282,8 +1278,24 @@
     "id" : 420,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/866",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/979",
     "room" : "Room 8",
+    "speaker" : "Joshua Bloch",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314",
+    "speakers" : [ { "speaker" : "Joshua Bloch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
+        } ],
+    "title" : "Java: The Good, the Bad, and the Ugly Parts",
+    "toTime" : "2011-11-16 13:00:00.0",
+    "type" : "Conference"
+  },
+  { "code" : "DV11_C_16_05_1",
+    "fromTime" : "2011-11-16 12:00:00.0",
+    "id" : 421,
+    "kind" : "Talk",
+    "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/866",
+    "room" : "Room 5",
     "speaker" : "Dion Almaer",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290",
     "speakers" : [ { "speaker" : "Dion Almaer",
@@ -1294,26 +1306,6 @@
         }
       ],
     "title" : "Web vs. Apps",
-    "toTime" : "2011-11-16 13:00:00.0",
-    "type" : "Conference"
-  },
-  { "code" : "DV11_C_16_05_1",
-    "fromTime" : "2011-11-16 12:00:00.0",
-    "id" : 421,
-    "kind" : "Talk",
-    "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/664",
-    "room" : "Room 5",
-    "speaker" : "Dan Allen",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/244",
-    "speakers" : [ { "speaker" : "Dan Allen",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/244"
-        },
-        { "speaker" : "Andrew Rubinger",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/7"
-        }
-      ],
-    "title" : "Death of the Slow: 7 Reasons to Love JBoss AS 7",
     "toTime" : "2011-11-16 13:00:00.0",
     "type" : "Conference"
   },
@@ -1580,7 +1572,18 @@
     "id" : 436,
     "kind" : "Talk",
     "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/664",
     "room" : "Room 6",
+    "speaker" : "Dan Allen",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/244",
+    "speakers" : [ { "speaker" : "Dan Allen",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/244"
+        },
+        { "speaker" : "Andrew Rubinger",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/7"
+        }
+      ],
+    "title" : "Death of the Slow: 7 Reasons to Love JBoss AS 7",
     "toTime" : "2011-11-16 15:00:00.0",
     "type" : "Conference"
   },
@@ -1614,14 +1617,14 @@
     "id" : 552,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/964",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/953",
     "room" : "Room 3",
-    "speaker" : "Joe Nuxoll",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/298",
-    "speakers" : [ { "speaker" : "Joe Nuxoll",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/298"
+    "speaker" : "Giorgio Sardo",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1131",
+    "speakers" : [ { "speaker" : "Giorgio Sardo",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1131"
         } ],
-    "title" : "Rules for Good U/X Design",
+    "title" : "HTML5 and Beyond",
     "toTime" : "2011-11-16 16:10:00.0",
     "type" : "Conference"
   },
@@ -1812,7 +1815,7 @@
     "speakers" : [ { "speaker" : "David Chandler",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1093"
         } ],
-    "title" : "These Aren't the Sites You're Looking For: Modern HTML5 Web Apps",
+    "title" : "Building Modern Web Apps with HTML5 and DART",
     "toTime" : "2011-11-16 17:40:00.0",
     "type" : "Conference"
   },
@@ -1948,7 +1951,14 @@
     "kind" : "Talk",
     "note" : "Microsoft",
     "partnerSlot" : true,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/977",
     "room" : "Room 6",
+    "speaker" : "Bastiaan Ceuppens",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1258",
+    "speakers" : [ { "speaker" : "Bastiaan Ceuppens",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1258"
+        } ],
+    "title" : "Serving Java on the Windows Azure Cloud Platform",
     "toTime" : "2011-11-16 18:50:00.0",
     "type" : "Conference"
   },
@@ -2133,7 +2143,14 @@
     "id" : 555,
     "kind" : "Talk",
     "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/964",
     "room" : "Room 3",
+    "speaker" : "Joe Nuxoll",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/298",
+    "speakers" : [ { "speaker" : "Joe Nuxoll",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/298"
+        } ],
+    "title" : "Rules for Good U/X Design",
     "toTime" : "2011-11-17 11:50:00.0",
     "type" : "Conference"
   },
@@ -2264,14 +2281,21 @@
     "id" : 556,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/953",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/981",
     "room" : "Room 3",
-    "speaker" : "Giorgio Sardo",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1131",
-    "speakers" : [ { "speaker" : "Giorgio Sardo",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1131"
-        } ],
-    "title" : "HTML5 and Beyond",
+    "speaker" : "Stijn Van den Enden",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/70",
+    "speakers" : [ { "speaker" : "Stijn Van den Enden",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/70"
+        },
+        { "speaker" : "Ward Vijfeijken",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1276"
+        },
+        { "speaker" : "Guy Veraghtert",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1275"
+        }
+      ],
+    "title" : "WWW: World Wide Wait? A Performance Comparison of Java Web Frameworks",
     "toTime" : "2011-11-17 13:00:00.0",
     "type" : "Conference"
   },
@@ -2506,7 +2530,27 @@
     "id" : 557,
     "kind" : "Talk",
     "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/982",
     "room" : "Room 3",
+    "speaker" : "Martijn Verburg",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405",
+    "speakers" : [ { "speaker" : "Martijn Verburg",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405"
+        },
+        { "speaker" : "Kim Ross",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1278"
+        },
+        { "speaker" : "Regina ten Bruggencate",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/219"
+        },
+        { "speaker" : "Trisha Gee",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1277"
+        },
+        { "speaker" : "Antonio Goncalves",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/116"
+        }
+      ],
+    "title" : "Why We Shouldn't Target Women",
     "toTime" : "2011-11-17 15:00:00.0",
     "type" : "Conference"
   },
@@ -2926,14 +2970,14 @@
     "id" : 513,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/926",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/966",
     "room" : "Room 5",
-    "speaker" : "Stephen Colebourne",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/335",
-    "speakers" : [ { "speaker" : "Stephen Colebourne",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/335"
+    "speaker" : "Shaun Smith",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1005",
+    "speakers" : [ { "speaker" : "Shaun Smith",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1005"
         } ],
-    "title" : "Is Fantom light years ahead of Scala?",
+    "title" : "JPA Multi-Tenancy & Extensibility: Blazing the Trail to JPA 2.1 in EclipseLink",
     "toTime" : "2011-11-17 18:50:00.0",
     "type" : "Conference"
   },
@@ -2974,14 +3018,14 @@
     "id" : 509,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/966",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/926",
     "room" : "Room 9",
-    "speaker" : "Shaun Smith",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1005",
-    "speakers" : [ { "speaker" : "Shaun Smith",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1005"
+    "speaker" : "Stephen Colebourne",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/335",
+    "speakers" : [ { "speaker" : "Stephen Colebourne",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/335"
         } ],
-    "title" : "JPA Multi-Tenancy & Extensibility: Blazing the Trail to JPA 2.1 in EclipseLink",
+    "title" : "Is Fantom light years ahead of Scala?",
     "toTime" : "2011-11-17 18:50:00.0",
     "type" : "Conference"
   },
@@ -3169,20 +3213,20 @@
     "speakers" : [ { "speaker" : "Brian Goetz",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/283"
         },
+        { "speaker" : "Mark Reinhold",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/279"
+        },
         { "speaker" : "Ben Evans",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/930"
-        },
-        { "speaker" : "David Pollak",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/850"
-        },
-        { "speaker" : "Giorgio Sardo",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1131"
         },
         { "speaker" : "Dion Almaer",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290"
         },
-        { "speaker" : "Ben Galbraith",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/291"
+        { "speaker" : "Joshua Bloch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
+        },
+        { "speaker" : "Brian H. Prince",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1264"
         }
       ],
     "title" : "Technical Discussion Panel",
@@ -3203,14 +3247,14 @@
     "id" : 524,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/950",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/978",
     "room" : "Room 8",
-    "speaker" : "Scott Kovatch",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1130",
-    "speakers" : [ { "speaker" : "Scott Kovatch",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1130"
+    "speaker" : "Joshua Bloch",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314",
+    "speakers" : [ { "speaker" : "Joshua Bloch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
         } ],
-    "title" : "Java on Mac OS X: Now What?",
+    "title" : "The Evolution of Java: Past, Present, and Future",
     "toTime" : "2011-11-18 11:45:00.0",
     "type" : "Conference"
   },
@@ -3219,8 +3263,44 @@
     "id" : 525,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/940",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/858",
     "room" : "Room 5",
+    "speaker" : "Greg Luck",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380",
+    "speakers" : [ { "speaker" : "Greg Luck",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380"
+        },
+        { "speaker" : "Ludovic Orban",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1061"
+        }
+      ],
+    "title" : "JSR107—What the New Java Caching Standard Has in Store For You",
+    "toTime" : "2011-11-18 11:45:00.0",
+    "type" : "Conference"
+  },
+  { "code" : "DV11_C_18_06_1",
+    "fromTime" : "2011-11-18 10:45:00.0",
+    "id" : 526,
+    "kind" : "Talk",
+    "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/497",
+    "room" : "Room 6",
+    "speaker" : "David Geary",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/231",
+    "speakers" : [ { "speaker" : "David Geary",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/231"
+        } ],
+    "title" : "HTML5 Game Development: The most fun you can have in a browser",
+    "toTime" : "2011-11-18 11:45:00.0",
+    "type" : "Conference"
+  },
+  { "code" : "DV11_C_18_09_1",
+    "fromTime" : "2011-11-18 10:45:00.0",
+    "id" : 527,
+    "kind" : "Talk",
+    "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/940",
+    "room" : "Room 9",
     "speaker" : "Frank Kim",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/919",
     "speakers" : [ { "speaker" : "Frank Kim",
@@ -3230,37 +3310,21 @@
     "toTime" : "2011-11-18 11:45:00.0",
     "type" : "Conference"
   },
-  { "code" : "DV11_C_18_04_1",
+  { "code" : "DV11_B_18_01_01",
     "fromTime" : "2011-11-18 10:45:00.0",
-    "id" : 526,
+    "id" : 561,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/482",
-    "room" : "Room 4",
-    "speaker" : "David Pollak",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/850",
-    "speakers" : [ { "speaker" : "David Pollak",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/850"
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/980",
+    "room" : "BOF 1",
+    "speaker" : "Roger Brinkley",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1266",
+    "speakers" : [ { "speaker" : "Roger Brinkley",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1266"
         } ],
-    "title" : "Building interactive stuff for real people",
+    "title" : "Live Recording of the Java Spotlight Podcast",
     "toTime" : "2011-11-18 11:45:00.0",
-    "type" : "Conference"
-  },
-  { "code" : "DV11_C_18_09_1",
-    "fromTime" : "2011-11-18 10:45:00.0",
-    "id" : 527,
-    "kind" : "Talk",
-    "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/497",
-    "room" : "Room 9",
-    "speaker" : "David Geary",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/231",
-    "speakers" : [ { "speaker" : "David Geary",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/231"
-        } ],
-    "title" : "HTML5 Game Development: The most fun you can have in a browser",
-    "toTime" : "2011-11-18 11:45:00.0",
-    "type" : "Conference"
+    "type" : "BOF"
   },
   { "code" : "DV11_C_18_08_2",
     "fromTime" : "2011-11-18 11:50:00.0",
@@ -3287,28 +3351,24 @@
     "id" : 529,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/858",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/950",
     "room" : "Room 5",
-    "speaker" : "Greg Luck",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380",
-    "speakers" : [ { "speaker" : "Greg Luck",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380"
-        },
-        { "speaker" : "Ludovic Orban",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1061"
-        }
-      ],
-    "title" : "JSR107—What the New Java Caching Standard Has in Store For You",
+    "speaker" : "Scott Kovatch",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1130",
+    "speakers" : [ { "speaker" : "Scott Kovatch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1130"
+        } ],
+    "title" : "Java on Mac OS X: Now What?",
     "toTime" : "2011-11-18 12:50:00.0",
     "type" : "Conference"
   },
-  { "code" : "DV11_C_18_04_2",
+  { "code" : "DV11_C_18_06_2",
     "fromTime" : "2011-11-18 11:50:00.0",
     "id" : 530,
     "kind" : "Talk",
     "partnerSlot" : false,
     "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/606",
-    "room" : "Room 4",
+    "room" : "Room 6",
     "speaker" : "Roy van Rijn",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/284",
     "speakers" : [ { "speaker" : "Roy van Rijn",

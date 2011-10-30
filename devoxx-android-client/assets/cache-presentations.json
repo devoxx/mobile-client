@@ -248,7 +248,6 @@
   },
   { "experience" : "SENIOR",
     "id" : 482,
-    "room" : "Room 4",
     "speaker" : "David Pollak",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/850",
     "speakers" : [ { "speaker" : "David Pollak",
@@ -313,7 +312,7 @@
   },
   { "experience" : "SENIOR",
     "id" : 497,
-    "room" : "Room 9",
+    "room" : "Room 6",
     "speaker" : "David Geary",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/231",
     "speakers" : [ { "speaker" : "David Geary",
@@ -609,7 +608,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 606,
-    "room" : "Room 4",
+    "room" : "Room 6",
     "speaker" : "Roy van Rijn",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/284",
     "speakers" : [ { "speaker" : "Roy van Rijn",
@@ -750,7 +749,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 664,
-    "room" : "Room 5",
+    "room" : "Room 6",
     "speaker" : "Dan Allen",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/244",
     "speakers" : [ { "speaker" : "Dan Allen",
@@ -887,7 +886,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 686,
-    "room" : "Room 4",
+    "room" : "Room 6",
     "speaker" : "Max Andersen",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/170",
     "speakers" : [ { "speaker" : "Max Andersen",
@@ -1254,7 +1253,7 @@
     "speakers" : [ { "speaker" : "Nikolche Mihajlovski",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/111"
         } ],
-    "summary" : "JAnnocessor is a new open-source framework for powerful, flexible and reliable processing of annotated Java code. Its main purpose is compile-time annotation-based code generation in a declarative and customizable fashion.\r\nJAnnocessor utilizes a powerful and innovative synergy of mature technologies: It's built on top of Java's APT for reliable compile-time annotation processing, encapsulating it in a rich and convenient domain model. It uses Drools for rule-based expressive pattern matching and transformation of the annotated source code. Finally, StringTemplate is used for customizable  template-based custom code generation.\r\nIn this talk, the author of JAnnocessor will show you how easily you can boost your productivity by simply annotating your code to generate: domain model, builders, DAOs, services, facades, DTOs, mappers, views, etc. The customization of annotations, patterns and templates will also be covered, so you will be able to generate anything!",
+    "summary" : "JAnnocessor is a new open-source framework for powerful, flexible, yet easy annotation-driven source code generation. It is built on top of Java APT, encapsulating the Java source code model in a rich and convenient high-level domain model that serves as a good target for expressive matching and transformation. Finally, a template engine is used for customizable source code generation. Having simplicity and productivity in mind, JAnnocessor offers many features that make it enjoyable: smart imports organization, logging delegation, graphical UI for real-time debug, hot swap of processors and templates, as well as out-of-the-box common annotations, processors and templates.\nIn this talk, the author of JAnnocessor will show you how easily you can boost your productivity by simply annotating your code to generate: domain model, builders, DAOs, services, facades, DTOs, mappers, views, etc. The customization of annotations, patterns and templates will also be covered, so you will be able to generate anything!\n",
     "tags" : [ { "name" : "annotations" } ],
     "title" : "JAnnocessor - Innovative Annotation-Based Code Generator",
     "track" : "Methodology",
@@ -1291,11 +1290,7 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/23",
     "speakers" : [ { "speaker" : "Arun Gupta",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/23"
-        },
-        { "speaker" : "Alexis Moussine-Pouchkine",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/182"
-        }
-      ],
+        } ],
     "summary" : "The Java EE 6 platform allows you to write enterprise Java applications using much lesser code from its earlier versions. It breaks the “one size fits all” approach with Profiles and extensively improves on the Java EE 5 developer productivity features. Several specifications like CDI, JSF 2, EJB 3.1, JAX-RS, JPA 2, Servlets 3, and Bean Validation make the platform more powerful. It also enables extensibility by embracing open source libraries and frameworks such that they are treated as first class citizens of the platform. NetBeans, Eclipse, and IntelliJ provide extensive tooling for Java EE 6. This hands-on lab builds a complete end-to-end application using all different technologies of Java EE 6 with NetBeans. You'll learn the tips and tricks to be more effective in your development and deployment cycles. And you'll also learn how to monitor your Java EE 6 applications more effectively. A quick preview of Eclipse and IntelliJ tooling will also be shown.",
     "tags" : [ { "name" : "Glassfish" },
         { "name" : "javaee6" }
@@ -1424,7 +1419,7 @@
     "summary" : "In this session Greg Luck, founder of Ehcache and spec lead for JSR107, will walk you through this new caching standard that is important part of Java EE 7. You will learn how to:\r\n\r\nAbstract your caching implementation much like JDBC \r\nUse the rich and modern API\r\nUse the new caching annotations\r\nUse the API before Java EE 7 is released with in the Java SE, Java EE 6 and Spring environments\r\nApply JCache to common caching scenarios",
     "tags" : [ { "name" : "caching" } ],
     "title" : "JSR107—What the New Java Caching Standard Has in Store For You",
-    "track" : "Architecture",
+    "track" : "Java EE",
     "type" : "Conference"
   },
   { "experience" : "SENIOR",
@@ -1446,7 +1441,7 @@
   },
   { "experience" : "SENIOR",
     "id" : 866,
-    "room" : "Room 8",
+    "room" : "Room 5",
     "speaker" : "Dion Almaer",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290",
     "speakers" : [ { "speaker" : "Dion Almaer",
@@ -2147,7 +2142,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 926,
-    "room" : "Room 5",
+    "room" : "Room 9",
     "speaker" : "Stephen Colebourne",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/335",
     "speakers" : [ { "speaker" : "Stephen Colebourne",
@@ -2169,9 +2164,9 @@
     "speakers" : [ { "speaker" : "David Chandler",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1093"
         } ],
-    "summary" : "This ain't your mother's web page. Modern web apps are client-side MVC JavaScript powerhouses. Learn\r\nhow to build a modern web app with the latest frameworks and techniques, and utilize HTML5 for responsive UIs which delight and amaze your users.",
+    "summary" : "Modern Web apps are rich, snappy, and work offline and mobile, too. In this talk, we’ll look at the frameworks and HTML5 features that make these possible, including support in GWT and Chrome: \n- MVC / MVP \n- File handling / FileSystem API \n- Offline (AppCache) \n- LocalStorage \n- Determining form factor \nIn addition, we’ll give an introduction to DART, a new language for structured Web programming.",
     "tags" : [ { "name" : "HTML5" } ],
-    "title" : "These Aren't the Sites You're Looking For: Modern HTML5 Web Apps",
+    "title" : "Building Modern Web Apps with HTML5 and DART",
     "track" : "Web",
     "type" : "Conference"
   },
@@ -2367,7 +2362,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 940,
-    "room" : "Room 5",
+    "room" : "Room 9",
     "speaker" : "Frank Kim",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/919",
     "speakers" : [ { "speaker" : "Frank Kim",
@@ -2555,7 +2550,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 950,
-    "room" : "Room 8",
+    "room" : "Room 5",
     "speaker" : "Scott Kovatch",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1130",
     "speakers" : [ { "speaker" : "Scott Kovatch",
@@ -2578,20 +2573,20 @@
     "speakers" : [ { "speaker" : "Brian Goetz",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/283"
         },
+        { "speaker" : "Mark Reinhold",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/279"
+        },
         { "speaker" : "Ben Evans",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/930"
-        },
-        { "speaker" : "David Pollak",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/850"
-        },
-        { "speaker" : "Giorgio Sardo",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1131"
         },
         { "speaker" : "Dion Almaer",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290"
         },
-        { "speaker" : "Ben Galbraith",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/291"
+        { "speaker" : "Joshua Bloch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
+        },
+        { "speaker" : "Brian H. Prince",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1264"
         }
       ],
     "summary" : "A technical discussion panel handling moderated questions posted by the Java Community.",
@@ -2870,7 +2865,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 966,
-    "room" : "Room 9",
+    "room" : "Room 5",
     "speaker" : "Shaun Smith",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1005",
     "speakers" : [ { "speaker" : "Shaun Smith",
@@ -2999,7 +2994,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1252"
         }
       ],
-    "summary" : "Part 1:  Home is complete Java EE 6 API for home automation. With jHome you can control wall jackets, lamps, RGB LEDs, gates and much more. The reference implmentation application is using EJB's, REST, WebService, JMS, JSF and jQuery to show how you can use Java EE 6 in a totally different application context. The proposed hardware is open-source, so you do it your self! During the talk we will be showing nice and funny demos!\r\n\r\nPart 2: OpenRemote is an open source project operating in the field of Domotics.  OpenRemote develops and distributes a standard based platform that is extensible and flexible with applications to Home Automation, Energy Management and Healthcare.  This community based project integrates varied field protocols (such as KXN, X10 and Z-Wave) in a common framework and allows for easy creation of visual panels.  Open Remote supports the leading standard platforms iOS, Android and web.",
+    "summary" : "Part 1:  Home is complete Java EE 6 API for home automation. With jHome you can control wall jackets, lamps, RGB LEDs, gates and much more. The reference implmentation application is using EJB's, REST, WebService, JMS, JSF and jQuery to show how you can use Java EE 6 in a totally different application context. The proposed hardware is open-source, so you do it your self! During the talk we will be showing nice and funny demos!\r\n\r\nPart 2: OpenRemote is an open source project operating in the field of Domotics.  OpenRemote develops and distributes a standard based platform that is extensible and flexible with applications to Home Automation, Energy Management and Healthcare.  This community based project integrates varied field protocols (such as KNX, X10 and Z-Wave) in a common framework and allows for easy creation of visual panels.  Open Remote supports the leading standard platforms iOS, Android and web.",
     "tags" : [ { "name" : "javase" },
         { "name" : "javaee" },
         { "name" : "Domotics" }
@@ -3065,6 +3060,7 @@
   },
   { "experience" : "NOVICE",
     "id" : 977,
+    "room" : "Room 6",
     "speaker" : "Bastiaan Ceuppens",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1258",
     "speakers" : [ { "speaker" : "Bastiaan Ceuppens",
@@ -3077,6 +3073,109 @@
       ],
     "title" : "Serving Java on the Windows Azure Cloud Platform",
     "track" : "Architecture",
+    "type" : "Conference"
+  },
+  { "experience" : "NOVICE",
+    "id" : 978,
+    "room" : "Room 8",
+    "speaker" : "Joshua Bloch",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314",
+    "speakers" : [ { "speaker" : "Joshua Bloch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
+        } ],
+    "summary" : "The Java programming language has evolved significantly since its introduction in 1995. In this talk, I’ll discuss language changes from the addition of assertions in JDK 1.4 through Project Coin in Java 8, discussing what worked, what didn’t, and why. Finally, I’ll discuss ongoing efforts (Project Lambda for Java 8) and future plans, in light of the lessons learned from previous changes.",
+    "tags" : [ { "name" : "javase" },
+        { "name" : "JDK8" },
+        { "name" : "Lambda" }
+      ],
+    "title" : "The Evolution of Java: Past, Present, and Future",
+    "track" : "Java SE",
+    "type" : "Conference"
+  },
+  { "experience" : "NOVICE",
+    "id" : 979,
+    "room" : "Room 8",
+    "speaker" : "Joshua Bloch",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314",
+    "speakers" : [ { "speaker" : "Joshua Bloch",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
+        } ],
+    "summary" : "In this retrospective, I'll present my candidates for the best and worst features in the Java language as it was originally released in 1995, and explain the reasoning behind my choices. Some may be obvious, but others will surprise you. When taken together, these critiques lend insight into what made the Java platform a success.",
+    "tags" : [ { "name" : "javase" },
+        { "name" : "JDK" }
+      ],
+    "title" : "Java: The Good, the Bad, and the Ugly Parts",
+    "track" : "Java SE",
+    "type" : "Conference"
+  },
+  { "experience" : "NOVICE",
+    "id" : 980,
+    "room" : "BOF 1",
+    "speaker" : "Roger Brinkley",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1266",
+    "speakers" : [ { "speaker" : "Roger Brinkley",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1266"
+        } ],
+    "summary" : "Devoxx Live Recording of the Java Spotlight Podcast. Be part of this recording November 18, 10:45am in BOF 1 room next to the info desk!",
+    "tags" : [ { "name" : "javafx" },
+        { "name" : "javase" },
+        { "name" : "javaee" },
+        { "name" : "Podcast" }
+      ],
+    "title" : "Live Recording of the Java Spotlight Podcast",
+    "track" : "Java SE",
+    "type" : "BOF"
+  },
+  { "experience" : "NOVICE",
+    "id" : 981,
+    "room" : "Room 3",
+    "speaker" : "Stijn Van den Enden",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/70",
+    "speakers" : [ { "speaker" : "Stijn Van den Enden",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/70"
+        },
+        { "speaker" : "Ward Vijfeijken",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1276"
+        },
+        { "speaker" : "Guy Veraghtert",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1275"
+        }
+      ],
+    "summary" : "Since its inception, Java has been associated with the Web. As a result, a lot of frameworks are available today, which makes it hard to pick the right one. How do developers choose from such a plethora of frameworks? Often subjective criteria are used: ease of use, preference of the architect. Seldom is performance of the framework taken into account. Nonetheless, responsive applications can make the online experience effective, even enjoyable. This session presents updated results of Sujoe Bose's JavaOne 2008 presentation: most frameworks have had a major release (Spring 3, JSF 2.1); others have gotten more traction (GWT, Wicket). On top of that, the focus has shifted toward a richer user experience: Ajax, bookmarkability, ...",
+    "tags" : [ { "name" : "Wicket" },
+        { "name" : "GWT" },
+        { "name" : "JSF2" },
+        { "name" : "SpringMVC" }
+      ],
+    "title" : "WWW: World Wide Wait? A Performance Comparison of Java Web Frameworks",
+    "track" : "Web",
+    "type" : "Conference"
+  },
+  { "experience" : "NOVICE",
+    "id" : 982,
+    "room" : "Room 3",
+    "speaker" : "Martijn Verburg",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405",
+    "speakers" : [ { "speaker" : "Martijn Verburg",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405"
+        },
+        { "speaker" : "Kim Ross",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1278"
+        },
+        { "speaker" : "Regina ten Bruggencate",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/219"
+        },
+        { "speaker" : "Trisha Gee",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1277"
+        },
+        { "speaker" : "Antonio Goncalves",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/116"
+        }
+      ],
+    "summary" : "There's no question that our industry is male dominated.  Many organizations are working hard to get more female developers, and to create products aimed at women.  The first question that people ask is \"Why aren't there more women developers?\", followed closely by \"What can we do to attract more women?\".  This panel will consider these questions, and then possibly throw them out of the window - are these even the right questions to be asking?  Do we actually care about the answers?",
+    "tags" : [ { "name" : "Duchess" } ],
+    "title" : "Why We Shouldn't Target Women",
+    "track" : "Methodology",
     "type" : "Conference"
   }
 ]
