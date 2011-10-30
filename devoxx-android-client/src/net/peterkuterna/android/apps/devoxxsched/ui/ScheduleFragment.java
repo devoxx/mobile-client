@@ -33,12 +33,12 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.Menu;
-import android.support.v4.view.MenuItem;
 import android.support.v4.view.ViewPager;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -77,6 +77,12 @@ public class ScheduleFragment extends Fragment {
 				R.layout.fragment_schedule, null);
 
 		mViewPager = (ViewPager) root.findViewById(R.id.viewpager);
+
+		mViewPager.setOffscreenPageLimit(4);
+		mViewPager.setPageMargin(getResources().getDimensionPixelSize(
+				R.dimen.viewpager_page_margin));
+		mViewPager.setPageMarginDrawable(R.drawable.viewpager_margin);
+
 		mTabs = (SwipeyTabs) root.findViewById(R.id.viewpagerheader);
 
 		return root;
@@ -87,7 +93,7 @@ public class ScheduleFragment extends Fragment {
 		super.onActivityCreated(savedInstanceState);
 
 		final BlocksPagerAdapter adapter = new BlocksPagerAdapter(
-				getActivity(), getSupportFragmentManager());
+				getActivity(), getFragmentManager());
 		mViewPager.setAdapter(adapter);
 		mTabs.setAdapter(adapter);
 		mViewPager.setOnPageChangeListener(mTabs);

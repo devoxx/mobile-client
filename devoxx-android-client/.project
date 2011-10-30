@@ -33,11 +33,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>actionbar-sherlock_src</name>
-			<type>2</type>
-			<locationURI>_android_actionbar_sherlock_396cb79d/src</locationURI>
-		</link>
-		<link>
 			<name>shared</name>
 			<type>2</type>
 			<locationURI>WORKSPACE_LOC/devoxx-schedule/devoxx-appengine/shared</locationURI>

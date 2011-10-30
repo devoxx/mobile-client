@@ -17,35 +17,29 @@
 
 package net.peterkuterna.android.apps.devoxxsched.ui;
 
+import net.peterkuterna.android.apps.devoxxsched.R;
+import net.peterkuterna.android.apps.devoxxsched.util.ActionBarHelper;
 import net.peterkuterna.android.apps.devoxxsched.util.ActivityHelper;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.Menu;
-import android.support.v4.view.MenuItem;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public abstract class AbstractActivity extends FragmentActivity implements
 		BaseActivity {
 
+	final ActionBarHelper mActionBarHelper = ActionBarHelper
+			.createInstance(this);
 	final ActivityHelper mActivityHelper = ActivityHelper.createInstance(this);
 
-	@Override
-	public void onContentChanged() {
-		super.onContentChanged();
-
-		mActivityHelper.setActionBarTextStyle();
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		return mActivityHelper.onCreateOptionsMenu(menu)
-				|| super.onCreateOptionsMenu(menu);
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		return mActivityHelper.onOptionsItemSelected(item)
-				|| super.onOptionsItemSelected(item);
+	/**
+	 * Returns the {@link ActionBarHelper} object associated with this activity.
+	 */
+	public ActionBarHelper getActionBarHelper() {
+		return mActionBarHelper;
 	}
 
 	/**
@@ -53,6 +47,57 @@ public abstract class AbstractActivity extends FragmentActivity implements
 	 */
 	public ActivityHelper getActivityHelper() {
 		return mActivityHelper;
+	}
+
+	@Override
+	public MenuInflater getMenuInflater() {
+		return mActionBarHelper.getMenuInflater(super.getMenuInflater());
+	}
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		mActionBarHelper.onCreate(savedInstanceState);
+	}
+
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		mActionBarHelper.onPostCreate(savedInstanceState);
+	}
+
+	/**
+	 * Base action bar-aware implementation for
+	 * {@link Activity#onCreateOptionsMenu(android.view.Menu)}.
+	 * 
+	 * Note: marking menu items as invisible/visible is not currently supported.
+	 */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.default_menu_items, menu);
+		boolean retValue = false;
+		retValue |= mActionBarHelper.onCreateOptionsMenu(menu);
+		retValue |= super.onCreateOptionsMenu(menu);
+		return retValue;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			mActivityHelper.goHome();
+			return true;
+		case R.id.menu_search:
+			mActivityHelper.goSearch();
+			return true;
+		default:
+			return false;
+		}
+	}
+
+	@Override
+	protected void onTitleChanged(CharSequence title, int color) {
+		mActionBarHelper.onTitleChanged(title, color);
+		super.onTitleChanged(title, color);
 	}
 
 	@Override

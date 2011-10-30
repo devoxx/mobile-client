@@ -20,10 +20,6 @@
 
     <!-- UI elements -->
     <dimen name="thickbar_height">200dp</dimen>
-    <dimen name="activity_side_padding">20dp</dimen>
-    <dimen name="activity_padding_small">10dp</dimen>
-    
-    <dimen name="thickbar_height">200dp</dimen>
     <dimen name="whats_on_height">40dp</dimen>
     <dimen name="activity_side_padding">20dp</dimen>
     <dimen name="activity_vert_padding">20dp</dimen>

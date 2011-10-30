@@ -19,7 +19,12 @@
 <resources>
 
     <declare-styleable name="AppTheme">
-        <attr name="actionbarProgressIndicatorStyle" format="reference" />
+        <attr name="actionbarCompatTitleStyle" format="reference" />
+        <attr name="actionbarCompatItemStyle" format="reference" />
+        <attr name="actionbarCompatItemLogoStyle" format="reference" />
+        <attr name="actionbarCompatItemHomeStyle" format="reference" />
+        <attr name="actionbarCompatProgressIndicatorStyle" format="reference" />
+        
         <attr name="textHeaderMaxLines" format="integer" />
         <attr name="trackAbstractMaxLines" format="integer" />
     </declare-styleable>

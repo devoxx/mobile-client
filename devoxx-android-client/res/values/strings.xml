@@ -18,6 +18,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Devoxx 2011</string>
+    <string name="short_app_name">Devoxx</string>
+    <string name="no_app_name"></string>
 
     <string name="maps_api_key">INSERT_YOUR_MAPS_API_KEY_HERE</string>
     
@@ -50,7 +52,6 @@
 
     <string name="title_share">Share using</string>
 
-    <string name="title_search">Search</string>
     <string name="title_search_query">Search for \'<xliff:g id="query">%1$s</xliff:g>\'</string>
 
     <string name="btn_schedule">Schedule</string>

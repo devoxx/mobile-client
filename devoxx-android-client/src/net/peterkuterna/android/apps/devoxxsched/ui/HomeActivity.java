@@ -31,9 +31,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.Menu;
-import android.support.v4.view.MenuItem;
 import android.text.format.DateUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class HomeActivity extends AbstractActivity {
@@ -122,7 +122,7 @@ public class HomeActivity extends AbstractActivity {
 	}
 
 	private void updateRefreshStatus(boolean refreshing) {
-		mActivityHelper.setRefreshActionButtonState(refreshing);
+		mActionBarHelper.setRefreshActionItemState(refreshing);
 	}
 
 	public static class SyncStatusUpdaterFragment extends Fragment implements

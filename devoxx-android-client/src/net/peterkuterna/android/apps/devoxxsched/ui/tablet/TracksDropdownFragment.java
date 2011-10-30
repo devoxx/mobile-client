@@ -66,13 +66,9 @@ public class TracksDropdownFragment extends Fragment implements
 
 	private Handler mHandler = new Handler();
 
-	// private NotifyingAsyncQueryHandler mHandler;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// mHandler = new
-		// NotifyingAsyncQueryHandler(getActivity().getContentResolver(), this);
 
 		mAdapter = new TracksAdapter(getActivity(), null);
 		mAdapter.setHasAllItem(true);
@@ -85,51 +81,11 @@ public class TracksDropdownFragment extends Fragment implements
 
 	public void reloadFromArguments(Bundle arguments) {
 		if (mListPopupWindow != null) {
-			// mAdapter.setIsSpinner(false);
 			mListPopupWindow.setAdapter(mAdapter);
 		}
 
 		getLoaderManager().initLoader(TracksAdapter.TracksQuery._TOKEN,
 				arguments, this);
-		// // Teardown from previous arguments
-		// if (mListPopupWindow != null) {
-		// mListPopupWindow.setAdapter(null);
-		// }
-		// if (mCursor != null) {
-		// getActivity().stopManagingCursor(mCursor);
-		// mCursor = null;
-		// }
-		// mHandler.cancelOperation(TracksAdapter.TracksQuery._TOKEN);
-
-		// // Load new arguments
-		// final Intent intent =
-		// BaseActivity.fragmentArgumentsToIntent(arguments);
-		// final Uri tracksUri = intent.getData();
-		// if (tracksUri == null) {
-		// return;
-		// }
-		//
-		// mNextType = intent.getStringExtra(EXTRA_NEXT_TYPE);
-		//
-		// // Filter our tracks query to only include those with valid results
-		// String[] projection = TracksAdapter.TracksQuery.PROJECTION;
-		// String selection = null;
-		// if (TracksFragment.NEXT_TYPE_SESSIONS.equals(mNextType)) {
-		// // Only show tracks with at least one session
-		// projection =
-		// TracksAdapter.TracksQuery.PROJECTION_WITH_SESSIONS_COUNT;
-		// selection = ScheduleContract.Tracks.SESSIONS_COUNT + ">0";
-		//
-		// } else if (TracksFragment.NEXT_TYPE_VENDORS.equals(mNextType)) {
-		// // Only show tracks with at least one vendor
-		// projection = TracksAdapter.TracksQuery.PROJECTION_WITH_VENDORS_COUNT;
-		// selection = ScheduleContract.Tracks.VENDORS_COUNT + ">0";
-		// }
-		//
-		// // Start background query to load tracks
-		// mHandler.startQuery(TracksAdapter.TracksQuery._TOKEN, null,
-		// tracksUri, projection,
-		// selection, null, ScheduleContract.Tracks.DEFAULT_SORT);
 	}
 
 	@Override
@@ -160,60 +116,9 @@ public class TracksDropdownFragment extends Fragment implements
 	}
 
 	/** {@inheritDoc} */
-	// public void onQueryComplete(int token, Object cookie, Cursor cursor) {
-	// if (getActivity() == null || cursor == null) {
-	// return;
-	// }
-	//
-	// mCursor = cursor;
-	// getActivity().startManagingCursor(mCursor);
-	//
-	// // If there was a last-opened track, load it. Otherwise load the first
-	// track.
-	// cursor.moveToFirst();
-	// String lastTrackID = UIUtils.getLastUsedTrackID(getActivity());
-	// if (lastTrackID != null) {
-	// while (!cursor.isAfterLast()) {
-	// if
-	// (lastTrackID.equals(cursor.getString(TracksAdapter.TracksQuery.TRACK_ID)))
-	// {
-	// break;
-	// }
-	// cursor.moveToNext();
-	// }
-	//
-	// if (cursor.isAfterLast()) {
-	// loadTrack(null, mAutoloadTarget);
-	// } else {
-	// loadTrack(cursor, mAutoloadTarget);
-	// }
-	// } else {
-	// loadTrack(null, mAutoloadTarget);
-	// }
-	//
-	// mAdapter.setHasAllItem(true);
-	// mAdapter.setIsSessions(TracksFragment.NEXT_TYPE_SESSIONS.equals(mNextType));
-	// mAdapter.changeCursor(mCursor);
-	// }
-
-	/** {@inheritDoc} */
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		selectTrack(position);
-		// final Cursor cursor = (Cursor) mAdapter.getItem(position);
-		// loadTrack(cursor, true);
-		//
-		// if (cursor != null) {
-		// UIUtils.setLastUsedTrackID(getActivity(), cursor.getString(
-		// TracksAdapter.TracksQuery.TRACK_ID));
-		// } else {
-		// UIUtils.setLastUsedTrackID(getActivity(),
-		// CfpContract.Tracks.ALL_TRACK_ID);
-		// }
-		//
-		// if (mListPopupWindow != null) {
-		// mListPopupWindow.dismiss();
-		// }
 	}
 
 	@Override

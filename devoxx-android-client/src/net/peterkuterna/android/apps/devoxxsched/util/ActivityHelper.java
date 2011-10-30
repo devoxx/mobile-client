@@ -33,16 +33,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.SupportActivity;
-import android.support.v4.view.Menu;
-import android.support.v4.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 public class ActivityHelper {
 
 	protected SupportActivity mActivity;
-
-	private Menu mOptionsMenu;
 
 	public static ActivityHelper createInstance(SupportActivity activity) {
 		return new ActivityHelper(activity);
@@ -63,12 +58,6 @@ public class ActivityHelper {
 			singlePaneActivity
 					.setContentView(R.layout.activity_singlepane_empty);
 
-			final String customTitle = singlePaneActivity.getIntent()
-					.getStringExtra(Intent.EXTRA_TITLE);
-			singlePaneActivity.getSupportActionBar().setTitle(
-					customTitle != null ? customTitle : singlePaneActivity
-							.getTitle());
-
 			if (savedInstanceState == null) {
 				Fragment fragment = singlePaneActivity.onCreatePane();
 				singlePaneActivity.setFragment(fragment);
@@ -81,32 +70,8 @@ public class ActivityHelper {
 			}
 		}
 	}
-
-	public void setActionBarTextStyle() {
-		TextView mTitleLayout = (TextView) mActivity
-				.findViewById(R.id.abs__action_bar_title);
-		if (mTitleLayout != null) {
-			mTitleLayout.setShadowLayer(1.0f, 1.0f, 1.0f, 0xffffffff);
-		}
-	}
-
-	public boolean onCreateOptionsMenu(Menu menu) {
-		mActivity.getMenuInflater().inflate(R.menu.default_menu_items, menu);
-		mOptionsMenu = menu;
-		return true;
-	}
-
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			goHome();
-			return true;
-		case R.id.menu_search:
-			goSearch();
-			return true;
-		default:
-			return false;
-		}
+	
+	public void setupActionBar() {
 	}
 
 	public void goHome() {
@@ -143,22 +108,6 @@ public class ActivityHelper {
 		}
 
 		colorstrip.setBackgroundColor(color);
-	}
-
-	public void setRefreshActionButtonState(boolean refreshing) {
-		if (mOptionsMenu == null) {
-			return;
-		}
-
-		final MenuItem refreshItem = mOptionsMenu.findItem(R.id.menu_refresh);
-		if (refreshItem != null) {
-			if (refreshing) {
-				refreshItem
-						.setActionView(R.layout.actionbar_indeterminate_progress);
-			} else {
-				refreshItem.setActionView(null);
-			}
-		}
 	}
 
 	/**

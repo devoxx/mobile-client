@@ -61,7 +61,7 @@ public class SpeakersActivity extends BaseMultiPaneActivity implements
 		intent.setData(CfpContract.Speakers.CONTENT_URI);
 
 		final FragmentManager fm = getSupportFragmentManager();
-		if (UIUtils.isHoneycomb()) {
+		if (UIUtils.isHoneycombTablet(this)) {
 			mSpeakersGridFragment = (SpeakersGridFragment) fm
 					.findFragmentByTag("speakers");
 			if (mSpeakersGridFragment == null) {
@@ -85,7 +85,7 @@ public class SpeakersActivity extends BaseMultiPaneActivity implements
 			}
 		}
 
-		if (UIUtils.isHoneycomb()) {
+		if (UIUtils.isHoneycombTablet(this)) {
 			mFragmentBreadCrumbs = (FragmentBreadCrumbs) findViewById(R.id.breadcrumbs);
 			mFragmentBreadCrumbs.setActivity(this);
 		}
@@ -155,7 +155,7 @@ public class SpeakersActivity extends BaseMultiPaneActivity implements
 	}
 
 	public void updateBreadCrumb() {
-		if (UIUtils.isHoneycomb()) {
+		if (UIUtils.isHoneycombTablet(this)) {
 			final String title = getString(R.string.title_sessions);
 			final String detailTitle = getString(R.string.title_session_detail);
 

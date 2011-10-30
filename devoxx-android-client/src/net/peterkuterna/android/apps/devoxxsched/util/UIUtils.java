@@ -36,7 +36,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ActionBar;
 import android.support.v4.app.SupportActivity;
 import android.text.Html;
 import android.text.Spannable;
@@ -157,11 +156,10 @@ public class UIUtils {
 		if (activity != null) {
 			final ActivityHelper activityHelper = ((BaseActivity) activity)
 					.getActivityHelper();
-			final ActionBar actionBar = activity.getSupportActionBar();
-			if (actionBar != null) {
-				actionBar.setTitle(title);
+			activity.setTitle(title);
+			if (color != -1) {
+				activityHelper.setActionBarColor(color);
 			}
-			activityHelper.setActionBarColor(color);
 		}
 	}
 

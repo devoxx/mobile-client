@@ -46,7 +46,6 @@ import android.provider.BaseColumns;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
-import android.support.v4.view.MenuItem;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -186,16 +185,6 @@ public class BlocksFragment extends ProgressFragment implements
 		filter.addAction(Intent.ACTION_TIME_CHANGED);
 		filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
 		getActivity().registerReceiver(mReceiver, filter, null, new Handler());
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		if (item.getItemId() == R.id.menu_now) {
-			updateNowView(true);
-			return true;
-		}
-
-		return super.onOptionsItemSelected(item);
 	}
 
 	private void setupDay(ViewGroup rootView, int position, long startMillis) {

@@ -90,6 +90,8 @@ public class CfpSyncService extends AbstractSyncService {
 	@Override
 	protected void doSync(Intent intent) throws Exception {
 		Log.d(TAG, "Start sync");
+		
+		Thread.sleep(5000);
 
 		final Context context = this;
 

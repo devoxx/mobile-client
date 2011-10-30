@@ -76,11 +76,14 @@ public class SearchActivity extends BaseMultiPaneActivity {
 		if (!UIUtils.isHoneycombTablet(this)) {
 			final CharSequence title = getString(R.string.title_search_query,
 					mQuery);
-			getSupportActionBar().setTitle(title);
+			setTitle(title);
 		}
 
 		mTabs = (ScrollableTabs) findViewById(R.id.viewpagerheader_search);
 		mViewPager = (ViewPager) findViewById(R.id.viewpager_search);
+		mViewPager.setPageMargin(getResources().getDimensionPixelSize(
+				R.dimen.viewpager_page_margin));
+		mViewPager.setPageMarginDrawable(R.drawable.viewpager_margin);
 		mAdapter = new SearchPagerAdapter(getSupportFragmentManager());
 		mViewPager.setAdapter(mAdapter);
 		mTabs.setAdapter(mAdapter);
@@ -105,7 +108,7 @@ public class SearchActivity extends BaseMultiPaneActivity {
 		if (!UIUtils.isHoneycombTablet(this)) {
 			final CharSequence title = getString(R.string.title_search_query,
 					mQuery);
-			getSupportActionBar().setTitle(title);
+			// getSupportActionBar().setTitle(title);
 		}
 
 		mAdapter.notifyDataSetChanged();

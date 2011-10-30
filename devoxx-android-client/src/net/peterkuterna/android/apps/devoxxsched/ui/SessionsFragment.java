@@ -41,6 +41,7 @@ import android.support.v4.content.Loader;
 import android.support.v4.widget.CursorAdapter;
 import android.text.Spannable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -112,21 +113,18 @@ public class SessionsFragment extends ListFragment {
 
 		mTrackName = intent.getStringExtra(Intent.EXTRA_TITLE);
 		mTrackColor = intent.getIntExtra(EXTRA_TRACK_COLOR, -1);
-		if (TextUtils.isEmpty(mTrackName) || mTrackColor == -1) {
-			final Uri trackUri = intent
-					.getParcelableExtra(SessionsFragment.EXTRA_TRACK);
-			if (trackUri != null) {
-				Bundle args = new Bundle();
-				args.putParcelable("uri", trackUri);
-				getLoaderManager().initLoader(TracksQuery._TOKEN, args,
-						mTrackLoaderCallback);
-			}
-		} else {
-			if (!TextUtils.isEmpty(mTrackName)) {
-				AnalyticsUtils.getInstance(getActivity()).trackPageView(
-						"/Sessions/" + mTrackName);
-			}
+		final Uri trackUri = intent
+				.getParcelableExtra(SessionsFragment.EXTRA_TRACK);
+		if (!TextUtils.isEmpty(mTrackName)) {
+			AnalyticsUtils.getInstance(getActivity()).trackPageView(
+					"/Sessions/" + mTrackName);
 			updateTrackData();
+		}
+		if (TextUtils.isEmpty(mTrackName) && mTrackColor == -1 && trackUri != null) {
+			Bundle args = new Bundle();
+			args.putParcelable("uri", trackUri);
+			getLoaderManager().initLoader(TracksQuery._TOKEN, args,
+					mTrackLoaderCallback);
 		}
 	}
 
@@ -194,6 +192,7 @@ public class SessionsFragment extends ListFragment {
 	}
 
 	private void updateTrackData() {
+		Log.d("SessionsFragment", "updateTrackData");
 		if (!UIUtils.isHoneycombTablet(getActivity())) {
 			UIUtils.setActionBarData(getSupportActivity(), mTrackName,
 					mTrackColor);

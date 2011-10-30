@@ -6,7 +6,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="lib" path="libs/libGoogleAnalytics.jar"/>
 	<classpathentry kind="lib" path="libs/jackson-core-asl-1.8.5.jar"/>
-	<classpathentry kind="lib" path="libs/actionbarsherlock-plugin-maps-3.2.0.jar"/>
 	<classpathentry kind="lib" path="libs/c2dm.jar"/>
 	<classpathentry kind="lib" path="libs/requestfactory-client.jar"/>
 	<classpathentry kind="lib" path="libs/validation-api-1.0.0.GA.jar"/>

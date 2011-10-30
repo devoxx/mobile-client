@@ -21,7 +21,7 @@
         android:icon="@drawable/ic_action_refresh"
         android:title="@string/description_refresh"
         android:orderInCategory="1"
-        android:showAsAction="ifRoom" />
+        android:showAsAction="always" />
 	<item android:id="@+id/menu_settings"
         android:icon="@drawable/ic_action_settings"
         android:title="@string/description_settings"

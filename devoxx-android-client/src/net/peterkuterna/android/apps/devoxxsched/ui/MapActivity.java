@@ -47,7 +47,7 @@ public class MapActivity extends BaseMultiPaneMapActivity implements
 		setContentView(R.layout.activity_map);
 
 		mFragmentManager = getSupportFragmentManager();
-		if (UIUtils.isHoneycomb()) {
+		if (UIUtils.isHoneycombTablet(this)) {
 			mFragmentBreadCrumbs = (FragmentBreadCrumbs) findViewById(R.id.breadcrumbs);
 			mFragmentBreadCrumbs.setActivity(this);
 		}
@@ -140,7 +140,7 @@ public class MapActivity extends BaseMultiPaneMapActivity implements
 	}
 
 	public void updateBreadCrumb() {
-		if (UIUtils.isHoneycomb()) {
+		if (UIUtils.isHoneycombTablet(this)) {
 			final String title = getString(R.string.title_sessions);
 			final String detailTitle = getString(R.string.title_session_detail);
 

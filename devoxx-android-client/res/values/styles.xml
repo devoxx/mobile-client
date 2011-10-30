@@ -17,20 +17,18 @@
 -->
 
 <resources>
-    <style name="Theme.DevoxxSched" parent="Theme.Sherlock.Light">
+    <style name="Theme.DevoxxSched" parent="android:Theme.Light">
         <item name="android:windowBackground">@drawable/background</item>
-        <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">@dimen/actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/ActionBarCompat</item>
 
-        <item name="actionbarProgressIndicatorStyle">@style/Widget.DevoxxSched.ActionButton.ProgressIndicator</item>
+        <!-- for programmatic instantiation -->
+        <item name="actionbarCompatTitleStyle">@style/ActionBarCompatTitle</item>
+        <item name="actionbarCompatItemStyle">@style/ActionBarCompatItem</item>
+        <item name="actionbarCompatItemHomeStyle">@style/ActionBarCompatHomeItem</item>
+        <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
 
-    	<item name="abBackground">@color/actionbar_overlay</item>
-    	<item name="abDisplayOptions">showHome|homeAsUp|showTitle|useLogo</item>
-        <item name="abDivider">@null</item>
-    	<item name="abLogo">@drawable/actionbar_logo_icon</item>
-		<item name="abTitleTextStyle">@style/ActionBarText</item>
-        <item name="homeAsUpIndicator">@drawable/ic_home_up</item>
-		
         <!-- custom attributes -->
         <item name="textHeaderMaxLines">@integer/text_header_maxlines</item>
         <item name="trackAbstractMaxLines">@integer/track_abstract_maxlines</item>
@@ -38,41 +36,44 @@
 
     <style name="Theme.DevoxxSched.Home" parent="Theme.DevoxxSched">
         <item name="android:windowBackground">@drawable/background_home</item>
-        <item name="actionHomeButtonStyle">@style/Widget.DevoxxSched.ActionButton.Home</item>
-    	<item name="abDisplayOptions">showHome|useLogo</item>
-    	<item name="abLogo">@drawable/actionbar_logo</item>
     </style>
 
-    <style name="Widget.DevoxxSched.ActionButton.Home" parent="Widget.Sherlock.Light.ActionButton.Home">
-        <item name="android:background">@null</item>
-    </style>
-    
-    <style name="Widget.DevoxxSched.ActionButton.ProgressIndicator" parent="android:style/Widget.ProgressBar.Small">
-    	<item name="android:padding">5dip</item>
+    <style name="ActionBarCompat">
+        <item name="android:background">@color/actionbar_overlay</item>
     </style>
 
-    <style name="ActionBarText">
+    <style name="ActionBarCompatItemBase">
+        <!-- layout_width/height must be set in code -->
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/actionbar_compat_item</item>
+    </style>
+
+    <style name="ActionBarCompatProgressIndicator" parent="android:style/Widget.ProgressBar.Small.Inverse">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="ActionBarCompatTitleBase">
+        <item name="android:id">@id/actionbar_compat_title</item>
+        <!-- layout_width/height/weight must be set in code -->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="ActionBarCompatTitle" parent="style/ActionBarCompatTitleBase">
     	<item name="android:textSize">@dimen/text_size_medium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/actionbar_icons</item>
-        <item name="android:shadowColor">#ffffffff</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
-        <item name="android:shadowRadius">0.00001</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:ellipsize">end</item>
+        <item name="android:marqueeRepeatLimit">-1</item>
     </style>
 
-    <style name="DashboardButton">
-        <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:drawablePadding">2dp</item>
-        <item name="android:textSize">@dimen/text_size_small</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/accent_1</item>
-        <item name="android:background">@null</item>
+    <style name="ActionBarCompatItem" parent="style/ActionBarCompatItemBase">
+    </style>
+
+    <style name="ActionBarCompatHomeItem" parent="style/ActionBarCompatItemBase">
     </style>
 
     <style name="ListItemTitle">
@@ -218,7 +219,6 @@
     <style name="MoreLessTextView">
         <item name="android:textSize">@dimen/text_size_small</item>
         <item name="android:textColor">@color/body_text_1</item>
-        <item name="android:textIsSelectable">true</item>
 		<item name="android:padding">@dimen/more_less_btn_padding</item>
 		<item name="android:text">@string/session_more</item>
 		<item name="android:background">@drawable/btn_more</item>

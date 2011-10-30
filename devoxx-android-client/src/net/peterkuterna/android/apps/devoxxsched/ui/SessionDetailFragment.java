@@ -35,10 +35,13 @@ import net.peterkuterna.appengine.apps.devoxxsched.shared.DevoxxRequest;
 import net.peterkuterna.appengine.apps.devoxxsched.shared.DevoxxRequestFactory;
 import net.peterkuterna.appengine.apps.devoxxsched.shared.SessionProxy;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.graphics.RectF;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -50,13 +53,13 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
-import android.support.v4.view.Menu;
-import android.support.v4.view.MenuItem;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -80,7 +83,7 @@ public class SessionDetailFragment extends Fragment implements
 	private static final int[] TAB_TITLES = { R.string.session_summary,
 			R.string.session_notes, R.string.session_links,
 			R.string.session_parallel };
-	private static final int[] TAB_TITLES_HONEYCOMB = {
+	private static final int[] TAB_TITLES_HONEYCOMB_TABLET = {
 			R.string.session_summary, R.string.session_notes,
 			R.string.session_links, R.string.session_parleys,
 			R.string.session_parallel };
@@ -146,7 +149,7 @@ public class SessionDetailFragment extends Fragment implements
 		}
 
 		final SessionDetailPagerAdapter adapter = new SessionDetailPagerAdapter(
-				getSupportFragmentManager());
+				getActivity(), getFragmentManager());
 		mViewPager.setAdapter(adapter);
 		mTabs.setAdapter(adapter);
 		mViewPager.setOnPageChangeListener(mTabs);
@@ -176,6 +179,11 @@ public class SessionDetailFragment extends Fragment implements
 				.findViewById(R.id.viewpagerheader_session_detail);
 		mViewPager = (ViewPager) mRootView
 				.findViewById(R.id.viewpager_session_detail);
+
+		mViewPager.setOffscreenPageLimit(2);
+		mViewPager.setPageMargin(getResources().getDimensionPixelSize(
+				R.dimen.viewpager_page_margin));
+		mViewPager.setPageMarginDrawable(R.drawable.viewpager_margin);
 
 		mTitle = (TextView) mRootView.findViewById(R.id.session_title);
 		mSubtitle = (TextView) mRootView.findViewById(R.id.session_subtitle);
@@ -394,8 +402,12 @@ public class SessionDetailFragment extends Fragment implements
 	private class SessionDetailPagerAdapter extends FragmentStatePagerAdapter
 			implements ScrollableTabsAdapter {
 
-		public SessionDetailPagerAdapter(FragmentManager fm) {
+		private final Context mContext;
+
+		public SessionDetailPagerAdapter(Context context, FragmentManager fm) {
 			super(fm);
+
+			this.mContext = context;
 		}
 
 		@Override
@@ -404,7 +416,7 @@ public class SessionDetailFragment extends Fragment implements
 					.getLayoutInflater().inflate(R.layout.tab_indicator, null,
 							false);
 			indicator
-					.setText(UIUtils.isHoneycomb() ? TAB_TITLES_HONEYCOMB[position]
+					.setText(UIUtils.isHoneycomb() ? TAB_TITLES_HONEYCOMB_TABLET[position]
 							: TAB_TITLES[position]);
 			indicator.setOnClickListener(new OnClickListener() {
 				@Override
@@ -423,7 +435,7 @@ public class SessionDetailFragment extends Fragment implements
 				return SessionNotesFragment.newInstance(mSessionUri);
 			} else if (position == 2) {
 				return SessionLinksFragment.newInstance(mSessionUri);
-			} else if (position == 3 && UIUtils.isHoneycomb()) {
+			} else if (position == 3 && UIUtils.isHoneycombTablet(mContext)) {
 				ParleysPresentationsFragment f = new ParleysPresentationsFragment();
 				final String sessionId = Sessions.getSessionId(mSessionUri);
 				final Intent intent = new Intent(Intent.ACTION_VIEW,

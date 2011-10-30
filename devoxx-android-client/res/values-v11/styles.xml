@@ -17,27 +17,49 @@
 -->
 
 <resources>
-    <style name="Theme.DevoxxSched" parent="Theme.Sherlock.Light">
+    <style name="Theme.DevoxxSched" parent="android:Theme.Holo.Light">
         <item name="android:windowBackground">@drawable/background_home</item>
+        
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBarOverflow</item>
 
-    	<item name="abBackground">@color/actionbar_overlay</item>
-    	<item name="abDisplayOptions">showHome|homeAsUp|showTitle|useLogo</item>
-    	<item name="abLogo">@drawable/actionbar_logo_icon</item>
-		<item name="abTitleTextStyle">@style/ActionBarText</item>
-        <item name="homeAsUpIndicator">@drawable/ic_home_up</item>
-		
         <!-- custom attributes -->
         <item name="textHeaderMaxLines">@integer/text_header_maxlines</item>
         <item name="trackAbstractMaxLines">@integer/track_abstract_maxlines</item>
     </style>
     
     <style name="Theme.DevoxxSched.Home" parent="Theme.DevoxxSched">
-    	<item name="abDisplayOptions"></item>
+        <item name="android:actionBarStyle">@style/ActionBarHome</item>
     </style>
 
-    <style name="ActionBarText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/actionbar_icons</item>
+    <style name="ActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar_overlay</item>
+        <item name="android:icon">@drawable/actionbar_logo_icon</item>
+        <item name="android:logo">@drawable/actionbar_logo</item>
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+    </style>
+
+    <style name="ActionBarHome" parent="style/ActionBar">
+        <item name="android:displayOptions">useLogo|showHome</item>
+    </style>
+
+    <style name="ActionBarTitle">
+    	<item name="android:textSize">@dimen/text_size_medium</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/actionbar_icons</item>
+        <item name="android:marqueeRepeatLimit">-1</item>
+    </style>
+    
+    <style name="ActionBarText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    	<item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/actionbar_icons</item>
+        <item name="android:marqueeRepeatLimit">-1</item>
+    </style>
+
+    <style name="ActionBarOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+		<item name="android:src">@drawable/ic_action_overflow</item>
     </style>
 
     <style name="ListItemContainerBase">
