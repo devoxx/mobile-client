@@ -148,7 +148,10 @@ public class ActionBarHelperBase extends ActionBarHelper {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Hides on-screen action items from the options menu.
 		for (Integer id : mActionItemIds) {
-			menu.findItem(id).setVisible(false);
+			final MenuItem menuItem = menu.findItem(id);
+			if (menuItem != null) {
+				menuItem.setVisible(false);
+			}
 		}
 		return true;
 	}
