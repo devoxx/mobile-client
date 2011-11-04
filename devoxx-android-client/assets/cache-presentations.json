@@ -99,7 +99,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/814"
         }
       ],
-    "summary" : "In this talk, Infinispan founder and project lead Manik Surtani, along with core Infinispan committers Mircea Markus and Pete Muir, takes the audience through a deep dive into Infinispan.  This code-centric talk will cover:\r\n\r\n* Configuring and setting up a data grid\r\n* Making use of eviction and expiry to control how much is stored in memory\r\n* Making use of write-through and write-behind persistence, as well as passivation/overflow\r\n* The eventing API to figure out what's going on in your grid\r\n* Using JMX hooks to manage and monitor your grid\r\n* Using the Group API to ensure entries are colocated\r\n* Making use of distributed code execution and map/reduce APIs\r\n* Interacting with Infinispan from Spring and CDI\r\n* Benchmarking Infinispan using RadarGun, and using RadarGun to tune your Infinispan setup\r\n\r\nAll in the context of building, testing and deploying a real application.",
+    "summary" : "In this talk the core Infinispan developers Sanne Grinovero, Mircea Markus and Pete Muir take the audience through a deep dive into Infinispan. This code-centric talk will cover:\r\n\r\n* Configuring and setting up a data grid\r\n* Making use of eviction and expiry to control how much is stored in memory\r\n* Making use of write-through and write-behind persistence, as well as passivation/overflow\r\n* The eventing API to figure out what's going on in your grid\r\n* Using JMX hooks to manage and monitor your grid\r\n* Using the Group API to ensure entries are colocated\r\n* Making use of distributed code execution and map/reduce APIs\r\n* Interacting with Infinispan from Spring and CDI\r\n* Benchmarking Infinispan using RadarGun, and using RadarGun to tune your Infinispan setup\r\n\r\nAll in the context of building, testing and deploying a real application.",
     "tags" : [ { "name" : "performance" },
         { "name" : "scalable" },
         { "name" : "caching" },
@@ -576,6 +576,22 @@
     "type" : "University"
   },
   { "experience" : "SENIOR",
+    "id" : 578,
+    "room" : "Room 9",
+    "speaker" : "Mario Fusco",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/831",
+    "speakers" : [ { "speaker" : "Mario Fusco",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/831"
+        } ],
+    "summary" : "One of the most common reason why software projects fail, or suffer unbearable delays, is the misunderstandings between business analysts and developers. Indeed the latter write the business rules in a language that is completely obscure for the first ones and in this way the business analysts don't have a chance to read, understand and validate what the programmers developed. They can only empirically test the final software behavior, hardly covering all the possible corner cases and recognizing mistakes only when it is too late. Hammurabi is an actor-based rule engine written in Scala that leverages the language's features making it particularly suitable to implement extremely readable internal DSL. What makes Hammurabi different from all other rule engines is that, despite its rules are written directly in the host language, they are also easily understandable even by non technical persons.",
+    "tags" : [ { "name" : "scala" },
+        { "name" : "DSL" }
+      ],
+    "title" : "Hammurabi - A Scala rule engine",
+    "track" : "New Languages on the JVM",
+    "type" : "Tools in Action"
+  },
+  { "experience" : "SENIOR",
     "id" : 590,
     "room" : "Room 8",
     "speaker" : "Rafael Liu",
@@ -986,10 +1002,10 @@
   { "experience" : "SENIOR",
     "id" : 703,
     "room" : "BOF 1",
-    "speaker" : "Adrian Cole",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254",
-    "speakers" : [ { "speaker" : "Adrian Cole",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254"
+    "speaker" : "Andrew Kennedy",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1288",
+    "speakers" : [ { "speaker" : "Andrew Kennedy",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1288"
         },
         { "speaker" : "Andrew Phillips",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/937"
@@ -1004,10 +1020,10 @@
   { "experience" : "NOVICE",
     "id" : 704,
     "room" : "Room 9",
-    "speaker" : "Adrian Cole",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254",
-    "speakers" : [ { "speaker" : "Adrian Cole",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254"
+    "speaker" : "Andrew Phillips",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/937",
+    "speakers" : [ { "speaker" : "Andrew Phillips",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/937"
         } ],
     "summary" : "Key/value stores are the most common storage offerings in the cloud today.  While conceptually similar, BlobStores present different programming models and consistency models that must be considered in application design.  After this session, you'll understand these differences, and know how to use jclouds to avoid cloud lock-in and increase testability without restricting access to cloud-specific features.\r\n\r\nWe'll start by comparing public cloud services like Amazon S3 or Microsoft Azure and private cloud software like OpenStack Swift or Eucalyptus Walrus from a feature and code/API level.  We'll then review java and clojure calls to the open source jclouds BlobStore API, abstracting away these differences.  We'll finish with a review of integration patterns in production today you can consider while designing your cloud architecture.",
     "tags" : [ { "name" : "cloud" } ],
@@ -1029,20 +1045,6 @@
       ],
     "title" : "The Disruptor, High Performance Inter-Thread Messaging",
     "track" : "Java SE",
-    "type" : "Tools in Action"
-  },
-  { "experience" : "NOVICE",
-    "id" : 708,
-    "room" : "Room 9",
-    "speaker" : "George Reese",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/153",
-    "speakers" : [ { "speaker" : "George Reese",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/153"
-        } ],
-    "summary" : "Dasein Cloud is an Open Source cloud abstraction API for Java designed around the same principles behind JDBC. This session is an introduction to the API and shows how to write once and run against any cloud. It addresses provisioning, de-provisioning, and managing all kinds of cloud infrastructure and platform elements from within Java code.",
-    "tags" : [ { "name" : "cloud" } ],
-    "title" : "Dasein Cloud: The JDBC for Cloud Programming",
-    "track" : "Architecture",
     "type" : "Tools in Action"
   },
   { "experience" : "NOVICE",
@@ -1166,10 +1168,14 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/264",
     "speakers" : [ { "speaker" : "Richard Bair",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/264"
-        } ],
-    "summary" : "As professional software engineers, we like to take things apart and put them back together. In this technical session we will describe and dissect the inner workings and architecture of JavaFX 2.0, covering topics such as properties, threading, rendering, porting to other platforms, and web integration.",
+        },
+        { "speaker" : "Jasper Potts",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/317"
+        }
+      ],
+    "summary" : "JavaFX 2.0 provides an ideal platform for rich client enterprise application development. In this session we will talk about various enterprise patterns and techniques, and using FXML for true MVC style application development. In addition we will cover using both Jersey for JSON communication between a JavaEE application and a JavaFX client, and also show an alternative approach using Hessian.",
     "tags" : [ { "name" : "javafx" } ],
-    "title" : "JavaFX Under The Hood",
+    "title" : "Enterprising JavaFX 2.0",
     "track" : "Java SE",
     "type" : "Conference"
   },
@@ -1185,7 +1191,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/317"
         }
       ],
-    "summary" : "With the release of JavaFX 2.0 several real-world JavaFX applications were also released with the SDK, including Ensemble and Artifex as BSD to encourage discovery of how to build real world JavaFX applications. In this session we will describe the patterns and practicalities when developing Java rich clients with the JavaFX platform, including how to get started, basic concepts and idioms, developer / designer workflow, and more.",
+    "summary" : "With the release of JavaFX 2.0 several real-world JavaFX applications were also released with the SDK, including Ensemble and DataApp as BSD to encourage discovery of how to build real world JavaFX applications. During the development of these blueprint applications we discovered many tips and tricks that lead to cleaner and more powerful code. In this session we will describe the patterns and practicalities when developing Java rich clients with the JavaFX platform, including how to get started, basic concepts and idioms, , and more",
     "tags" : [ { "name" : "javafx" } ],
     "title" : "Practical Experience Building JavaFX Rich Clients",
     "track" : "Java SE",
@@ -1411,11 +1417,7 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380",
     "speakers" : [ { "speaker" : "Greg Luck",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380"
-        },
-        { "speaker" : "Ludovic Orban",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1061"
-        }
-      ],
+        } ],
     "summary" : "In this session Greg Luck, founder of Ehcache and spec lead for JSR107, will walk you through this new caching standard that is important part of Java EE 7. You will learn how to:\r\n\r\nAbstract your caching implementation much like JDBC \r\nUse the rich and modern API\r\nUse the new caching annotations\r\nUse the API before Java EE 7 is released with in the Java SE, Java EE 6 and Spring environments\r\nApply JCache to common caching scenarios",
     "tags" : [ { "name" : "caching" } ],
     "title" : "JSR107—What the New Java Caching Standard Has in Store For You",
@@ -1441,7 +1443,6 @@
   },
   { "experience" : "SENIOR",
     "id" : 866,
-    "room" : "Room 5",
     "speaker" : "Dion Almaer",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290",
     "speakers" : [ { "speaker" : "Dion Almaer",
@@ -1519,9 +1520,9 @@
     "speakers" : [ { "speaker" : "Martin Odersky",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/304"
         } ],
-    "summary" : "Tba",
+    "summary" : "I will talk about new developments for Scala: Better tools, full reflection, runtime compilation, and dynamic types. The presentation will cover the user's point of view as well as the system architecture, which shows how Scala's component model achieves 100% reuse of core code between compiler and reflection library without compromising safety.",
     "tags" : [ { "name" : "scala" } ],
-    "title" : "Scala Update",
+    "title" : "What's in store for Scala?",
     "track" : "New Languages on the JVM",
     "type" : "Conference"
   },
@@ -2003,19 +2004,19 @@
   { "experience" : "NOVICE",
     "id" : 918,
     "room" : "Room 8",
-    "speaker" : "James Gosling",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/306",
-    "speakers" : [ { "speaker" : "James Gosling",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/306"
+    "speaker" : "Mark Reinhold",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/279",
+    "speakers" : [ { "speaker" : "Mark Reinhold",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/279"
         },
         { "speaker" : "Cameron Purdy",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1087"
         },
-        { "speaker" : "Ben Forta",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1086"
-        },
         { "speaker" : "Tim Bray",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1085"
+        },
+        { "speaker" : "Henrik Ståhl",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1091"
         }
       ],
     "summary" : "Forward looking informal Devoxx keynote.",
@@ -2579,8 +2580,8 @@
         { "speaker" : "Ben Evans",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/930"
         },
-        { "speaker" : "Dion Almaer",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290"
+        { "speaker" : "Emmanuel Bernard",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/117"
         },
         { "speaker" : "Joshua Bloch",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
@@ -2834,11 +2835,11 @@
     "speakers" : [ { "speaker" : "Joe Nuxoll",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/298"
         } ],
-    "summary" : "What separates a good user experience from a bad one? How do you make sure that your customers' experience with your software leaves them feeling good about you? We will go over some rules, tips, and tricks for designing a good user experience that will hopefully lead you to building better and more usable applications in the future.",
+    "summary" : "What separates a good user interface from a bad one? How do you make sure that your customers' experience with your software leaves them feeling good about you? We will go over some rules, tips, and tricks for designing a good user interface that will hopefully lead you to building better and more usable applications in the future.",
     "tags" : [ { "name" : "graphics" },
         { "name" : "Design" }
       ],
-    "title" : "Rules for Good U/X Design",
+    "title" : "Rules for Good UI Design",
     "track" : "Mobile",
     "type" : "Conference"
   },
@@ -3170,12 +3171,53 @@
         },
         { "speaker" : "Antonio Goncalves",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/116"
+        },
+        { "speaker" : "Claude Falguière",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1285"
         }
       ],
     "summary" : "There's no question that our industry is male dominated.  Many organizations are working hard to get more female developers, and to create products aimed at women.  The first question that people ask is \"Why aren't there more women developers?\", followed closely by \"What can we do to attract more women?\".  This panel will consider these questions, and then possibly throw them out of the window - are these even the right questions to be asking?  Do we actually care about the answers?",
     "tags" : [ { "name" : "Duchess" } ],
     "title" : "Why We Shouldn't Target Women",
     "track" : "Methodology",
+    "type" : "Conference"
+  },
+  { "experience" : "NOVICE",
+    "id" : 983,
+    "room" : "Room 5",
+    "speaker" : "Michael Seghers",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1289",
+    "speakers" : [ { "speaker" : "Michael Seghers",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1289"
+        } ],
+    "summary" : "Because iPads have been spotted more and more on conventions over the past year, iDA MediaFoundry decided to make an iPad version of the Devoxx schedule. In this 15 minute talk we will go over the initial custom designs, the challenges we had while developing and the techniques used to make everything run smoothly. Last, but not least, we will talk about the release process, which is rather unique for the Apple iOS platform. This quickie is especially interesting for those looking into the possibilities of mobile applications and the challenges that come with the development of those applications when using custom designs.",
+    "tags" : [ { "name" : "iOS" },
+        { "name" : "mobile" },
+        { "name" : "Apple" }
+      ],
+    "title" : "Development of the Devoxx Scheduler on iOS",
+    "track" : "Mobile",
+    "type" : "Quickie"
+  },
+  { "experience" : "NOVICE",
+    "id" : 984,
+    "room" : "Room 5",
+    "speaker" : "Guillaume Bort",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1291",
+    "speakers" : [ { "speaker" : "Guillaume Bort",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1291"
+        },
+        { "speaker" : "Sadek Drobi",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1292"
+        }
+      ],
+    "summary" : "The Play framework revolutionized the Java Web application development, by bringing back simplicity and agility contrasting the so-called standard way of writing enterprise applications. Moving forward, technology and the Web have evolved. The Web has become the central point of all applications. The whole Web architecture is fast moving towards real-time, and the emerging requirements of project profiles have put into question the classic assumptions, like SQL as the exclusive datastore technology. At the programming language level we've witnessed some monumental changes with several JVM languages, including Scala, gaining popularity. In this talk we will introduce Play 2.0 a Java and Scala Web application framework, its asynchronous model, its extensibility, its scalable architecture and how does it address tomorrow challenges.",
+    "tags" : [ { "name" : "scala" },
+        { "name" : "PlayFramework" },
+        { "name" : "JVM" }
+      ],
+    "title" : "Play 2.0, a Web framework for a new era",
+    "track" : "Web",
     "type" : "Conference"
   }
 ]

@@ -128,10 +128,10 @@
     "partnerSlot" : false,
     "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/703",
     "room" : "BOF 1",
-    "speaker" : "Adrian Cole",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254",
-    "speakers" : [ { "speaker" : "Adrian Cole",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254"
+    "speaker" : "Andrew Kennedy",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1288",
+    "speakers" : [ { "speaker" : "Andrew Kennedy",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1288"
         },
         { "speaker" : "Andrew Phillips",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/937"
@@ -946,10 +946,10 @@
     "partnerSlot" : false,
     "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/704",
     "room" : "Room 9",
-    "speaker" : "Adrian Cole",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254",
-    "speakers" : [ { "speaker" : "Adrian Cole",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/254"
+    "speaker" : "Andrew Phillips",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/937",
+    "speakers" : [ { "speaker" : "Andrew Phillips",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/937"
         } ],
     "title" : "Portable Cloud Storage with jclouds",
     "toTime" : "2011-11-15 17:15:00.0",
@@ -1021,14 +1021,14 @@
     "id" : 407,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/708",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/578",
     "room" : "Room 9",
-    "speaker" : "George Reese",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/153",
-    "speakers" : [ { "speaker" : "George Reese",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/153"
+    "speaker" : "Mario Fusco",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/831",
+    "speakers" : [ { "speaker" : "Mario Fusco",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/831"
         } ],
-    "title" : "Dasein Cloud: The JDBC for Cloud Programming",
+    "title" : "Hammurabi - A Scala rule engine",
     "toTime" : "2011-11-15 17:55:00.0",
     "type" : "Tools in Action"
   },
@@ -1039,19 +1039,19 @@
     "partnerSlot" : false,
     "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/918",
     "room" : "Room 8",
-    "speaker" : "James Gosling",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/306",
-    "speakers" : [ { "speaker" : "James Gosling",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/306"
+    "speaker" : "Mark Reinhold",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/279",
+    "speakers" : [ { "speaker" : "Mark Reinhold",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/279"
         },
         { "speaker" : "Cameron Purdy",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1087"
         },
-        { "speaker" : "Ben Forta",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1086"
-        },
         { "speaker" : "Tim Bray",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1085"
+        },
+        { "speaker" : "Henrik Ståhl",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1091"
         }
       ],
     "title" : "Fireside Chat",
@@ -1294,18 +1294,18 @@
     "id" : 421,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/866",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/984",
     "room" : "Room 5",
-    "speaker" : "Dion Almaer",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290",
-    "speakers" : [ { "speaker" : "Dion Almaer",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290"
+    "speaker" : "Guillaume Bort",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1291",
+    "speakers" : [ { "speaker" : "Guillaume Bort",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1291"
         },
-        { "speaker" : "Ben Galbraith",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/291"
+        { "speaker" : "Sadek Drobi",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1292"
         }
       ],
-    "title" : "Web vs. Apps",
+    "title" : "Play 2.0, a Web framework for a new era",
     "toTime" : "2011-11-16 13:00:00.0",
     "type" : "Conference"
   },
@@ -1363,14 +1363,18 @@
     "id" : 425,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/745",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/748",
     "room" : "Room 7",
     "speaker" : "Richard Bair",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/264",
     "speakers" : [ { "speaker" : "Richard Bair",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/264"
-        } ],
-    "title" : "JavaFX Under The Hood",
+        },
+        { "speaker" : "Jasper Potts",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/317"
+        }
+      ],
+    "title" : "Practical Experience Building JavaFX Rich Clients",
     "toTime" : "2011-11-16 13:00:00.0",
     "type" : "Conference"
   },
@@ -2150,7 +2154,7 @@
     "speakers" : [ { "speaker" : "Joe Nuxoll",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/298"
         } ],
-    "title" : "Rules for Good U/X Design",
+    "title" : "Rules for Good UI Design",
     "toTime" : "2011-11-17 11:50:00.0",
     "type" : "Conference"
   },
@@ -2331,7 +2335,7 @@
     "speakers" : [ { "speaker" : "Martin Odersky",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/304"
         } ],
-    "title" : "Scala Update",
+    "title" : "What's in store for Scala?",
     "toTime" : "2011-11-17 13:00:00.0",
     "type" : "Conference"
   },
@@ -2397,7 +2401,7 @@
     "id" : 480,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/748",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/745",
     "room" : "Room 7",
     "speaker" : "Richard Bair",
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/264",
@@ -2408,7 +2412,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/317"
         }
       ],
-    "title" : "Practical Experience Building JavaFX Rich Clients",
+    "title" : "Enterprising JavaFX 2.0",
     "toTime" : "2011-11-17 13:00:00.0",
     "type" : "Conference"
   },
@@ -2442,18 +2446,14 @@
     "id" : 483,
     "kind" : "Talk",
     "partnerSlot" : false,
-    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/854",
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/983",
     "room" : "Room 5",
-    "speaker" : "Maciej Machulak",
-    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/207",
-    "speakers" : [ { "speaker" : "Maciej Machulak",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/207"
-        },
-        { "speaker" : "Lukasz Moren",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/212"
-        }
-      ],
-    "title" : "Protecting Web APIs with OAuth using Apache Amber",
+    "speaker" : "Michael Seghers",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1289",
+    "speakers" : [ { "speaker" : "Michael Seghers",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1289"
+        } ],
+    "title" : "Development of the Devoxx Scheduler on iOS",
     "toTime" : "2011-11-17 13:30:00.0",
     "type" : "Quickie"
   },
@@ -2548,6 +2548,9 @@
         },
         { "speaker" : "Antonio Goncalves",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/116"
+        },
+        { "speaker" : "Claude Falguière",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1285"
         }
       ],
     "title" : "Why We Shouldn't Target Women",
@@ -3067,14 +3070,13 @@
     "toTime" : "2011-11-17 18:50:00.0",
     "type" : "Conference"
   },
-  { "code" : "Exhibition & Movie",
+  { "code" : "Exhibition",
     "fromTime" : "2011-11-17 18:50:00.0",
     "id" : 548,
     "kind" : "Break",
-    "note" : "Devoxx Movie",
     "partnerSlot" : false,
-    "room" : "Room 8",
-    "toTime" : "2011-11-17 22:00:00.0",
+    "room" : "Hollywood Lounge",
+    "toTime" : "2011-11-17 20:00:00.0",
     "type" : "Conference"
   },
   { "code" : "DV11_B_17_01_01",
@@ -3153,6 +3155,15 @@
     "toTime" : "2011-11-17 21:00:00.0",
     "type" : "BOF"
   },
+  { "code" : "Tintin Movie",
+    "fromTime" : "2011-11-17 20:00:00.0",
+    "id" : 562,
+    "kind" : "Break",
+    "partnerSlot" : false,
+    "room" : "Room 8",
+    "toTime" : "2011-11-17 22:00:00.0",
+    "type" : "Conference"
+  },
   { "code" : "DV11_B_17_01_03",
     "fromTime" : "2011-11-17 21:00:00.0",
     "id" : 519,
@@ -3192,6 +3203,15 @@
     "toTime" : "2011-11-17 22:00:00.0",
     "type" : "BOF"
   },
+  { "code" : "Devoxx @ Noxx Party",
+    "fromTime" : "2011-11-17 22:00:00.0",
+    "id" : 563,
+    "kind" : "Break",
+    "partnerSlot" : false,
+    "room" : "Room 8",
+    "toTime" : "2011-11-17 23:59:00.0",
+    "type" : "Conference"
+  },
   { "code" : "Breakfast",
     "fromTime" : "2011-11-18 08:00:00.0",
     "id" : 521,
@@ -3219,8 +3239,8 @@
         { "speaker" : "Ben Evans",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/930"
         },
-        { "speaker" : "Dion Almaer",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/290"
+        { "speaker" : "Emmanuel Bernard",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/117"
         },
         { "speaker" : "Joshua Bloch",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/314"
@@ -3269,11 +3289,7 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380",
     "speakers" : [ { "speaker" : "Greg Luck",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/380"
-        },
-        { "speaker" : "Ludovic Orban",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1061"
-        }
-      ],
+        } ],
     "title" : "JSR107—What the New Java Caching Standard Has in Store For You",
     "toTime" : "2011-11-18 11:45:00.0",
     "type" : "Conference"
