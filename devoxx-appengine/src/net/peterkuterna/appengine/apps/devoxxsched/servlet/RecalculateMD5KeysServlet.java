@@ -30,6 +30,8 @@ import net.peterkuterna.appengine.apps.devoxxsched.model.RequestHash;
 import net.peterkuterna.appengine.apps.devoxxsched.util.Md5Calculator;
 
 import com.google.android.c2dm.server.PMF;
+import com.google.appengine.api.memcache.MemcacheService;
+import com.google.appengine.api.memcache.MemcacheServiceFactory;
 
 @SuppressWarnings("serial")
 public class RecalculateMD5KeysServlet extends HttpServlet {
@@ -49,6 +51,9 @@ public class RecalculateMD5KeysServlet extends HttpServlet {
 					requestHash.setMd5(newMd5);
 					requestHash.setDate(new Date());
 					pm.makePersistent(requestHash);
+
+					final MemcacheService syncCache = MemcacheServiceFactory.getMemcacheService();
+					syncCache.delete(requestHash.getRequestUri());
 				}
 			}
 		} finally {

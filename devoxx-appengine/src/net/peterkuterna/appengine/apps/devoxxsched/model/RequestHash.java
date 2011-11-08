@@ -16,6 +16,7 @@
 
 package net.peterkuterna.appengine.apps.devoxxsched.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
@@ -26,7 +27,9 @@ import javax.jdo.annotations.PrimaryKey;
 import com.google.appengine.api.datastore.Key;
 
 @PersistenceCapable
-public class RequestHash {
+public class RequestHash implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)

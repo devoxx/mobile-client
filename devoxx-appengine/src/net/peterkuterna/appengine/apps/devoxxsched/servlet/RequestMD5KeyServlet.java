@@ -29,6 +29,9 @@ import net.peterkuterna.appengine.apps.devoxxsched.model.RequestHash;
 import net.peterkuterna.appengine.apps.devoxxsched.util.Md5Calculator;
 
 import com.google.android.c2dm.server.PMF;
+import com.google.appengine.api.memcache.Expiration;
+import com.google.appengine.api.memcache.MemcacheService;
+import com.google.appengine.api.memcache.MemcacheServiceFactory;
 
 @SuppressWarnings("serial")
 public class RequestMD5KeyServlet extends HttpServlet {
@@ -68,17 +71,23 @@ public class RequestMD5KeyServlet extends HttpServlet {
 	}
 
 	private RequestHash getRequestHash(String requestUri) {
-		final PersistenceManager pm = PMF.get().getPersistenceManager();
-		final Query query = pm.newQuery(RequestHash.class);
-		query.setFilter("requestUri == requestUriParam");
-		query.declareParameters("String requestUriParam");
-		query.setUnique(true);
-
-		RequestHash requestHash = null;
-		try {
-			requestHash = (RequestHash) query.execute(requestUri);
-		} finally {
-			query.closeAll();
+		final MemcacheService syncCache = MemcacheServiceFactory.getMemcacheService();
+		RequestHash requestHash = (RequestHash) syncCache.get(requestUri);
+		if (requestHash == null) {
+			final PersistenceManager pm = PMF.get().getPersistenceManager();
+			final Query query = pm.newQuery(RequestHash.class);
+			query.setFilter("requestUri == requestUriParam");
+			query.declareParameters("String requestUriParam");
+			query.setUnique(true);
+	
+			try {
+				requestHash = (RequestHash) query.execute(requestUri);
+				if (requestHash != null) {
+					syncCache.put(requestUri, requestHash, Expiration.byDeltaSeconds(180));
+				}
+			} finally {
+				query.closeAll();
+			}
 		}
 
 		return requestHash;

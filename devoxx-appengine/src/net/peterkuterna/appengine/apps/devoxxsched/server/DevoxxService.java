@@ -20,9 +20,12 @@ import java.util.List;
 
 import net.peterkuterna.appengine.apps.devoxxsched.c2dm.C2DMMessage;
 
+import com.google.appengine.api.memcache.MemcacheService;
+import com.google.appengine.api.memcache.MemcacheServiceFactory;
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
+import com.google.appengine.repackaged.com.google.common.collect.Lists;
 import com.google.web.bindery.requestfactory.server.RequestFactoryServlet;
 
 public class DevoxxService {
@@ -30,6 +33,19 @@ public class DevoxxService {
 	static DataStore db = new DataStore();
 
 	public static Session star(Session session) {
+		return star(session, true);
+	}
+
+	public static Session star(Session session, boolean clearCache) {
+		if (clearCache) {
+			final String email = DataStore.getUserEmail();
+			if (email != null) {
+				final MemcacheService syncCache = MemcacheServiceFactory
+						.getMemcacheService();
+				syncCache.delete(email);
+			}
+		}
+
 		final String sessionId = session.getSessionId();
 		Session sessionDb = db.find(sessionId);
 		if (sessionDb == null) {
@@ -45,6 +61,19 @@ public class DevoxxService {
 	}
 
 	public static void unstar(Session session) {
+		unstar(session, true);
+	}
+
+	public static void unstar(Session session, boolean clearCache) {
+		if (clearCache) {
+			final String email = DataStore.getUserEmail();
+			if (email != null) {
+				final MemcacheService syncCache = MemcacheServiceFactory
+						.getMemcacheService();
+				syncCache.delete(email);
+			}
+		}
+
 		final String sessionId = session.getSessionId();
 		Session sessionDb = db.find(sessionId);
 		if (sessionDb != null) {
@@ -59,13 +88,35 @@ public class DevoxxService {
 
 	public static List<Session> sync(List<Session> toStar,
 			List<Session> toUnstar) {
+		final String email = DataStore.getUserEmail();
+		final MemcacheService syncCache = MemcacheServiceFactory
+				.getMemcacheService();
+		boolean sessionsToStar = toStar != null && toStar.size() > 0;
+		boolean sessionsToUnstar = toUnstar != null && toUnstar.size() > 0;
+		boolean clearCache = sessionsToStar || sessionsToUnstar;
+		if (clearCache) {
+			if (email != null) {
+				syncCache.delete(email);
+			}
+		}
+
 		for (Session session : toStar) {
-			star(session);
+			star(session, false);
 		}
 		for (Session session : toUnstar) {
-			unstar(session);
+			unstar(session, false);
 		}
-		return db.findAll();
+
+		List<Session> result = Lists.newArrayList();
+		List<Session> resultFromCache = (List<Session>) syncCache.get(email);
+		if (resultFromCache == null) {
+			List<Session> resultFromDb = db.findAll();
+			result.addAll(resultFromDb);
+			syncCache.put(email, result);
+		} else {
+			result.addAll(resultFromCache);
+		}
+		return result;
 	}
 
 }
