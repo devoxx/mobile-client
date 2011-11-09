@@ -211,7 +211,7 @@
     "speakers" : [ { "speaker" : "Chris Richardson",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/55"
         } ],
-    "summary" : "Relational databases have long been considered the one true way to persist enterprise data. But today, NoSQL databases are emerging as a viable alternative for many applications. They can simplify the persistence of complex data models and offer significantly better scalability, and performance. But NoSQL databases are very different than the ACID/SQL/JDBC/JPA world that we have become accustomed to. In this presentation, you will learn about our experience implementing a use case from POJOs in Action using popular NoSQL databases: Redis, MongoDB, and Neo4j. We will compare and contrast each database’s data model and Java API. You will learn about the benefits and drawbacks of using NoSQL.",
+    "summary" : "Relational databases have long been considered the one true way to persist enterprise data. But today, NoSQL databases are emerging as a viable alternative for many applications. They can simplify the persistence of complex data models and offer significantly better scalability, and performance. But NoSQL databases are very different than the ACID/SQL/JDBC/JPA world that we have become accustomed to. In this presentation, you will learn about our experience implementing a use case from POJOs in Action using popular NoSQL databases: Redis, MongoDB, and Cassandra. We will compare and contrast each database’s data model and Java API. You will learn about the benefits and drawbacks of using NoSQL.",
     "tags" : [ { "name" : "Redis" },
         { "name" : "MongoDB" },
         { "name" : "POJO" },
@@ -476,7 +476,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/55"
         }
       ],
-    "summary" : "Let's face it, the cloud's here to stay. Spring's always been about portability and choice, and the cloud is no different. CloudFoundry, introduced to rave reviews and massive enthusiasm in the NOSQL, Node.js, Ruby, Scala and Java communities, represents the most promising, most open cloud platform for Java and Spring applications today, and tomorrow. In this talk, Josh Long will introduce CloudFoundry, it's architecture, and how it can be used with existing Spring applications and new ones, leveraging Spring 3.1.",
+    "summary" : "Let's face it, the cloud's here to stay. Cloud Foundry, introduced to rave reviews in the NoSQL, Node.js, Ruby, Scala and Java communities, represents the most promising, most open cloud platform for Java and Spring applications today, and tomorrow. In this talk, we introduce Cloud Foundry and describe it's architecture. You will learn about why Spring is the ideal cloud computing platform. We describe how Cloud Foundry can be used with both existing Spring applications and new ones leveraging Spring 3.1. You will learn how to use Spring Data to develop NoSQL applications on Cloud Foundry, and how to integrate applications with RabbitMQ and Spring AMQP.",
     "tags" : [ { "name" : "CloudFoundry" },
         { "name" : "cloud" },
         { "name" : "spring" }
@@ -523,6 +523,23 @@
     "title" : "Speeding Up Javascript & CSS Download Times With Aggregation and Minification",
     "track" : "Web",
     "type" : "Quickie"
+  },
+  { "experience" : "SENIOR",
+    "id" : 570,
+    "room" : "Room 3",
+    "speaker" : "Martijn Verburg",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405",
+    "speakers" : [ { "speaker" : "Martijn Verburg",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405"
+        } ],
+    "summary" : "After spending the last few years utilising best practices in Java, following lean/agile techniques, practicing software craftsmanship and listening to the likes of Joshua Bloch, Uncle Bob and Martin Fowler, I have come to realise that it’s all one great big hoax! This talk challenges everything that the modern Java developer holds dear, I mean they didn't need IDEs and TDD to write the Space Shuttle software now did they?",
+    "tags" : [ { "name" : "javase" },
+        { "name" : "Methodology" },
+        { "name" : "agile" }
+      ],
+    "title" : "The Diabolical Developer - take the power back",
+    "track" : "Methodology",
+    "type" : "Conference"
   },
   { "experience" : "NOVICE",
     "id" : 571,
@@ -1297,7 +1314,7 @@
     "speakers" : [ { "speaker" : "Arun Gupta",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/23"
         } ],
-    "summary" : "The Java EE 6 platform allows you to write enterprise Java applications using much lesser code from its earlier versions. It breaks the “one size fits all” approach with Profiles and extensively improves on the Java EE 5 developer productivity features. Several specifications like CDI, JSF 2, EJB 3.1, JAX-RS, JPA 2, Servlets 3, and Bean Validation make the platform more powerful. It also enables extensibility by embracing open source libraries and frameworks such that they are treated as first class citizens of the platform. NetBeans, Eclipse, and IntelliJ provide extensive tooling for Java EE 6. This hands-on lab builds a complete end-to-end application using all different technologies of Java EE 6 with NetBeans. You'll learn the tips and tricks to be more effective in your development and deployment cycles. And you'll also learn how to monitor your Java EE 6 applications more effectively. A quick preview of Eclipse and IntelliJ tooling will also be shown.",
+    "summary" : "The Java EE 6 platform allows you to write enterprise Java applications using much lesser code from its earlier versions. It breaks the “one size fits all” approach with Profiles and extensively improves on the Java EE 5 developer productivity features. Several specifications like CDI, JSF 2, EJB 3.1, JAX-RS, JPA 2, Servlets 3, and Bean Validation make the platform more powerful. It also enables extensibility by embracing open source libraries and frameworks such that they are treated as first class citizens of the platform. NetBeans, Eclipse, and IntelliJ provide extensive tooling for Java EE 6. This hands-on lab builds a complete end-to-end application using all different technologies of Java EE 6 with NetBeans. You'll learn the tips and tricks to be more effective in your development and deployment cycles. And you'll also learn how to monitor your Java EE 6 applications more effectively. A quick preview of Eclipse and IntelliJ tooling will also be shown.\n\nPlease have the following software pre-installed:\n\n JDK 1.6/1.7\n(http://www.oracle.com/technetwork/java/javase/downloads/index.html)\n\nNetBeans 7.0+ \"All\" or \"Java EE\" version\n(http://netbeans.org/downloads/index.html)",
     "tags" : [ { "name" : "Glassfish" },
         { "name" : "javaee6" }
       ],
@@ -1630,11 +1647,7 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1071",
     "speakers" : [ { "speaker" : "Nigel Deakin",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1071"
-        },
-        { "speaker" : "Masoud Kalali",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/26"
-        }
-      ],
+        } ],
     "summary" : "JMS is a key part of Java EE, despite its not having been updated since 2002. There is therefore no shortage  of ideas for updating it, which is why in 2011 the JMS community has come together in JSR 343 to define JMS 2.0. JMS 2.0  will define new facilities to support Java EE 7 and the needs of the cloud. It will also include features to improve  ease of use, updates to clarify the relationship with other Java EE specifications, a mandatory API for integration with  application servers, and many other changes that that have been proposed following nearly a decade of use. Come and hear what is in the early draft of JMS 2.0, and join the subsequent discussion.",
     "tags" : [ { "name" : "javaee" },
         { "name" : "JMS" }
@@ -2233,7 +2246,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1098"
         }
       ],
-    "summary" : "Get your hands dirty with the FuseSource distributions for the following Apache projects: ActiveMQ, ServiceMix, Camel and CXF.",
+    "summary" : "Get your hands dirty with the FuseSource distributions for the following Apache projects: ActiveMQ, ServiceMix, Camel and CXF.\n\nSoftware requirements :\n\t•\tJDK 6-7\n\t•\tApache Maven : 3.0.x\n\t•\tEquinox Eclipse : 3.7.1",
     "tags" : [ { "name" : "ServiceMix" },
         { "name" : "CXF" },
         { "name" : "camel" },
@@ -3142,7 +3155,7 @@
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1275"
         }
       ],
-    "summary" : "Since its inception, Java has been associated with the Web. As a result, a lot of frameworks are available today, which makes it hard to pick the right one. How do developers choose from such a plethora of frameworks? Often subjective criteria are used: ease of use, preference of the architect. Seldom is performance of the framework taken into account. Nonetheless, responsive applications can make the online experience effective, even enjoyable. This session presents updated results of Sujoe Bose's JavaOne 2008 presentation: most frameworks have had a major release (Spring 3, JSF 2.1); others have gotten more traction (GWT, Wicket). On top of that, the focus has shifted toward a richer user experience: Ajax, bookmarkability, ...",
+    "summary" : "Are you in need for speed? Did you ever have to meet SLA defined response times for your web application? What about designing for scalability? Conducting load tests can help you answer those questions, but load testing an application is a lot harder than it seems. Many pitfalls lurk around the corner. A solid approach and a clear performance model are key when performing these tests and interpreting the results. You better know what to expect! Choosing the right framework can make your job as a developer a nightmare or a breeze! Choosing the wrong one can burn a hole in your pocket.\n\nLadies & gentlemen, fasten your seat belts! In this talk we let 4 frameworks compete for the title of fastest and most scalable java web framework: JSF, GWT, SpringMVC and Wicket. You'll gain the necessary insights to build a performance model, define a method to perform and interpret the tests and we will look beyond raw response times alone. So you will be armed when having to respond to the  'how do we scale' question next time.",
     "tags" : [ { "name" : "Wicket" },
         { "name" : "GWT" },
         { "name" : "JSF2" },
@@ -3219,5 +3232,23 @@
     "title" : "Play 2.0, a Web framework for a new era",
     "track" : "Web",
     "type" : "Conference"
+  },
+  { "experience" : "NOVICE",
+    "id" : 985,
+    "room" : "Room 8",
+    "speaker" : "Peter Kuterna",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/348",
+    "speakers" : [ { "speaker" : "Peter Kuterna",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/348"
+        } ],
+    "summary" : "In this 15 minute quickie I will give you a look of how the Devoxx Schedule app for Android works. You will learn that this app is based upon the Google I/O schedule application, but with tweaks here and there. I will talk about those tweaks and more specific about the following topics:\r\n- The role of AppEngine in between the Android app and the CFP\r\n- Cloud To Device Messaging (c2dm)\r\n- The implementation of background updates\r\n- How a MapView was integrated in the fragments\r\n- The Android Compatibility Library (ACL)\r\n- Android openness and how it helped me during development",
+    "tags" : [ { "name" : "c2dm" },
+        { "name" : "android" },
+        { "name" : "mobile" },
+        { "name" : "GAE" }
+      ],
+    "title" : "Devoxx Schedule app for Android - Under the hood",
+    "track" : "Mobile",
+    "type" : "Quickie"
   }
 ]

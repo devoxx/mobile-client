@@ -715,7 +715,14 @@
     "id" : 390,
     "kind" : "Talk",
     "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/985",
     "room" : "Room 8",
+    "speaker" : "Peter Kuterna",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/348",
+    "speakers" : [ { "speaker" : "Peter Kuterna",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/348"
+        } ],
+    "title" : "Devoxx Schedule app for Android - Under the hood",
     "toTime" : "2011-11-15 13:15:00.0",
     "type" : "Quickie"
   },
@@ -1269,7 +1276,14 @@
     "id" : 550,
     "kind" : "Talk",
     "partnerSlot" : false,
+    "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/570",
     "room" : "Room 3",
+    "speaker" : "Martijn Verburg",
+    "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405",
+    "speakers" : [ { "speaker" : "Martijn Verburg",
+          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/405"
+        } ],
+    "title" : "The Diabolical Developer - take the power back",
     "toTime" : "2011-11-16 13:00:00.0",
     "type" : "Conference"
   },
@@ -2314,11 +2328,7 @@
     "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1071",
     "speakers" : [ { "speaker" : "Nigel Deakin",
           "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/1071"
-        },
-        { "speaker" : "Masoud Kalali",
-          "speakerUri" : "https://cfp.devoxx.com/rest/v1/events/speakers/26"
-        }
-      ],
+        } ],
     "title" : "What's Coming in Java Message Service 2.0",
     "toTime" : "2011-11-17 13:00:00.0",
     "type" : "Conference"

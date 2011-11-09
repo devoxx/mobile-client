@@ -1310,17 +1310,6 @@
         }
       ]
   },
-  { "bio" : "Masoud Kalali has been working on software development projects since 1998. He has experience with  variety of technologies on diverse platforms. His experience is in software architecture, design, and server-side development. Masoud has published several articles at Java.net and DZone. He is also author of GlassFish Security book which covers GlassFish v3 security and Java EE 6 security. Masoud is member of the JMS 2.0 expert group.",
-    "company" : "Informatics Matters",
-    "firstName" : "Masoud",
-    "id" : 26,
-    "imageURI" : "https://cfp.devoxx.com/static/images/26/DSC_0601.jpg",
-    "lastName" : "Kalali",
-    "talks" : [ { "event" : "Conference",
-          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/890",
-          "title" : "What's Coming in Java Message Service 2.0"
-        } ]
-  },
   { "bio" : "Mattias spends most of his time working with software development in the financial sector as well as leading a Java User Group in Stockholm, Sweden. The JUG holds 8-10 fully booked meetings per year with more then 200 participants at every meeting. Mattias has worked with OO software development since 1993. Through the years he has gained experience from many different roles, including developer, architect, team leader, coach, manager, and teacher. Mattias also wrote a chapter in the \"97 Things Every Programmer Should Know\" about Code Reviews\r\n\r\nIn his spare time, Mattias can be found playing with his children or riding his motorcycle, as well as changing underprivileged people's lives by building houses with Habitat for Humanity. Mattias leads a JUG Kiva team. Kiva is a person to person micro-loan organization. Join his effort to improve the world at http://www.kiva.org/team/jug.",
     "company" : "Avega Group",
     "firstName" : "Mattias",
@@ -1428,6 +1417,17 @@
     "talks" : [ { "event" : "Conference",
           "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/974",
           "title" : "Google TV: Open for Android Developers"
+        } ]
+  },
+  { "bio" : "Peter is a Senior Java Consultant at XT-i NV (part of the Cronos group) and holds a Master Degree in Computer Science from the University of Antwerp where he started his career performing research on software in C/C++ and Java for validating and implementing (multi-precision) floating-point arithmetic. Currently he is using the Java programming language and its related technologies and frameworks in large web based applications and Android applications. Before switching back to Java/J2EE in 2005 he used to program in C/C++ and Tcl on various projects in the telecommunications sector.",
+    "company" : "XT-i NV",
+    "firstName" : "Peter",
+    "id" : 348,
+    "imageURI" : "https://cfp.devoxx.com/static/images/348/peter_100x110.png",
+    "lastName" : "Kuterna",
+    "talks" : [ { "event" : "Quickie",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/985",
+          "title" : "Devoxx Schedule app for Android - Under the hood"
         } ]
   },
   { "bio" : "Guillaume Laforge is the project lead of Groovy, the highly popular and successful dynamic language for the JVM. He co-authored Manning's best seller \"Groovy in Action\" with Dierk König, and is working for SpringSource (a division of VMWare) where he's hacking full time on cool and Groovy stuff. You can meet Guillaume at conferences around the world where he evangelizes the Groovy dynamic language, Domain-Specific Languages in Groovy, the agile Grails web framework or the Gaelyk lightweight toolkit for Google App Engine.",
@@ -2498,7 +2498,7 @@
           "title" : "Building Mobile Web application with Open Web standards and the Dojo Toolkit"
         } ]
   },
-  { "bio" : "Dalibor Topic lives and works in Hamburg, Germany, as Sun's Java F/OSS Ambassador. In collaboration with the OpenJDK community and GNU/Linux distributions, he is occupied accelerating the evolution of Open Source software stacks based on Java technology and GNU/Linux.",
+  { "bio" : "Dalibor Topić lives in Hamburg, Germany, and works as Java F/OSS Ambassador for Oracle. He joined the OpenJDK project in order to help make it a successful open source project, and stayed for anchoring Java in Linux distributions, and as an all around Java F/OSS community guy. He joined the Java strategy team at Oracle to help provide community feedback into the long-term strategy planning.",
     "company" : "Oracle",
     "firstName" : "Dalibor",
     "id" : 345,
@@ -2613,7 +2613,11 @@
     "id" : 405,
     "imageURI" : "https://cfp.devoxx.com/static/images/405/529dd6111421e230eedb34d96a473f85.png",
     "lastName" : "Verburg",
-    "talks" : [ { "event" : "BOF",
+    "talks" : [ { "event" : "Conference",
+          "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/570",
+          "title" : "The Diabolical Developer - take the power back"
+        },
+        { "event" : "BOF",
           "presentationUri" : "https://cfp.devoxx.com/rest/v1/events/presentations/571",
           "title" : "Less annoying Java standards"
         },
