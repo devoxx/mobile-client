@@ -49,10 +49,10 @@ public class SessionNotesFragment extends ProgressFragment implements
 
 	private Handler mHandler = new Handler();
 
-	public static SessionNotesFragment newInstance(Uri sessionUri) {
+	public static SessionNotesFragment newInstance(String sessionId) {
 		SessionNotesFragment f = new SessionNotesFragment();
 		Bundle args = new Bundle();
-		args.putParcelable("uri", sessionUri);
+		args.putString("sessionId", sessionId);
 		f.setArguments(args);
 		return f;
 	}
@@ -190,7 +190,8 @@ public class SessionNotesFragment extends ProgressFragment implements
 
 	@Override
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-		final Uri uri = getArguments().getParcelable("uri");
+		final String sessionId = getArguments().getString("sessionId");
+		final Uri uri = Sessions.buildSessionUri(sessionId);
 		return new CursorLoader(getActivity(), uri, SessionsQuery.PROJECTION,
 				null, null, null);
 	}

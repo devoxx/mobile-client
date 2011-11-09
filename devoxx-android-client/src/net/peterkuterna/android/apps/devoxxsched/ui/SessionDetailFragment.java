@@ -39,9 +39,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.graphics.RectF;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -103,6 +101,7 @@ public class SessionDetailFragment extends Fragment implements
 	private ViewGroup mRootView;
 	private ScrollableTabs mTabs;
 	private ViewPager mViewPager;
+	private SessionDetailPagerAdapter mAdapter;
 	private TextView mTitle;
 	private TextView mSubtitle;
 	private CompoundButton mStarred;
@@ -124,6 +123,20 @@ public class SessionDetailFragment extends Fragment implements
 
 		mSessionId = Sessions.getSessionId(mSessionUri);
 
+		setHasOptionsMenu(true);
+	}
+
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+
+		if (mSessionUri == null) {
+			return;
+		}
+
+		final Intent intent = ActivityHelper
+				.fragmentArgumentsToIntent(getArguments());
+		mSessionUri = intent.getData();
 		mTrackName = intent.getStringExtra(Intent.EXTRA_TITLE);
 		mTrackColor = intent.getIntExtra(EXTRA_TRACK_COLOR, -1);
 
@@ -137,24 +150,13 @@ public class SessionDetailFragment extends Fragment implements
 			updateTrackData();
 		}
 
-		setHasOptionsMenu(true);
-	}
-
-	@Override
-	public void onActivityCreated(Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
-
-		if (mSessionUri == null) {
-			return;
-		}
-
-		final SessionDetailPagerAdapter adapter = new SessionDetailPagerAdapter(
-				getActivity(), getFragmentManager());
-		mViewPager.setAdapter(adapter);
-		mTabs.setAdapter(adapter);
+		mAdapter = new SessionDetailPagerAdapter(getActivity(),
+				getFragmentManager());
+		mViewPager.setAdapter(mAdapter);
+		mTabs.setAdapter(mAdapter);
 		mViewPager.setOnPageChangeListener(mTabs);
 
-		adapter.notifyDataSetChanged();
+		mAdapter.notifyDataSetChanged();
 
 		mQueryHandler = new NotifyingAsyncQueryHandler(getActivity()
 				.getContentResolver(), null);
@@ -430,24 +432,22 @@ public class SessionDetailFragment extends Fragment implements
 		@Override
 		public Fragment getItem(int position) {
 			if (position == 0) {
-				return SessionSummaryFragment.newInstance(mSessionUri);
+				return SessionSummaryFragment.newInstance(mSessionId);
 			} else if (position == 1) {
-				return SessionNotesFragment.newInstance(mSessionUri);
+				return SessionNotesFragment.newInstance(mSessionId);
 			} else if (position == 2) {
-				return SessionLinksFragment.newInstance(mSessionUri);
+				return SessionLinksFragment.newInstance(mSessionId);
 			} else if (position == 3 && UIUtils.isHoneycombTablet(mContext)) {
 				ParleysPresentationsFragment f = new ParleysPresentationsFragment();
-				final String sessionId = Sessions.getSessionId(mSessionUri);
 				final Intent intent = new Intent(Intent.ACTION_VIEW,
-						Sessions.buildParleysDirUri(sessionId));
+						Sessions.buildParleysDirUri(mSessionId));
 				f.setArguments(ActivityHelper.intentToFragmentArguments(intent));
 				return f;
 			} else if ((position == 3)
 					|| (position == 4 && UIUtils.isHoneycomb())) {
 				SessionsFragment f = new SessionsFragment();
-				final String sessionId = Sessions.getSessionId(mSessionUri);
 				final Intent intent = new Intent(Intent.ACTION_VIEW,
-						Sessions.buildSessionsParallelDirUri(sessionId));
+						Sessions.buildSessionsParallelDirUri(mSessionId));
 				f.setArguments(ActivityHelper.intentToFragmentArguments(intent));
 				return f;
 			}
@@ -478,7 +478,7 @@ public class SessionDetailFragment extends Fragment implements
 		int _TOKEN = 0x1;
 
 		String[] PROJECTION = { CfpContract.Blocks.BLOCK_START,
-				CfpContract.Blocks.BLOCK_END,
+				CfpContract.Blocks.BLOCK_END, CfpContract.Sessions.SESSION_ID,
 				CfpContract.Sessions.SESSION_TITLE,
 				CfpContract.Sessions.SESSION_STARRED,
 				CfpContract.Sessions.SESSION_URL, CfpContract.Rooms.ROOM_ID,
@@ -487,13 +487,14 @@ public class SessionDetailFragment extends Fragment implements
 
 		int BLOCK_START = 0;
 		int BLOCK_END = 1;
-		int TITLE = 2;
-		int STARRED = 3;
-		int URL = 4;
-		int ROOM_ID = 5;
-		int ROOM_NAME = 6;
-		int ROOM_LEVEL = 7;
-		int TRACK_HASHTAG = 8;
+		int SESSION_ID = 2;
+		int TITLE = 3;
+		int STARRED = 4;
+		int URL = 5;
+		int ROOM_ID = 6;
+		int ROOM_NAME = 7;
+		int ROOM_LEVEL = 8;
+		int TRACK_HASHTAG = 9;
 
 	}
 

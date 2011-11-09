@@ -41,7 +41,6 @@ import android.support.v4.content.Loader;
 import android.support.v4.widget.CursorAdapter;
 import android.text.Spannable;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,7 +72,7 @@ public class SessionsFragment extends ListFragment {
 
 		getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-		reloadFromArguments(getArguments());
+		reloadFromArguments(getArguments(), false);
 
 		setListShown(false);
 
@@ -83,7 +82,7 @@ public class SessionsFragment extends ListFragment {
 		}
 	}
 
-	public void reloadFromArguments(Bundle arguments) {
+	public void reloadFromArguments(Bundle arguments, boolean reset) {
 		mCheckedPosition = -1;
 
 		// Load new arguments
@@ -108,8 +107,13 @@ public class SessionsFragment extends ListFragment {
 
 		setListAdapter(mAdapter);
 
-		getLoaderManager().initLoader(sessionsQueryId, null,
-				mSessionsLoaderCallback);
+		if (!reset) {
+			getLoaderManager().initLoader(sessionsQueryId, null,
+					mSessionsLoaderCallback);
+		} else {
+			getLoaderManager().restartLoader(sessionsQueryId, null,
+					mSessionsLoaderCallback);
+		}
 
 		mTrackName = intent.getStringExtra(Intent.EXTRA_TITLE);
 		mTrackColor = intent.getIntExtra(EXTRA_TRACK_COLOR, -1);
@@ -120,7 +124,8 @@ public class SessionsFragment extends ListFragment {
 					"/Sessions/" + mTrackName);
 			updateTrackData();
 		}
-		if (TextUtils.isEmpty(mTrackName) && mTrackColor == -1 && trackUri != null) {
+		if (TextUtils.isEmpty(mTrackName) && mTrackColor == -1
+				&& trackUri != null) {
 			Bundle args = new Bundle();
 			args.putParcelable("uri", trackUri);
 			getLoaderManager().initLoader(TracksQuery._TOKEN, args,
@@ -192,7 +197,6 @@ public class SessionsFragment extends ListFragment {
 	}
 
 	private void updateTrackData() {
-		Log.d("SessionsFragment", "updateTrackData");
 		if (!UIUtils.isHoneycombTablet(getActivity())) {
 			UIUtils.setActionBarData(getSupportActivity(), mTrackName,
 					mTrackColor);

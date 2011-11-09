@@ -41,10 +41,10 @@ public class SessionLinksFragment extends ProgressFragment implements
 	private ViewGroup mRootView;
 	private String mTitleString;
 
-	public static SessionLinksFragment newInstance(Uri sessionUri) {
+	public static SessionLinksFragment newInstance(String sessionId) {
 		SessionLinksFragment f = new SessionLinksFragment();
 		Bundle args = new Bundle();
-		args.putParcelable("uri", sessionUri);
+		args.putString("sessionId", sessionId);
 		f.setArguments(args);
 		return f;
 	}
@@ -139,7 +139,8 @@ public class SessionLinksFragment extends ProgressFragment implements
 
 	@Override
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-		final Uri uri = getArguments().getParcelable("uri");
+		final String sessionId = getArguments().getString("sessionId");
+		final Uri uri = Sessions.buildSessionUri(sessionId);
 		return new CursorLoader(getActivity(), uri, SessionsQuery.PROJECTION,
 				null, null, null);
 	}

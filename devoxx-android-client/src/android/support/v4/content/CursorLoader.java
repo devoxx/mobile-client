@@ -16,14 +16,15 @@
 
 package android.support.v4.content;
 
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.util.Arrays;
+
+import android.content.ContentResolver;
 import android.content.Context;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.net.Uri;
-
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
-import java.util.Arrays;
 
 /**
  * Static library support version of the framework's {@link android.content.CursorLoader}.

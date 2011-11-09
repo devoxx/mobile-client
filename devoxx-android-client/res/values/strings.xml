@@ -21,7 +21,7 @@
     <string name="short_app_name">Devoxx</string>
     <string name="no_app_name"></string>
 
-    <string name="maps_api_key">INSERT_YOUR_MAPS_API_KEY_HERE</string>
+    <string name="maps_api_key">0bVyKufew_EzW6zBfqv-IFJlw5pjx_tEH4iKAmA</string>
     
     <string name="description_search">Search</string>
     <string name="description_refresh">Refresh</string>
@@ -47,6 +47,7 @@
     <string name="title_settings">Settings</string>
     <string name="title_new_sessions">New Sessions</string>
     <string name="title_bulletin">Bulletin</string>
+    <string name="title_todays_starred">Today\'s Starred</string>
 
     <string name="title_session_tracks">Session tracks</string>
 

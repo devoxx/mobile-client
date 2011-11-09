@@ -21,7 +21,7 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
+    
     <LinearLayout android:orientation="vertical"
         android:layout_width="0px"
         android:layout_weight="0.5"
@@ -60,18 +60,66 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp">
-
-        <LinearLayout android:layout_width="fill_parent"
+        
+        <LinearLayout
+			android:orientation="vertical"
+        	android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:background="@drawable/home_streambox">
+	        android:paddingLeft="12dip"
+	        android:paddingRight="12dip"
+            android:background="@drawable/home_streambox_no_padding">
 
-			<fragment android:name="net.peterkuterna.android.apps.devoxxsched.ui.TwitterSearchFragment"
-			    android:id="@+id/fragment_twitter_search"
+		    <FrameLayout
+		    	android:id="@+id/viewpagerheader_container"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/thickbar_shadow">
+				<net.peterkuterna.android.apps.devoxxsched.ui.widget.ScrollableTabs
+					android:id="@+id/viewpagerheader"
+					android:layout_width="fill_parent"
+					android:layout_height="@dimen/tab_height"
+					android:fadingEdge="horizontal"
+					android:background="@drawable/tab_unselected" />
+		    </FrameLayout>
+		    
+		    <FrameLayout
 			    android:layout_width="fill_parent"
-			    android:layout_height="fill_parent" >
-			</fragment>
+			    android:layout_height="fill_parent">
+			    
+				<android.support.v4.view.ViewPager
+					android:id="@+id/viewpager"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent" />
+				    
+	            <RelativeLayout android:id="@+id/session_detail_popup"
+	            	android:visibility="gone"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:layout_margin="@dimen/activity_pane_spacing"
+	                android:padding="@dimen/detail_pane_padding"
+	                android:background="?android:attr/detailsElementBackground">
+	
+	                <ImageButton android:id="@+id/close_button"
+	                    android:layout_alignParentTop="true"
+	                    android:layout_alignParentRight="true"
+	                    android:src="@drawable/ic_close_holo_light"
+	                    android:background="@drawable/panel_button_background"
+	                    android:layout_width="@dimen/panel_button_width"
+	                    android:layout_height="@dimen/detail_breadcrumb_height" />
+	
+	                <FrameLayout android:id="@+id/fragment_container_session_detail"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_below="@id/close_button"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="0dp" />
+	            </RelativeLayout>
+	            
+			</FrameLayout>
+			    
         </LinearLayout>
 
         <fragment android:name="net.peterkuterna.android.apps.devoxxsched.ui.WhatsOnFragment"
@@ -80,5 +128,5 @@
             android:layout_height="@dimen/whats_on_height" >
         </fragment>
     </LinearLayout>
-
+    
 </LinearLayout>

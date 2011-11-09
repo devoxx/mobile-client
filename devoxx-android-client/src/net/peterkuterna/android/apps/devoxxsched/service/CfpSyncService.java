@@ -65,7 +65,7 @@ public class CfpSyncService extends AbstractSyncService {
 	public static final int NOTIFICATION_NEW_SESSIONS = 1;
 
 	private static final int VERSION_NONE = 0;
-	private static final int VERSION_CURRENT = 1;
+	private static final int VERSION_CURRENT = 2;
 
 	private LocalExecutor mLocalExecutor;
 	private RemoteExecutor mRemoteExecutor;

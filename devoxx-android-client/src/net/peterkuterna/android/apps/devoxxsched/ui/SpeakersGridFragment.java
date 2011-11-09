@@ -117,6 +117,7 @@ public class SpeakersGridFragment extends GridFragment {
 		getActivity().getContentResolver()
 				.registerContentObserver(CfpContract.Speakers.CONTENT_URI,
 						true, mSpeakerChangesObserver);
+
 		if (mSpeakersUri != null) {
 			getLoaderManager().restartLoader(
 					SpeakersAdapter.SpeakersQuery._TOKEN, null,

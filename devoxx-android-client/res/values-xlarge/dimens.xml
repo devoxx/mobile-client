@@ -25,7 +25,7 @@
     <dimen name="activity_vert_padding">20dp</dimen>
     <dimen name="activity_pane_spacing">12dp</dimen>
     <dimen name="activity_padding_small">10dp</dimen>
-    <dimen name="schedule_hour_height">80dp</dimen>
+    <dimen name="schedule_hour_height">100dp</dimen>
     <dimen name="detail_pane_padding">16dp</dimen>
     <dimen name="detail_breadcrumb_height">40dp</dimen>
     <dimen name="tab_height">56dp</dimen>

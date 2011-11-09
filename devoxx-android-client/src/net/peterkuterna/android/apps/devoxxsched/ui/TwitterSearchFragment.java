@@ -57,6 +57,10 @@ public class TwitterSearchFragment extends PullToRefreshListFragment implements
 	private State mState;
 	private Handler mHandler = new Handler();
 
+	public static TwitterSearchFragment newInstance() {
+		return new TwitterSearchFragment();
+	}
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -24,7 +24,7 @@ import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 import com.google.web.bindery.requestfactory.shared.ServiceName;
 
-public interface RegistrationRequestFactory extends RequestFactory {
+public interface MyRequestFactory extends RequestFactory {
 
 	@ServiceName("net.peterkuterna.appengine.apps.devoxxsched.server.RegistrationInfo")
 	public interface RegistrationInfoRequest extends RequestContext {

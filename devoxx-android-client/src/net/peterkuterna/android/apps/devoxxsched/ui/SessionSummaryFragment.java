@@ -57,10 +57,10 @@ public class SessionSummaryFragment extends ProgressFragment {
 	private boolean mSessionAbstractLoaded = false;
 	private boolean mSessionSpeakersLoaded = false;
 
-	public static SessionSummaryFragment newInstance(Uri sessionUri) {
+	public static SessionSummaryFragment newInstance(String sessionId) {
 		SessionSummaryFragment f = new SessionSummaryFragment();
 		Bundle args = new Bundle();
-		args.putParcelable("uri", sessionUri);
+		args.putString("sessionId", sessionId);
 		f.setArguments(args);
 		return f;
 	}
@@ -134,8 +134,7 @@ public class SessionSummaryFragment extends ProgressFragment {
 
 		@Override
 		public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-			final Uri sessionUri = getArguments().getParcelable("uri");
-			final String sessionId = Sessions.getSessionId(sessionUri);
+			final String sessionId = getArguments().getString("sessionId");
 			final Uri tagsUri = CfpContract.Sessions.buildTagsDirUri(sessionId);
 			return new CursorLoader(getActivity(), tagsUri,
 					TagsQuery.PROJECTION, null, null, Tags.DEFAULT_SORT);
@@ -199,7 +198,8 @@ public class SessionSummaryFragment extends ProgressFragment {
 
 		@Override
 		public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-			final Uri uri = getArguments().getParcelable("uri");
+			final String sessionId = getArguments().getString("sessionId");
+			final Uri uri = Sessions.buildSessionUri(sessionId);
 			return new CursorLoader(getActivity(), uri,
 					SessionsQuery.PROJECTION, null, null, null);
 		}
@@ -283,8 +283,7 @@ public class SessionSummaryFragment extends ProgressFragment {
 
 		@Override
 		public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-			final Uri sessionUri = getArguments().getParcelable("uri");
-			final String sessionId = Sessions.getSessionId(sessionUri);
+			final String sessionId = getArguments().getString("sessionId");
 			final Uri speakersUri = CfpContract.Sessions
 					.buildSpeakersDirUri(sessionId);
 			return new CursorLoader(getActivity(), speakersUri,

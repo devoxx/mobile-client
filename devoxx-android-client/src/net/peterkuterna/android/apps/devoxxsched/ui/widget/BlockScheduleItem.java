@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2007 The Android Open Source Project
- * Copyright (C) 2011 Peter Kuterna
+ * Copyright 2011 Google Inc.
+ * Copyright 2011 Peter Kuterna
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package net.peterkuterna.android.apps.devoxxsched.ui.widget;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
-import net.peterkuterna.android.apps.devoxxsched.ui.BlocksFragment;
-import net.peterkuterna.android.apps.devoxxsched.util.Lists;
+import net.peterkuterna.android.apps.devoxxsched.R;
+import net.peterkuterna.android.apps.devoxxsched.ui.BlockScheduleItemsFragment;
 import net.peterkuterna.android.apps.devoxxsched.util.Maps;
 import net.peterkuterna.android.apps.devoxxsched.util.ParserUtils;
+import android.content.Context;
 import android.database.Cursor;
 
-public class Block {
+public class BlockScheduleItem extends ScheduleItem {
 
 	public static final String BLOCK_KIND_REGISTRATION = "Registration";
 	public static final String BLOCK_KIND_BREAK = "Break";
@@ -56,14 +57,8 @@ public class Block {
 	private static final HashMap<String, Integer> sKindMap = buildKindMap();
 	private static final HashMap<String, Integer> sTypeMap = buildTypeMap();
 
-	String blockId;
-	String title;
-	boolean containsStarred;
 	int sessionsCount;
-	long startMillis; // UTC milliseconds since the epoch
-	long endMillis; // UTC milliseconds since the epoch
-	int column;
-	int maxColumns;
+	String sessionId; // the single session id in case we only have one session
 	int type;
 
 	private static HashMap<String, Integer> buildKindMap() {
@@ -88,18 +83,19 @@ public class Block {
 		return map;
 	}
 
-	public static void loadBlocks(Cursor data, ArrayList<Block> blocksList) {
+	public static void loadBlocks(Context context, Cursor data,
+			ArrayList<BlockScheduleItem> blocksList) {
 		if (data == null) {
 			return;
 		}
 
 		do {
 			final String code = data
-					.getString(BlocksFragment.BlocksQuery.BLOCK_CODE);
+					.getString(BlockScheduleItemsFragment.BlocksQuery.BLOCK_CODE);
 			final String kind = data
-					.getString(BlocksFragment.BlocksQuery.BLOCK_KIND);
+					.getString(BlockScheduleItemsFragment.BlocksQuery.BLOCK_KIND);
 			final String type = data
-					.getString(BlocksFragment.BlocksQuery.BLOCK_TYPE);
+					.getString(BlockScheduleItemsFragment.BlocksQuery.BLOCK_TYPE);
 
 			Integer columnType = null;
 			if (ParserUtils.isTalk(code)) {
@@ -114,25 +110,27 @@ public class Block {
 			}
 
 			final String blockId = data
-					.getString(BlocksFragment.BlocksQuery.BLOCK_ID);
+					.getString(BlockScheduleItemsFragment.BlocksQuery.BLOCK_ID);
 			final String title = data
-					.getString(BlocksFragment.BlocksQuery.BLOCK_TITLE);
+					.getString(BlockScheduleItemsFragment.BlocksQuery.BLOCK_TITLE);
 			final long start = data
-					.getLong(BlocksFragment.BlocksQuery.BLOCK_START);
-			final long end = data.getLong(BlocksFragment.BlocksQuery.BLOCK_END);
+					.getLong(BlockScheduleItemsFragment.BlocksQuery.BLOCK_START);
+			final long end = data.getLong(BlockScheduleItemsFragment.BlocksQuery.BLOCK_END);
 			final boolean containsStarred = data
-					.getInt(BlocksFragment.BlocksQuery.CONTAINS_STARRED) != 0;
+					.getInt(BlockScheduleItemsFragment.BlocksQuery.CONTAINS_STARRED) != 0;
 			final int sessionsCount = data
-					.getInt(BlocksFragment.BlocksQuery.SESSIONS_COUNT);
+					.getInt(BlockScheduleItemsFragment.BlocksQuery.SESSIONS_COUNT);
 
-			final Block block = new Block();
-			block.blockId = blockId;
+			final BlockScheduleItem block = new BlockScheduleItem();
+			block.id = blockId;
 			block.title = title;
+			block.roomId = null;
 			block.startMillis = start;
 			block.endMillis = end;
 			block.containsStarred = containsStarred;
 			block.sessionsCount = sessionsCount;
 			block.type = columnType.intValue();
+			block.accentColor = getAccentColor(context, block);
 
 			blocksList.add(block);
 
@@ -141,73 +139,53 @@ public class Block {
 		computePositions(blocksList);
 	}
 
-	/**
-	 * Taken from the Calendar app in AOSP.
-	 */
-	private static void computePositions(ArrayList<Block> blocksList) {
-		ArrayList<Block> activeList = Lists.newArrayList();
-		ArrayList<Block> groupList = Lists.newArrayList();
-
-		long colMask = 0;
-		int maxCols = 0;
-		for (Block event : blocksList) {
-			long start = event.startMillis;
-
-			// Remove the inactive events.
-			// An event on the active list becomes inactive when its end time +
-			// margin time is less
-			// than or equal to the current event's start time. For more
-			// information about
-			// the margin time, see the comment in EVENT_OVERWRAP_MARGIN_TIME.
-			Iterator<Block> iter = activeList.iterator();
-			while (iter.hasNext()) {
-				Block active = iter.next();
-				final long duration = active.endMillis - active.startMillis;
-				if ((active.startMillis + duration) <= start) {
-					colMask &= ~(1L << active.column);
-					iter.remove();
-				}
+	private static int getAccentColor(Context context, BlockScheduleItem block) {
+		int accentColor = -1;
+		if (context != null) {
+			switch (block.type) {
+			case BlockScheduleItem.COLOR_REGISTRATION:
+				accentColor = context.getResources().getColor(
+						R.color.block_registration);
+				break;
+			case BlockScheduleItem.COLOR_BREAK:
+				accentColor = context.getResources().getColor(
+						R.color.block_break);
+				break;
+			case BlockScheduleItem.COLOR_KEYNOTE:
+				accentColor = context.getResources().getColor(
+						R.color.block_keynote);
+				break;
+			case BlockScheduleItem.COLOR_UNIVERSITY:
+				accentColor = context.getResources().getColor(
+						R.color.block_university);
+				break;
+			case BlockScheduleItem.COLOR_CONFERENCE:
+				accentColor = context.getResources().getColor(
+						R.color.block_conference);
+				break;
+			case BlockScheduleItem.COLOR_TOOLS_IN_ACTION:
+				accentColor = context.getResources().getColor(
+						R.color.block_tools_in_action);
+				break;
+			case BlockScheduleItem.COLOR_QUICKIE:
+				accentColor = context.getResources().getColor(
+						R.color.block_quickie);
+				break;
+			case BlockScheduleItem.COLOR_HANDS_ON_LAB:
+				accentColor = context.getResources().getColor(
+						R.color.block_hands_on_lab);
+				break;
+			case BlockScheduleItem.COLOR_BOF:
+				accentColor = context.getResources()
+						.getColor(R.color.block_bof);
+				break;
 			}
-
-			// If the active list is empty, then reset the max columns, clear
-			// the column bit mask, and empty the groupList.
-			if (activeList.isEmpty()) {
-				for (Block ev : groupList) {
-					ev.maxColumns = maxCols;
-				}
-				maxCols = 0;
-				colMask = 0;
-				groupList.clear();
-			}
-
-			// Find the first empty column. Empty columns are represented by
-			// zero bits in the column mask "colMask".
-			int col = findFirstZeroBit(colMask);
-			if (col == 64)
-				col = 63;
-			colMask |= (1L << col);
-			event.column = col;
-			activeList.add(event);
-			groupList.add(event);
-			int len = activeList.size();
-			if (maxCols < len)
-				maxCols = len;
 		}
-		for (Block ev : groupList) {
-			ev.maxColumns = maxCols;
-		}
+		return accentColor;
 	}
 
-	public static int findFirstZeroBit(long val) {
-		for (int ii = 0; ii < 64; ++ii) {
-			if ((val & (1L << ii)) == 0)
-				return ii;
-		}
-		return 64;
-	}
-
-	public String getBlockId() {
-		return blockId;
+	public static void updateSessionId(BlockScheduleItem block, String sessionId) {
+		block.sessionId = sessionId;
 	}
 
 	public int getSessionsCount() {

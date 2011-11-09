@@ -18,5 +18,14 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/btn_block_mask" />
     <item android:drawable="@drawable/btn_block_star" />
+    <item android:drawable="@drawable/btn_block_room3" />
+    <item android:drawable="@drawable/btn_block_room4" />
+    <item android:drawable="@drawable/btn_block_room5" />
+    <item android:drawable="@drawable/btn_block_room6" />
+    <item android:drawable="@drawable/btn_block_room7" />
+    <item android:drawable="@drawable/btn_block_room8" />
+    <item android:drawable="@drawable/btn_block_room9" />
+    <item android:drawable="@drawable/btn_block_bof1" />
+    <item android:drawable="@drawable/btn_block_bof2" />
     <item android:drawable="@drawable/btn_block_border" />
 </layer-list>

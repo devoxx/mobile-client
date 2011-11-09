@@ -110,7 +110,7 @@ public class WhatsOnFragment extends Fragment {
 				} else {
 					Intent intent = new Intent(Intent.ACTION_VIEW);
 					intent.setData(CfpContract.Sessions
-							.buildSessionsAtDirUri(System.currentTimeMillis()));
+							.buildSessionsAtDirUri(UIUtils.getCurrentTime(getActivity())));
 					intent.putExtra(Intent.EXTRA_TITLE,
 							getString(R.string.title_now_playing));
 					startActivity(intent);

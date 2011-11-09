@@ -60,6 +60,8 @@ public class ScheduleHandler extends JsonHandler {
 			ContentResolver resolver) throws JsonParseException, IOException {
 		final ArrayList<ContentProviderOperation> batch = Lists.newArrayList();
 
+		batch.add(ContentProviderOperation.newUpdate(Blocks.CONTENT_URI)
+				.withValue(Blocks.DELETED, CfpContract.MARK_AS_DELETED).build());
 		batch.add(ContentProviderOperation.newUpdate(Sessions.CONTENT_URI)
 				.withValue(Sessions.DELETED, CfpContract.MARK_AS_DELETED)
 				.build());
@@ -75,6 +77,13 @@ public class ScheduleHandler extends JsonHandler {
 				.newDelete(Sessions.CONTENT_URI)
 				.withSelection(
 						Sessions.DELETED + "=?",
+						new String[] { String
+								.valueOf(CfpContract.MARK_AS_DELETED) })
+				.build());
+		batch.add(ContentProviderOperation
+				.newDelete(Blocks.CONTENT_URI)
+				.withSelection(
+						Blocks.DELETED + "=?",
 						new String[] { String
 								.valueOf(CfpContract.MARK_AS_DELETED) })
 				.build());
@@ -167,6 +176,14 @@ public class ScheduleHandler extends JsonHandler {
 			builder.withValue(Blocks.BLOCK_KIND, kind);
 			builder.withValue(Blocks.BLOCK_TYPE, type);
 			builder.withValue(Blocks.BLOCK_CODE, code);
+			builder.withValue(Blocks.UPDATED, System.currentTimeMillis());
+			builder.withValue(Blocks.DELETED, CfpContract.NOT_DELETED);
+			batch.add(builder.build());
+		} else {
+			final ContentProviderOperation.Builder builder = ContentProviderOperation
+					.newUpdate(Blocks.buildBlockUri(blockId));
+			builder.withValue(Blocks.UPDATED, System.currentTimeMillis());
+			builder.withValue(Blocks.DELETED, CfpContract.NOT_DELETED);
 			batch.add(builder.build());
 		}
 

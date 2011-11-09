@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2009 The Android Open Source Project
+ * Copyright (C) 2011 Peter Kuterna
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -73,7 +74,7 @@ public class NotifyingAsyncQueryHandler extends AsyncQueryHandler {
 	 * if a valid {@link AsyncQueryListener} is present.
 	 */
 	public void startQuery(Uri uri, String[] projection) {
-		startQuery(-1, null, uri, projection, null, null, null);
+		startQuery(uri, projection, null);
 	}
 
 	/**
@@ -106,6 +107,16 @@ public class NotifyingAsyncQueryHandler extends AsyncQueryHandler {
 	public void startQuery(Uri uri, String[] projection, String selection,
 			String[] selectionArgs, String orderBy) {
 		startQuery(-1, null, uri, projection, selection, selectionArgs, orderBy);
+	}
+
+	/**
+	 * Begin an asynchronous query with the given arguments. When finished,
+	 * {@link AsyncQueryListener#onQueryComplete(int, Object, Cursor)} is called
+	 * if a valid {@link AsyncQueryListener} is present.
+	 */
+	public void startQuery(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String orderBy, Object cookie) {
+		startQuery(-1, cookie, uri, projection, selection, selectionArgs, orderBy);
 	}
 
 	/**

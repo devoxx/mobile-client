@@ -108,7 +108,7 @@ public class SearchActivity extends BaseMultiPaneActivity {
 		if (!UIUtils.isHoneycombTablet(this)) {
 			final CharSequence title = getString(R.string.title_search_query,
 					mQuery);
-			// getSupportActionBar().setTitle(title);
+			setTitle(title);
 		}
 
 		mAdapter.notifyDataSetChanged();
@@ -235,11 +235,11 @@ public class SearchActivity extends BaseMultiPaneActivity {
 			for (Fragment fragment : mFragments) {
 				if (fragment != null) {
 					if (fragment instanceof SessionsFragment) {
-						((SessionsFragment) fragment)
-								.reloadFromArguments(getSessionsFragmentArguments());
+						((SessionsFragment) fragment).reloadFromArguments(
+								getSessionsFragmentArguments(), true);
 					} else if (fragment instanceof SpeakersListFragment) {
-						((SpeakersListFragment) fragment)
-								.reloadFromArguments(getSpeakersFragmentArguments());
+						((SpeakersListFragment) fragment).reloadFromArguments(
+								getSpeakersFragmentArguments(), true);
 					}
 				}
 			}

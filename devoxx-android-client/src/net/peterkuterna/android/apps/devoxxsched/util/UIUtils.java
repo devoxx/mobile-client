@@ -60,6 +60,14 @@ public class UIUtils {
 	public static final long CONFERENCE_END_MILLIS = ParserUtils
 			.parseTime("2011-11-18T12:50:00.000+01:00");
 
+	public static final int NUMBER_DAYS = 5;
+	public static final long[] START_DAYS_IN_MILLIS = {
+			ParserUtils.parseTime("2011-11-14T00:00:00.000+01:00"),
+			ParserUtils.parseTime("2011-11-15T00:00:00.000+01:00"),
+			ParserUtils.parseTime("2011-11-16T00:00:00.000+01:00"),
+			ParserUtils.parseTime("2011-11-17T00:00:00.000+01:00"),
+			ParserUtils.parseTime("2011-11-18T00:00:00.000+01:00"), };
+
 	private static final int DAY_FLAGS = DateUtils.FORMAT_SHOW_WEEKDAY
 			| DateUtils.FORMAT_ABBREV_WEEKDAY;
 	private static final int TIME_FLAGS = DateUtils.FORMAT_SHOW_TIME;
@@ -238,7 +246,8 @@ public class UIUtils {
 		// prefs.edit().commit();
 		// return prefs.getLong("mock_current_time",
 		// System.currentTimeMillis());
-		return System.currentTimeMillis();
+		// return START_DAYS_IN_MILLIS[3]+(DateUtils.HOUR_IN_MILLIS * 16);
+		 return System.currentTimeMillis();
 	}
 
 	public static Drawable getIconForIntent(final Context context, Intent i) {

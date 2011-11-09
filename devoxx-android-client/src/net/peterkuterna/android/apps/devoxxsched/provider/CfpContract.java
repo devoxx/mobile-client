@@ -207,6 +207,7 @@ public class CfpContract {
 	private static final String PATH_BETWEEN = "between";
 	private static final String PATH_TRACKS = "tracks";
 	private static final String PATH_ROOMS = "rooms";
+	private static final String PATH_SESSION = "session";
 	private static final String PATH_SESSIONS = "sessions";
 	private static final String PATH_STARRED = "starred";
 	private static final String PATH_SPEAKERS = "speakers";
@@ -223,7 +224,8 @@ public class CfpContract {
 	 * Blocks are generic timeslots that {@link Sessions} and other related
 	 * events fall into.
 	 */
-	public static class Blocks implements BlocksColumns, BaseColumns {
+	public static class Blocks implements BlocksColumns, SyncColumns,
+			BaseColumns {
 		public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon()
 				.appendPath(PATH_BLOCKS).build();
 
@@ -246,6 +248,15 @@ public class CfpContract {
 		/** Build {@link Uri} for requested {@link #BLOCK_ID}. */
 		public static Uri buildBlockUri(String blockId) {
 			return CONTENT_URI.buildUpon().appendPath(blockId).build();
+		}
+
+		/**
+		 * Build {@link Uri} that returns the single {@link Sessions} associated
+		 * with the requested {@link #BLOCK_ID}.
+		 */
+		public static Uri buildSessionUri(String blockId) {
+			return CONTENT_URI.buildUpon().appendPath(blockId)
+					.appendPath(PATH_SESSION).build();
 		}
 
 		/**
@@ -459,6 +470,17 @@ public class CfpContract {
 		public static Uri buildSessionsAtDirUri(long time) {
 			return CONTENT_URI.buildUpon().appendPath(PATH_AT)
 					.appendPath(String.valueOf(time)).build();
+		}
+
+		/**
+		 * Build {@link Uri} that references any {@link Sessions} that occur
+		 * between the requested time boundaries.
+		 */
+		public static Uri buildSessionsBetweenDirUri(long startTime,
+				long endTime) {
+			return CONTENT_URI.buildUpon().appendPath(PATH_BETWEEN)
+					.appendPath(String.valueOf(startTime))
+					.appendPath(String.valueOf(endTime)).build();
 		}
 
 		public static Uri buildSearchUri(String query) {

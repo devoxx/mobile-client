@@ -71,7 +71,8 @@ public class CfpProvider extends ContentProvider {
 	private static final int BLOCKS = 100;
 	private static final int BLOCKS_BETWEEN = 101;
 	private static final int BLOCKS_ID = 102;
-	private static final int BLOCKS_ID_SESSIONS = 103;
+	private static final int BLOCKS_ID_SESSION = 103;
+	private static final int BLOCKS_ID_SESSIONS = 104;
 
 	private static final int TRACKS = 200;
 	private static final int TRACKS_ID = 201;
@@ -82,16 +83,17 @@ public class CfpProvider extends ContentProvider {
 	private static final int ROOMS_ID_SESSIONS = 302;
 
 	private static final int SESSIONS = 400;
-	private static final int SESSIONS_STARRED = 401;
-	private static final int SESSIONS_NEW = 402;
-	private static final int SESSIONS_SEARCH = 403;
-	private static final int SESSIONS_PARALLEL = 404;
-	private static final int SESSIONS_AT = 405;
-	private static final int SESSIONS_ID = 406;
-	private static final int SESSIONS_ID_SPEAKERS = 407;
-	private static final int SESSIONS_ID_TAGS = 408;
-	private static final int SESSIONS_ID_TRACKS = 409;
-	private static final int SESSIONS_ID_PARLEYS = 410;
+	private static final int SESSIONS_BETWEEN = 401;
+	private static final int SESSIONS_STARRED = 402;
+	private static final int SESSIONS_NEW = 403;
+	private static final int SESSIONS_SEARCH = 404;
+	private static final int SESSIONS_PARALLEL = 405;
+	private static final int SESSIONS_AT = 406;
+	private static final int SESSIONS_ID = 407;
+	private static final int SESSIONS_ID_SPEAKERS = 408;
+	private static final int SESSIONS_ID_TAGS = 409;
+	private static final int SESSIONS_ID_TRACKS = 410;
+	private static final int SESSIONS_ID_PARLEYS = 411;
 
 	private static final int SPEAKERS = 500;
 	private static final int SPEAKERS_SEARCH = 501;
@@ -129,6 +131,7 @@ public class CfpProvider extends ContentProvider {
 		matcher.addURI(authority, "blocks", BLOCKS);
 		matcher.addURI(authority, "blocks/between/*/*", BLOCKS_BETWEEN);
 		matcher.addURI(authority, "blocks/*", BLOCKS_ID);
+		matcher.addURI(authority, "blocks/*/session", BLOCKS_ID_SESSION);
 		matcher.addURI(authority, "blocks/*/sessions", BLOCKS_ID_SESSIONS);
 
 		matcher.addURI(authority, "tracks", TRACKS);
@@ -140,6 +143,7 @@ public class CfpProvider extends ContentProvider {
 		matcher.addURI(authority, "rooms/*/sessions", ROOMS_ID_SESSIONS);
 
 		matcher.addURI(authority, "sessions", SESSIONS);
+		matcher.addURI(authority, "sessions/between/*/*", SESSIONS_BETWEEN);
 		matcher.addURI(authority, "sessions/starred", SESSIONS_STARRED);
 		matcher.addURI(authority, "sessions/new", SESSIONS_NEW);
 		matcher.addURI(authority, "sessions/search/*", SESSIONS_SEARCH);
@@ -197,6 +201,8 @@ public class CfpProvider extends ContentProvider {
 			return Blocks.CONTENT_TYPE;
 		case BLOCKS_ID:
 			return Blocks.CONTENT_ITEM_TYPE;
+		case BLOCKS_ID_SESSION:
+			return Sessions.CONTENT_ITEM_TYPE;
 		case BLOCKS_ID_SESSIONS:
 			return Sessions.CONTENT_TYPE;
 		case TRACKS:
@@ -212,6 +218,8 @@ public class CfpProvider extends ContentProvider {
 		case ROOMS_ID_SESSIONS:
 			return Sessions.CONTENT_TYPE;
 		case SESSIONS:
+			return Sessions.CONTENT_TYPE;
+		case SESSIONS_BETWEEN:
 			return Sessions.CONTENT_TYPE;
 		case SESSIONS_STARRED:
 			return Sessions.CONTENT_TYPE;
@@ -610,10 +618,24 @@ public class CfpProvider extends ContentProvider {
 							Subquery.BLOCK_CONTAINS_STARRED)
 					.where(Blocks.BLOCK_ID + "=?", blockId);
 		}
+		case BLOCKS_ID_SESSION: {
+			final String blockId = Blocks.getBlockId(uri);
+			return builder
+					.table(Tables.SESSIONS_JOIN_BLOCKS_ROOMS_TRACKS)
+					.map(Blocks.SESSIONS_COUNT, Subquery.BLOCK_SESSIONS_COUNT)
+					.map(Blocks.CONTAINS_STARRED,
+							Subquery.BLOCK_CONTAINS_STARRED)
+					.mapToTable(Sessions._ID, Tables.SESSIONS)
+					.mapToTable(Sessions.SESSION_ID, Tables.SESSIONS)
+					.mapToTable(Sessions.BLOCK_ID, Tables.SESSIONS)
+					.mapToTable(Sessions.ROOM_ID, Tables.SESSIONS)
+					.mapToTable(Sessions.TRACK_ID, Tables.SESSIONS)
+					.where(Qualified.SESSIONS_BLOCK_ID + "=?", blockId);
+		}
 		case BLOCKS_ID_SESSIONS: {
 			final String blockId = Blocks.getBlockId(uri);
 			return builder
-					.table(Tables.SESSIONS_JOIN_BLOCKS_ROOMS)
+					.table(Tables.SESSIONS_JOIN_BLOCKS_ROOMS_TRACKS)
 					.map(Blocks.SESSIONS_COUNT, Subquery.BLOCK_SESSIONS_COUNT)
 					.map(Blocks.CONTAINS_STARRED,
 							Subquery.BLOCK_CONTAINS_STARRED)
@@ -663,6 +685,18 @@ public class CfpProvider extends ContentProvider {
 					.mapToTable(Sessions._ID, Tables.SESSIONS)
 					.mapToTable(Sessions.BLOCK_ID, Tables.SESSIONS)
 					.mapToTable(Sessions.ROOM_ID, Tables.SESSIONS);
+		}
+		case SESSIONS_BETWEEN: {
+			final List<String> segments = uri.getPathSegments();
+			final String startTime = segments.get(2);
+			final String endTime = segments.get(3);
+			return builder.table(Tables.SESSIONS_JOIN_BLOCKS_ROOMS_TRACKS)
+					.mapToTable(Sessions._ID, Tables.SESSIONS)
+					.mapToTable(Sessions.BLOCK_ID, Tables.SESSIONS)
+					.mapToTable(Sessions.ROOM_ID, Tables.SESSIONS)
+					.mapToTable(Sessions.TRACK_ID, Tables.SESSIONS)
+					.where(Sessions.BLOCK_START + ">=?", startTime)
+					.where(Sessions.BLOCK_END + "<=?", endTime);
 		}
 		case SESSIONS_STARRED: {
 			return builder.table(Tables.SESSIONS_JOIN_BLOCKS_ROOMS)

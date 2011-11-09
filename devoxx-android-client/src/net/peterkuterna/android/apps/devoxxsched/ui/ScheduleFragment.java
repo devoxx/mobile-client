@@ -26,7 +26,6 @@ import net.peterkuterna.android.apps.devoxxsched.ui.widget.SwipeyTabs;
 import net.peterkuterna.android.apps.devoxxsched.ui.widget.SwipeyTabsAdapter;
 import net.peterkuterna.android.apps.devoxxsched.util.AnalyticsUtils;
 import net.peterkuterna.android.apps.devoxxsched.util.Lists;
-import net.peterkuterna.android.apps.devoxxsched.util.ParserUtils;
 import net.peterkuterna.android.apps.devoxxsched.util.UIUtils;
 import android.content.Context;
 import android.os.Bundle;
@@ -49,14 +48,6 @@ import android.widget.Toast;
 public class ScheduleFragment extends Fragment {
 
 	protected static final String TAG = "ScheduleFragment";
-
-	private static final int NUMBER_DAYS = 5;
-	private static final long[] START_DAYS_IN_MILLIS = {
-			ParserUtils.parseTime("2011-11-14T00:00:00.000+01:00"),
-			ParserUtils.parseTime("2011-11-15T00:00:00.000+01:00"),
-			ParserUtils.parseTime("2011-11-16T00:00:00.000+01:00"),
-			ParserUtils.parseTime("2011-11-17T00:00:00.000+01:00"),
-			ParserUtils.parseTime("2011-11-18T00:00:00.000+01:00"), };
 
 	private ViewPager mViewPager;
 	private SwipeyTabs mTabs;
@@ -131,9 +122,9 @@ public class ScheduleFragment extends Fragment {
 		final long now = UIUtils.getCurrentTime(getActivity());
 
 		int nowDay = -1;
-		for (int i = 0; i < START_DAYS_IN_MILLIS.length; i++) {
-			if (now >= START_DAYS_IN_MILLIS[i]
-					&& now <= (START_DAYS_IN_MILLIS[i] + DateUtils.DAY_IN_MILLIS)) {
+		for (int i = 0; i < UIUtils.START_DAYS_IN_MILLIS.length; i++) {
+			if (now >= UIUtils.START_DAYS_IN_MILLIS[i]
+					&& now <= (UIUtils.START_DAYS_IN_MILLIS[i] + DateUtils.DAY_IN_MILLIS)) {
 				nowDay = i;
 				break;
 			}
@@ -153,7 +144,7 @@ public class ScheduleFragment extends Fragment {
 		private static final int TIME_FLAGS = DateUtils.FORMAT_SHOW_WEEKDAY;
 
 		private final Context mContext;
-		private final ArrayList<BlocksFragment> mFragments = Lists
+		private final ArrayList<BlockScheduleItemsFragment> mFragments = Lists
 				.newArrayList();
 		private int mScrollY = -1;
 
@@ -165,13 +156,13 @@ public class ScheduleFragment extends Fragment {
 
 		@Override
 		public Fragment getItem(int position) {
-			return BlocksFragment.newInstance(position,
-					START_DAYS_IN_MILLIS[position], mScrollY);
+			return BlockScheduleItemsFragment.newInstance(position,
+					UIUtils.START_DAYS_IN_MILLIS[position], mScrollY);
 		}
 
 		@Override
 		public Object instantiateItem(View container, int position) {
-			BlocksFragment fragment = (BlocksFragment) super.instantiateItem(
+			BlockScheduleItemsFragment fragment = (BlockScheduleItemsFragment) super.instantiateItem(
 					container, position);
 
 			fragment.setOnScrollListener(this);
@@ -199,7 +190,8 @@ public class ScheduleFragment extends Fragment {
 			TextView view = (TextView) LayoutInflater.from(mContext).inflate(
 					R.layout.swipey_tab_indicator, root, false);
 			view.setText(DateUtils.formatDateTime(getActivity(),
-					START_DAYS_IN_MILLIS[position], TIME_FLAGS).toUpperCase());
+					UIUtils.START_DAYS_IN_MILLIS[position], TIME_FLAGS)
+					.toUpperCase());
 			view.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(final View v) {
@@ -211,14 +203,14 @@ public class ScheduleFragment extends Fragment {
 
 		@Override
 		public int getCount() {
-			return NUMBER_DAYS;
+			return UIUtils.NUMBER_DAYS;
 		}
 
 		@Override
 		public void onScrollChanged(ObservableScrollView view) {
 			mScrollY = view.getScrollY();
 
-			for (BlocksFragment fragment : mFragments) {
+			for (BlockScheduleItemsFragment fragment : mFragments) {
 				if (fragment != null) {
 					final ScrollView scrollView = fragment.getScrollView();
 					if (!view.equals(scrollView)) {

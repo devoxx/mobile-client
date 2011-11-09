@@ -64,6 +64,7 @@ public class ScrollableTabs extends HorizontalScrollView implements
 		mAdapter = adapter;
 
 		// clean up our childs
+		mCurrentTab = -1;
 		mHost.removeAllViews();
 
 		if (mAdapter != null) {

@@ -26,36 +26,36 @@ import android.view.ViewGroup;
 
 /**
  * Custom layout that contains and organizes a {@link TimeRulerView} and several
- * instances of {@link BlockView}. Also positions current "now" divider using
- * {@link R.id#blocks_now} view when applicable.
+ * instances of {@link ScheduleItemView}. Also positions current "now" divider using
+ * {@link R.id#schedule_items_now} view when applicable.
  */
-public class BlocksLayout extends ViewGroup {
+public class ScheduleItemsLayout extends ViewGroup {
 
 	private TimeRulerView mRulerView;
 	private View mNowView;
 
-	public BlocksLayout(Context context) {
+	public ScheduleItemsLayout(Context context) {
 		this(context, null);
 	}
 
-	public BlocksLayout(Context context, AttributeSet attrs) {
+	public ScheduleItemsLayout(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 
 	private void ensureChildren() {
-		mRulerView = (TimeRulerView) findViewById(R.id.blocks_ruler);
+		mRulerView = (TimeRulerView) findViewById(R.id.schedule_items_ruler);
 		if (mRulerView == null) {
 			throw new IllegalStateException(
-					"Must include a R.id.blocks_ruler view.");
+					"Must include a R.id.schedule_items_rules view.");
 		}
-		mRulerView.setDrawingCacheEnabled(true);
+		// mRulerView.setDrawingCacheEnabled(true);
 
-		mNowView = findViewById(R.id.blocks_now);
+		mNowView = findViewById(R.id.schedule_items_now);
 		if (mNowView == null) {
 			throw new IllegalStateException(
-					"Must include a R.id.blocks_now view.");
+					"Must include a R.id.schedule_items_now view.");
 		}
-		mNowView.setDrawingCacheEnabled(true);
+		// mNowView.setDrawingCacheEnabled(true);
 	}
 
 	/**
@@ -69,9 +69,9 @@ public class BlocksLayout extends ViewGroup {
 		addView(mNowView);
 	}
 
-	public void addBlock(BlockView blockView) {
-		blockView.setDrawingCacheEnabled(true);
-		addView(blockView, 1);
+	public void addBlock(ScheduleItemView scheduleItemView) {
+		// blockView.setDrawingCacheEnabled(true);
+		addView(scheduleItemView, 1);
 	}
 
 	@Override
@@ -103,18 +103,18 @@ public class BlocksLayout extends ViewGroup {
 			if (child.getVisibility() == GONE)
 				continue;
 
-			if (child instanceof BlockView) {
-				final BlockView blockView = (BlockView) child;
-				final Block block = blockView.getBlock();
+			if (child instanceof ScheduleItemView) {
+				final ScheduleItemView view = (ScheduleItemView) child;
+				final ScheduleItem item = view.getScheduleItem();
 				final int columnWidth = (getWidth() - headerWidth)
-						/ block.maxColumns;
+						/ item.maxColumns;
 				final int top = rulerView
-						.getTimeVerticalOffset(block.startMillis);
+						.getTimeVerticalOffset(item.startMillis);
 				final int bottom = rulerView
-						.getTimeVerticalOffset(block.endMillis);
-				final int left = headerWidth + (block.column * columnWidth);
+						.getTimeVerticalOffset(item.endMillis);
+				final int left = headerWidth + (item.column * columnWidth);
 				final int right = left + columnWidth;
-				blockView.layout(left, top, right, bottom);
+				view.layout(left, top, right, bottom);
 			}
 		}
 
@@ -129,5 +129,4 @@ public class BlocksLayout extends ViewGroup {
 
 		nowView.layout(left, top, right, bottom);
 	}
-
 }

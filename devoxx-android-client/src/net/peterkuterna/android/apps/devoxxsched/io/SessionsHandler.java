@@ -38,6 +38,7 @@ import net.peterkuterna.android.apps.devoxxsched.provider.CfpContract.Tags;
 import net.peterkuterna.android.apps.devoxxsched.provider.CfpContract.Tracks;
 import net.peterkuterna.android.apps.devoxxsched.provider.CfpDatabase.SessionsSpeakers;
 import net.peterkuterna.android.apps.devoxxsched.provider.CfpDatabase.SessionsTags;
+import net.peterkuterna.android.apps.devoxxsched.provider.CfpDatabase.Tables;
 import net.peterkuterna.android.apps.devoxxsched.util.Lists;
 import net.peterkuterna.android.apps.devoxxsched.util.ParserUtils;
 
@@ -218,7 +219,8 @@ public class SessionsHandler extends JsonHandler {
 	 * {@link Sessions} query parameters.
 	 */
 	private interface SessionsQuery {
-		String[] PROJECTION = { SyncColumns.UPDATED, Sessions.SESSION_STARRED, };
+		String[] PROJECTION = { Tables.SESSIONS + "." + SyncColumns.UPDATED,
+				Sessions.SESSION_STARRED, };
 
 		int UPDATED = 0;
 		int STARRED = 1;

@@ -29,7 +29,7 @@
         <attr name="trackAbstractMaxLines" format="integer" />
     </declare-styleable>
 
-    <declare-styleable name="BlocksLayout">
+    <declare-styleable name="ScheduleItemsLayout">
         <attr name="columns" format="integer" />
     </declare-styleable>
 

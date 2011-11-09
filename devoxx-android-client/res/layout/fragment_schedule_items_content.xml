@@ -20,19 +20,19 @@
     class="net.peterkuterna.android.apps.devoxxsched.ui.widget.ObservableScrollView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:devoxxsched="http://schemas.android.com/apk/res/net.peterkuterna.android.apps.devoxxsched"
-    android:id="@+id/blocks_scroll"
+    android:id="@+id/schedule_items_scroll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fadingEdge="vertical">
     <view
-        class="net.peterkuterna.android.apps.devoxxsched.ui.widget.BlocksLayout"
-        android:id="@+id/blocks"
+        class="net.peterkuterna.android.apps.devoxxsched.ui.widget.ScheduleItemsLayout"
+        android:id="@+id/schedule_items"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layerType="software">
         <view
             class="net.peterkuterna.android.apps.devoxxsched.ui.widget.TimeRulerView"
-            android:id="@id/blocks_ruler"
+            android:id="@id/schedule_items_ruler"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             devoxxsched:headerWidth="@dimen/schedule_label_header_width"
@@ -45,7 +45,7 @@
             devoxxsched:startHour="7"
             devoxxsched:endHour="23" />
         <View
-            android:id="@id/blocks_now"
+            android:id="@id/schedule_items_now"
             android:background="@drawable/now_bar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />

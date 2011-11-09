@@ -19,8 +19,8 @@ package net.peterkuterna.android.apps.devoxxsched.c2dm;
 import net.peterkuterna.android.apps.devoxxsched.ui.SettingsActivity;
 import net.peterkuterna.android.apps.devoxxsched.util.Prefs;
 import net.peterkuterna.android.apps.devoxxsched.util.Prefs.DevoxxPrefs;
-import net.peterkuterna.appengine.apps.devoxxsched.client.RegistrationRequestFactory;
-import net.peterkuterna.appengine.apps.devoxxsched.client.RegistrationRequestFactory.RegistrationInfoRequest;
+import net.peterkuterna.appengine.apps.devoxxsched.client.MyRequestFactory;
+import net.peterkuterna.appengine.apps.devoxxsched.client.MyRequestFactory.RegistrationInfoRequest;
 import net.peterkuterna.appengine.apps.devoxxsched.shared.RegistrationInfoProxy;
 import android.content.Context;
 import android.content.Intent;
@@ -123,8 +123,8 @@ public class DeviceRegistrar {
 	}
 
 	private static RegistrationInfoRequest getRequest(Context context) {
-		RegistrationRequestFactory requestFactory = Util.getRequestFactory(
-				context, RegistrationRequestFactory.class);
+		MyRequestFactory requestFactory = Util.getRequestFactory(context,
+				MyRequestFactory.class);
 		RegistrationInfoRequest request = requestFactory
 				.registrationInfoRequest();
 		return request;

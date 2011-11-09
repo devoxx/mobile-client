@@ -16,19 +16,16 @@
     limitations under the License.
 -->
 
-<resources>
-    <item type="id" name="actionbar_compat" />
-    <item type="id" name="actionbar_compat_title" />
-    <item type="id" name="actionbar_compat_item_refresh_progress" />
-    <item type="id" name="actionbar_compat_item_refresh" />
-    <item type="id" name="actionbar_compat_logo" />    
-    <item type="id" name="menu_refresh" />    
-        
-    <item type="id" name="fragment_sessions" />
-    <item type="id" name="fragment_session_detail" />
-    <item type="id" name="fragment_speakers" />
-    <item type="id" name="fragment_speaker_detail" />
-
-    <item type="id" name="schedule_items_ruler" />
-    <item type="id" name="schedule_items_now" />
-</resources>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/tab_side_padding"
+    android:layout_marginRight="@dimen/tab_side_padding"
+    android:minWidth="150dip"
+    android:singleLine="true"
+    android:textColor="@color/accent_1"
+    android:textSize="@dimen/text_size_small"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/tab_indicator"/>

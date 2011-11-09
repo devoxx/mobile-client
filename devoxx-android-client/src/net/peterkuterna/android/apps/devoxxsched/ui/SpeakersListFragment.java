@@ -68,7 +68,7 @@ public class SpeakersListFragment extends ListFragment {
 
 		getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-		reloadFromArguments(getArguments());
+		reloadFromArguments(getArguments(), false);
 
 		setListShown(false);
 
@@ -78,7 +78,7 @@ public class SpeakersListFragment extends ListFragment {
 		}
 	}
 
-	public void reloadFromArguments(Bundle arguments) {
+	public void reloadFromArguments(Bundle arguments, boolean reset) {
 		mCheckedPosition = -1;
 
 		// Load new arguments
@@ -101,20 +101,26 @@ public class SpeakersListFragment extends ListFragment {
 
 		setListAdapter(mAdapter);
 
-		getLoaderManager().initLoader(speakersQueryId, null,
-				mSpeakersLoaderCallback);
+		if (!reset) {
+			getLoaderManager().initLoader(speakersQueryId, null,
+					mSpeakersLoaderCallback);
+		} else {
+			getLoaderManager().restartLoader(speakersQueryId, null,
+					mSpeakersLoaderCallback);
+		}
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
+
 		getActivity().getContentResolver()
 				.registerContentObserver(CfpContract.Speakers.CONTENT_URI,
 						true, mSpeakerChangesObserver);
+
 		if (mSpeakersUri != null) {
 			if (!CfpContract.Speakers.isSearchUri(mSpeakersUri)) {
-				getLoaderManager().restartLoader(
-						SpeakersAdapter.SpeakersQuery._TOKEN, null,
+				getLoaderManager().restartLoader(SpeakersQuery._TOKEN, null,
 						mSpeakersLoaderCallback);
 			} else {
 				getLoaderManager().restartLoader(SearchQuery._TOKEN, null,

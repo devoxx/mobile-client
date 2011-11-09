@@ -24,6 +24,7 @@ import net.peterkuterna.android.apps.devoxxsched.ui.SessionDetailFragment;
 import net.peterkuterna.android.apps.devoxxsched.ui.SessionsFragment;
 import net.peterkuterna.android.apps.devoxxsched.ui.phone.SessionDetailActivity;
 import net.peterkuterna.android.apps.devoxxsched.ui.phone.SessionsActivity;
+import net.peterkuterna.android.apps.devoxxsched.util.UIUtils;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -43,8 +44,7 @@ public class NowPlayingMultiPaneActivity extends BaseMultiPaneActivity {
 		super.onCreate(savedInstanceState);
 
 		Intent intent = new Intent();
-		intent.setData(Sessions.buildSessionsAtDirUri(System
-				.currentTimeMillis()));
+		intent.setData(Sessions.buildSessionsAtDirUri(UIUtils.getCurrentTime(this)));
 
 		setContentView(R.layout.activity_now_playing);
 

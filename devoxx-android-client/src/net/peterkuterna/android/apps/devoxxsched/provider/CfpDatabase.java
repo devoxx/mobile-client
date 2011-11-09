@@ -50,10 +50,11 @@ public class CfpDatabase extends SQLiteOpenHelper {
 	private static final String DATABASE_NAME = "schedule.db";
 
 	private static final int VER_LAUNCH = 21;
+	private static final int VER_ADD_SYNC_COLUMNS_TO_BLOCKS = 22;
 
-	private static final int DATABASE_VERSION = VER_LAUNCH;
+	private static final int DATABASE_VERSION = VER_ADD_SYNC_COLUMNS_TO_BLOCKS;
 
-	interface Tables {
+	public interface Tables {
 		String BLOCKS = "blocks";
 		String TRACKS = "tracks";
 		String ROOMS = "rooms";
@@ -323,12 +324,13 @@ public class CfpDatabase extends SQLiteOpenHelper {
 				+ ") ON CONFLICT REPLACE)");
 
 		db.execSQL("CREATE TABLE " + Tables.BLOCKS + " (" + BaseColumns._ID
-				+ " INTEGER PRIMARY KEY AUTOINCREMENT,"
-				+ BlocksColumns.BLOCK_ID + " TEXT NOT NULL,"
-				+ BlocksColumns.BLOCK_TITLE + " TEXT NOT NULL,"
-				+ BlocksColumns.BLOCK_START + " INTEGER NOT NULL,"
-				+ BlocksColumns.BLOCK_END + " INTEGER NOT NULL,"
-				+ BlocksColumns.BLOCK_KIND + " TEXT,"
+				+ " INTEGER PRIMARY KEY AUTOINCREMENT," + SyncColumns.UPDATED
+				+ " INTEGER NOT NULL," + SyncColumns.DELETED
+				+ " INTEGER NOT NULL," + BlocksColumns.BLOCK_ID
+				+ " TEXT NOT NULL," + BlocksColumns.BLOCK_TITLE
+				+ " TEXT NOT NULL," + BlocksColumns.BLOCK_START
+				+ " INTEGER NOT NULL," + BlocksColumns.BLOCK_END
+				+ " INTEGER NOT NULL," + BlocksColumns.BLOCK_KIND + " TEXT,"
 				+ BlocksColumns.BLOCK_TYPE + " TEXT,"
 				+ BlocksColumns.BLOCK_CODE + " TEXT," + "UNIQUE ("
 				+ BlocksColumns.BLOCK_ID + ") ON CONFLICT REPLACE)");
@@ -417,6 +419,46 @@ public class CfpDatabase extends SQLiteOpenHelper {
 		int version = oldVersion;
 
 		switch (version) {
+		case VER_LAUNCH:
+			db.execSQL("ALTER TABLE " + Tables.BLOCKS + " ADD COLUMN "
+					+ SyncColumns.UPDATED + " INTEGER");
+			db.execSQL("ALTER TABLE " + Tables.BLOCKS + " ADD COLUMN "
+					+ SyncColumns.DELETED + " INTEGER");
+			db.execSQL("UPDATE  " + Tables.BLOCKS + " SET "
+					+ SyncColumns.UPDATED + "=" + System.currentTimeMillis()
+					+ " WHERE " + SyncColumns.UPDATED + " IS NULL");
+			db.execSQL("UPDATE " + Tables.BLOCKS + " SET "
+					+ SyncColumns.DELETED + "=" + CfpContract.NOT_DELETED
+					+ " WHERE " + SyncColumns.DELETED + " IS NULL");
+			db.execSQL("ALTER TABLE " + Tables.BLOCKS + " RENAME TO tmp_"
+					+ Tables.BLOCKS);
+			db.execSQL("CREATE TABLE " + Tables.BLOCKS + " (" + BaseColumns._ID
+					+ " INTEGER PRIMARY KEY AUTOINCREMENT,"
+					+ SyncColumns.UPDATED + " INTEGER NOT NULL,"
+					+ SyncColumns.DELETED + " INTEGER NOT NULL,"
+					+ BlocksColumns.BLOCK_ID + " TEXT NOT NULL,"
+					+ BlocksColumns.BLOCK_TITLE + " TEXT NOT NULL,"
+					+ BlocksColumns.BLOCK_START + " INTEGER NOT NULL,"
+					+ BlocksColumns.BLOCK_END + " INTEGER NOT NULL,"
+					+ BlocksColumns.BLOCK_KIND + " TEXT,"
+					+ BlocksColumns.BLOCK_TYPE + " TEXT,"
+					+ BlocksColumns.BLOCK_CODE + " TEXT," + "UNIQUE ("
+					+ BlocksColumns.BLOCK_ID + ") ON CONFLICT REPLACE)");
+			db.execSQL("INSERT INTO " + Tables.BLOCKS + "("
+					+ SyncColumns.UPDATED + ", " + SyncColumns.DELETED + ", "
+					+ BlocksColumns.BLOCK_ID + ", " + BlocksColumns.BLOCK_TITLE
+					+ ", " + BlocksColumns.BLOCK_START + ", "
+					+ BlocksColumns.BLOCK_END + ", " + BlocksColumns.BLOCK_KIND
+					+ ", " + BlocksColumns.BLOCK_TYPE + ", "
+					+ BlocksColumns.BLOCK_CODE + ")" + " SELECT "
+					+ SyncColumns.UPDATED + ", " + SyncColumns.DELETED + ", "
+					+ BlocksColumns.BLOCK_ID + ", " + BlocksColumns.BLOCK_TITLE
+					+ ", " + BlocksColumns.BLOCK_START + ", "
+					+ BlocksColumns.BLOCK_END + ", " + BlocksColumns.BLOCK_KIND
+					+ ", " + BlocksColumns.BLOCK_TYPE + ", "
+					+ BlocksColumns.BLOCK_CODE + " FROM tmp_" + Tables.BLOCKS);
+			db.execSQL("DROP TABLE tmp_" + Tables.BLOCKS);
+			version = VER_ADD_SYNC_COLUMNS_TO_BLOCKS;
 		}
 
 		Log.d(TAG, "after upgrade logic, at version " + version);
@@ -461,9 +503,9 @@ public class CfpDatabase extends SQLiteOpenHelper {
 			db.execSQL("DROP TABLE IF EXISTS " + Tables.PARLEYS_PRESENTATIONS);
 			db.execSQL("DROP TABLE IF EXISTS "
 					+ Tables.PARLEYS_PRESENTATIONS_TAGS);
-		}
 
-		onCreate(db);
+			onCreate(db);
+		}
 	}
 
 	private static void createSessionsSearch(SQLiteDatabase db) {
