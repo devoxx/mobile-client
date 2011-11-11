@@ -46,14 +46,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -156,8 +155,6 @@ public class SessionDetailFragment extends Fragment implements
 		mTabs.setAdapter(mAdapter);
 		mViewPager.setOnPageChangeListener(mTabs);
 
-		mAdapter.notifyDataSetChanged();
-
 		mQueryHandler = new NotifyingAsyncQueryHandler(getActivity()
 				.getContentResolver(), null);
 	}
@@ -168,6 +165,13 @@ public class SessionDetailFragment extends Fragment implements
 
 		getLoaderManager().restartLoader(SessionsQuery._TOKEN, null,
 				mSessionDetailCallback);
+	}
+
+	@Override
+	public void onDetach() {
+		mViewPager.setAdapter(null);
+
+		super.onDetach();
 	}
 
 	@Override
@@ -182,7 +186,6 @@ public class SessionDetailFragment extends Fragment implements
 		mViewPager = (ViewPager) mRootView
 				.findViewById(R.id.viewpager_session_detail);
 
-		mViewPager.setOffscreenPageLimit(2);
 		mViewPager.setPageMargin(getResources().getDimensionPixelSize(
 				R.dimen.viewpager_page_margin));
 		mViewPager.setPageMarginDrawable(R.drawable.viewpager_margin);
@@ -401,15 +404,15 @@ public class SessionDetailFragment extends Fragment implements
 
 	};
 
-	private class SessionDetailPagerAdapter extends FragmentStatePagerAdapter
+	private class SessionDetailPagerAdapter extends FragmentPagerAdapter
 			implements ScrollableTabsAdapter {
 
-		private final Context mContext;
+		private final boolean mIsHoneycombTablet;
 
 		public SessionDetailPagerAdapter(Context context, FragmentManager fm) {
 			super(fm);
 
-			this.mContext = context;
+			this.mIsHoneycombTablet = UIUtils.isHoneycombTablet(context);
 		}
 
 		@Override
@@ -437,7 +440,7 @@ public class SessionDetailFragment extends Fragment implements
 				return SessionNotesFragment.newInstance(mSessionId);
 			} else if (position == 2) {
 				return SessionLinksFragment.newInstance(mSessionId);
-			} else if (position == 3 && UIUtils.isHoneycombTablet(mContext)) {
+			} else if (position == 3 && mIsHoneycombTablet) {
 				ParleysPresentationsFragment f = new ParleysPresentationsFragment();
 				final Intent intent = new Intent(Intent.ACTION_VIEW,
 						Sessions.buildParleysDirUri(mSessionId));
@@ -460,12 +463,9 @@ public class SessionDetailFragment extends Fragment implements
 		}
 
 		@Override
-		public void finishUpdate(View container) {
-			try {
-				super.finishUpdate(container);
-			} catch (IllegalStateException e) {
-				Log.e(TAG, "executePendingTransactions is already executing");
-			}
+		protected String makeFragmentName(int viewId, int index) {
+			return "android:switcher:" + mSessionId + ":" + viewId + ":"
+					+ index;
 		}
 
 	}

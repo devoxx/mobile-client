@@ -93,6 +93,7 @@ public class ScheduleMultiPaneActivity extends BaseMultiPaneActivity implements
 	public void onBeforeCommitReplaceFragment(FragmentManager fm,
 			FragmentTransaction ft, Fragment fragment) {
 		super.onBeforeCommitReplaceFragment(fm, ft, fragment);
+
 		if (fragment instanceof SessionsFragment) {
 			fm.popBackStack();
 		} else if (fragment instanceof SessionDetailFragment) {

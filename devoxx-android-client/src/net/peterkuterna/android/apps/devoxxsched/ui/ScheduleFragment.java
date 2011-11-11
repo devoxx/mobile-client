@@ -17,15 +17,12 @@
 
 package net.peterkuterna.android.apps.devoxxsched.ui;
 
-import java.util.ArrayList;
-
 import net.peterkuterna.android.apps.devoxxsched.R;
 import net.peterkuterna.android.apps.devoxxsched.ui.widget.ObservableScrollView;
 import net.peterkuterna.android.apps.devoxxsched.ui.widget.ObservableScrollView.OnScrollListener;
 import net.peterkuterna.android.apps.devoxxsched.ui.widget.SwipeyTabs;
 import net.peterkuterna.android.apps.devoxxsched.ui.widget.SwipeyTabsAdapter;
 import net.peterkuterna.android.apps.devoxxsched.util.AnalyticsUtils;
-import net.peterkuterna.android.apps.devoxxsched.util.Lists;
 import net.peterkuterna.android.apps.devoxxsched.util.UIUtils;
 import android.content.Context;
 import android.os.Bundle;
@@ -115,6 +112,13 @@ public class ScheduleFragment extends Fragment {
 		return super.onOptionsItemSelected(item);
 	}
 
+	@Override
+	public void onDetach() {
+		mViewPager.setAdapter(null);
+
+		super.onDetach();
+	}
+
 	/**
 	 * Update position and visibility of "now" view.
 	 */
@@ -144,8 +148,6 @@ public class ScheduleFragment extends Fragment {
 		private static final int TIME_FLAGS = DateUtils.FORMAT_SHOW_WEEKDAY;
 
 		private final Context mContext;
-		private final ArrayList<BlockScheduleItemsFragment> mFragments = Lists
-				.newArrayList();
 		private int mScrollY = -1;
 
 		public BlocksPagerAdapter(Context context, FragmentManager fm) {
@@ -162,27 +164,15 @@ public class ScheduleFragment extends Fragment {
 
 		@Override
 		public Object instantiateItem(View container, int position) {
-			BlockScheduleItemsFragment fragment = (BlockScheduleItemsFragment) super.instantiateItem(
-					container, position);
+			BlockScheduleItemsFragment fragment = (BlockScheduleItemsFragment) super
+					.instantiateItem(container, position);
 
 			fragment.setOnScrollListener(this);
 			if (mScrollY != -1) {
 				fragment.setScrollY(mScrollY);
 			}
 
-			while (mFragments.size() <= position) {
-				mFragments.add(null);
-			}
-			mFragments.set(position, fragment);
-
 			return fragment;
-		}
-
-		@Override
-		public void destroyItem(View container, int position, Object object) {
-			super.destroyItem(container, position, object);
-
-			mFragments.set(position, null);
 		}
 
 		@Override
@@ -210,11 +200,17 @@ public class ScheduleFragment extends Fragment {
 		public void onScrollChanged(ObservableScrollView view) {
 			mScrollY = view.getScrollY();
 
-			for (BlockScheduleItemsFragment fragment : mFragments) {
-				if (fragment != null) {
-					final ScrollView scrollView = fragment.getScrollView();
+			for (int i = 0; i < getCount(); i++) {
+				final String fragmentName = makeFragmentName(
+						mViewPager.getId(), i);
+				final Fragment f = getFragmentManager().findFragmentByTag(
+						fragmentName);
+				if (f instanceof BlockScheduleItemsFragment) {
+					BlockScheduleItemsFragment scheduleFragment = (BlockScheduleItemsFragment) f;
+					final ScrollView scrollView = scheduleFragment
+							.getScrollView();
 					if (!view.equals(scrollView)) {
-						fragment.setScrollY(mScrollY);
+						scheduleFragment.setScrollY(mScrollY);
 					}
 				}
 			}

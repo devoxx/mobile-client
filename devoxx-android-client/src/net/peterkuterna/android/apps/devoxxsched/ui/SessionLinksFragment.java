@@ -77,7 +77,7 @@ public class SessionLinksFragment extends ProgressFragment implements
 
 		getLoaderManager().restartLoader(0, null, this);
 	}
-
+	
 	private void updateLinksTab(Cursor cursor) {
 		ViewGroup container = (ViewGroup) mRootView
 				.findViewById(R.id.links_container);

@@ -178,13 +178,13 @@ public class SessionsFragment extends ListFragment {
 		final String title = cursor.getString(SessionsQuery.SESSION_TITLE);
 		AnalyticsUtils.getInstance(getActivity()).trackEvent("Sessions",
 				"Click", title, 0);
+		getListView().setItemChecked(position, true);
+		mCheckedPosition = position;
 		final Uri sessionUri = CfpContract.Sessions.buildSessionUri(sessionId);
 		final Intent intent = new Intent(Intent.ACTION_VIEW, sessionUri);
 		intent.putExtra(Intent.EXTRA_TITLE, mTrackName);
 		intent.putExtra(SessionDetailFragment.EXTRA_TRACK_COLOR, mTrackColor);
 		((BaseActivity) getSupportActivity()).openActivityOrFragment(intent);
-		getListView().setItemChecked(position, true);
-		mCheckedPosition = position;
 	}
 
 	public void clearCheckedPosition() {
@@ -286,13 +286,16 @@ public class SessionsFragment extends ListFragment {
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			if (mSessionsUri != null) {
-				if (CfpContract.Sessions.isSearchUri(mSessionsUri)) {
-					getLoaderManager().restartLoader(SearchQuery._TOKEN, null,
-							mSessionsLoaderCallback);
-				} else if (!CfpContract.Sessions.isNewSessionsUri(mSessionsUri)) {
-					getLoaderManager().restartLoader(SessionsQuery._TOKEN,
-							null, mSessionsLoaderCallback);
+			if (getActivity() != null) {
+				if (mSessionsUri != null) {
+					if (CfpContract.Sessions.isSearchUri(mSessionsUri)) {
+						getLoaderManager().restartLoader(SearchQuery._TOKEN,
+								null, mSessionsLoaderCallback);
+					} else if (!CfpContract.Sessions
+							.isNewSessionsUri(mSessionsUri)) {
+						getLoaderManager().restartLoader(SessionsQuery._TOKEN,
+								null, mSessionsLoaderCallback);
+					}
 				}
 			}
 		}

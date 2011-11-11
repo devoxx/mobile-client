@@ -1031,8 +1031,8 @@ public class Fragment implements ComponentCallbacks, OnCreateContextMenuListener
      */
     public void onDestroy() {
         mCalled = true;
-        //Log.v("foo", "onDestroy: mCheckedForLoaderManager=" + mCheckedForLoaderManager
-        //        + " mLoaderManager=" + mLoaderManager);
+//        Log.v("foo", "onDestroy: mCheckedForLoaderManager=" + mCheckedForLoaderManager
+//                + " mLoaderManager=" + mLoaderManager);
         if (!mCheckedForLoaderManager) {
             mCheckedForLoaderManager = true;
             mLoaderManager = mActivity.getInternalCallbacks().getLoaderManager(mIndex, mLoadersStarted, false);

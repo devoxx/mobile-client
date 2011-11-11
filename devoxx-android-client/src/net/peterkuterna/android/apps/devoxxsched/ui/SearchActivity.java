@@ -220,15 +220,6 @@ public class SearchActivity extends BaseMultiPaneActivity {
 		}
 
 		@Override
-		public void finishUpdate(View container) {
-			try {
-				super.finishUpdate(container);
-			} catch (IllegalStateException e) {
-				Log.e(TAG, "executePendingTransactions is already executing");
-			}
-		}
-
-		@Override
 		public void notifyDataSetChanged() {
 			super.notifyDataSetChanged();
 
