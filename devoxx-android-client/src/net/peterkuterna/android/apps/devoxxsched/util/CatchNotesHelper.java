@@ -21,7 +21,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 
 /**
@@ -99,7 +98,7 @@ public class CatchNotesHelper {
 			if (packageInfo.versionCode < NOTES_MIN_VERSION_CODE) {
 				return false;
 			}
-		} catch (NameNotFoundException e) {
+		} catch (Exception e) {
 			return false;
 		}
 
