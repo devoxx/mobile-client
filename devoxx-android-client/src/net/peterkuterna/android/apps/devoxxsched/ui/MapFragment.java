@@ -258,7 +258,9 @@ public class MapFragment extends Fragment implements
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			getLoaderManager().restartLoader(0, null, MapFragment.this);
+			if (getActivity() != null) {
+				getLoaderManager().restartLoader(0, null, MapFragment.this);
+			}
 		}
 	};
 

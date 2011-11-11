@@ -208,10 +208,12 @@ public class SpeakersGridFragment extends GridFragment {
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			if (mSpeakersUri != null) {
-				getLoaderManager().restartLoader(
-						SpeakersAdapter.SpeakersQuery._TOKEN, null,
-						mSpeakersLoaderCallback);
+			if (getActivity() != null) {
+				if (mSpeakersUri != null) {
+					getLoaderManager().restartLoader(
+							SpeakersAdapter.SpeakersQuery._TOKEN, null,
+							mSpeakersLoaderCallback);
+				}
 			}
 		}
 	};

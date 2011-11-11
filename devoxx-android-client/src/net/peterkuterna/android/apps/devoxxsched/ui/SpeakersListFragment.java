@@ -220,14 +220,16 @@ public class SpeakersListFragment extends ListFragment {
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			if (mSpeakersUri != null) {
-				if (!CfpContract.Speakers.isSearchUri(mSpeakersUri)) {
-					getLoaderManager().restartLoader(
-							SpeakersAdapter.SpeakersQuery._TOKEN, null,
-							mSpeakersLoaderCallback);
-				} else {
-					getLoaderManager().restartLoader(SearchQuery._TOKEN, null,
-							mSpeakersLoaderCallback);
+			if (getActivity() != null) {
+				if (mSpeakersUri != null) {
+					if (!CfpContract.Speakers.isSearchUri(mSpeakersUri)) {
+						getLoaderManager().restartLoader(
+								SpeakersAdapter.SpeakersQuery._TOKEN, null,
+								mSpeakersLoaderCallback);
+					} else {
+						getLoaderManager().restartLoader(SearchQuery._TOKEN, null,
+								mSpeakersLoaderCallback);
+					}
 				}
 			}
 		}

@@ -130,8 +130,10 @@ public class BulletinFragment extends ListFragment implements
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			getLoaderManager().restartLoader(NewsQuery._TOKEN, null,
-					BulletinFragment.this);
+			if (getActivity() != null) {
+				getLoaderManager().restartLoader(NewsQuery._TOKEN, null,
+						BulletinFragment.this);
+			}
 		}
 	};
 

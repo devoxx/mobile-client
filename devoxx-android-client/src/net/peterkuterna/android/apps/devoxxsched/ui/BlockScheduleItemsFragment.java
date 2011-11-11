@@ -236,8 +236,10 @@ public class BlockScheduleItemsFragment extends ScheduleItemsFragment implements
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			getLoaderManager().restartLoader(getArguments().getInt("id"), null,
-					BlockScheduleItemsFragment.this);
+			if (getActivity() != null) {
+				getLoaderManager().restartLoader(getArguments().getInt("id"), null,
+						BlockScheduleItemsFragment.this);
+			}
 		}
 	};
 

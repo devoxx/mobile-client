@@ -146,10 +146,12 @@ public class ParleysPresentationsFragment extends ListFragment {
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			if (mPresentationUri != null) {
-				getLoaderManager().restartLoader(
-						ParleysPresentationsQuery._TOKEN, null,
-						mPresentationsLoaderCallback);
+			if (getActivity() != null) {
+				if (mPresentationUri != null) {
+					getLoaderManager().restartLoader(
+							ParleysPresentationsQuery._TOKEN, null,
+							mPresentationsLoaderCallback);
+				}
 			}
 		}
 	};

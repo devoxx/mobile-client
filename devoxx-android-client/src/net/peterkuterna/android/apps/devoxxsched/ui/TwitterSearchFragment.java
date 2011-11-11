@@ -218,8 +218,10 @@ public class TwitterSearchFragment extends PullToRefreshListFragment implements
 			new Handler()) {
 		@Override
 		public void onChange(boolean selfChange) {
-			getLoaderManager().restartLoader(TwitterSearchQuery._TOKEN, null,
-					TwitterSearchFragment.this);
+			if (getActivity() != null) {
+				getLoaderManager().restartLoader(TwitterSearchQuery._TOKEN,
+						null, TwitterSearchFragment.this);
+			}
 		}
 	};
 
