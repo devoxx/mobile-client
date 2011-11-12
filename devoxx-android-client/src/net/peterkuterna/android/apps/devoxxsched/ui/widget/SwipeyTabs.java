@@ -375,6 +375,8 @@ public class SwipeyTabs extends ViewGroup implements OnPageChangeListener {
 	}
 
 	public void onPageScrollStateChanged(int state) {
+		updateTabPositions(true);
+		requestLayout();
 	}
 
 	public void onPageScrolled(int position, float positionOffset,
