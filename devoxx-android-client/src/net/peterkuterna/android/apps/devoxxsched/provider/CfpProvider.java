@@ -45,6 +45,7 @@ import android.app.SearchManager;
 import android.content.ContentProvider;
 import android.content.ContentProviderOperation;
 import android.content.ContentProviderResult;
+import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.OperationApplicationException;
@@ -288,13 +289,17 @@ public class CfpProvider extends ContentProvider {
 							+ Arrays.toString(projection) + ")");
 		final SQLiteDatabase db = mOpenHelper.getReadableDatabase();
 
+		final ContentResolver contentResolver = getContext()
+				.getContentResolver();
 		final int match = sUriMatcher.match(uri);
 		switch (match) {
 		default: {
 			// Most cases are handled with simple SelectionBuilder
 			final SelectionBuilder builder = buildExpandedSelection(uri, match);
-			return builder.where(selection, selectionArgs).query(db,
+			final Cursor c = builder.where(selection, selectionArgs).query(db,
 					projection, sortOrder);
+			c.setNotificationUri(contentResolver, uri);
+			return c;
 		}
 		case SEARCH_SUGGEST: {
 			final SelectionBuilder builder = new SelectionBuilder();
@@ -312,8 +317,10 @@ public class CfpProvider extends ContentProvider {
 
 			final String limit = uri
 					.getQueryParameter(SearchManager.SUGGEST_PARAMETER_LIMIT);
-			return builder.query(db, projection, null, null,
+			final Cursor c = builder.query(db, projection, null, null,
 					SearchSuggest.DEFAULT_SORT, limit);
+			c.setNotificationUri(contentResolver, uri);
+			return c;
 		}
 		}
 	}
