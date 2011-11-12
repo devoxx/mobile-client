@@ -22,12 +22,27 @@
 	android:layout_height="fill_parent">
     <include layout="@layout/colorstrip"/>
     <LinearLayout
-	    android:id="@+id/root_container"
-	    android:orientation="vertical"
-	    android:layout_width="fill_parent"
+		android:orientation="vertical"
+    	android:layout_width="fill_parent"
 	    android:layout_height="0px"
 	    android:layout_weight="1"
 	    android:background="@color/background_1">
+	    <FrameLayout
+	    	android:id="@+id/viewpagerheader_container"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/thickbar_shadow">
+			<net.peterkuterna.android.apps.devoxxsched.ui.widget.ScrollableTabs
+				android:id="@+id/viewpagerheader"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/tab_height"
+				android:fadingEdge="horizontal"
+				android:background="@drawable/tab_unselected" />
+	    </FrameLayout>
+		<android.support.v4.view.ViewPager
+			android:id="@+id/viewpager"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="1" />
     </LinearLayout>
-    
 </LinearLayout>

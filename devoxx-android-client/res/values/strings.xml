@@ -47,6 +47,7 @@
     <string name="title_settings">Settings</string>
     <string name="title_new_sessions">New Sessions</string>
     <string name="title_bulletin">Bulletin</string>
+    <string name="title_all_starred">All Starred</string>
     <string name="title_todays_starred">Today\'s Starred</string>
 
     <string name="title_session_tracks">Session tracks</string>
