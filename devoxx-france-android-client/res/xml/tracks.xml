@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Google Inc.
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<tracks>
+
+    <track>
+    	<id>18</id>
+        <name>Java, Java EE et Architectures</name>
+        <color>#0FABFF</color>
+        <description>Java SE 7/8, Java EE, Spring, les outils et les librairies, tout ce qui tourne autour de Java en général.</description>
+        <hashtag>java</hashtag>
+    </track>
+
+    <track>
+    	<id>16</id>
+        <name>Languages alternatifs</name>
+        <color>#999999</color>
+        <description>Groovy, Scala, Clojure, Ceylon, Kotlin, Javascript, Fantom, JRuby. Ce thème regroupera aussi les librairies ou les frameworks sur ces langages</description>
+        <hashtag>newlang</hashtag>
+    </track>
+
+    <track>
+    	<id>17</id>
+        <name>Entreprises et pratiques</name>
+        <color>#CC0033</color>
+        <description>Pratiques Agiles, Kanban, retour d'expérience, de \"Vrais Projets de la Vraie Vie\", communauté, métier, devops, TDD, BDD.</description>
+        <hashtag>methodology</hashtag>
+    </track>
+
+    <track>
+    	<id>15</id>
+        <name>Web, Mobile et le Cloud</name>
+        <color>#A4C639</color>
+        <description>HTML5, Javascript, Architectures webs, Cloud computing, nosql, Android, AS3, Flex, développement embarqué...</description>
+        <hashtag>webmobilecloud</hashtag>
+    </track>
+
+</tracks>

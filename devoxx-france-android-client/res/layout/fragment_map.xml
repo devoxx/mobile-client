@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<com.google.android.maps.MapView
+		android:id="@+id/mapview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true"
+		android:apiKey="@string/maps_api_key"/>
+		
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|left"
+		android:padding="10dip"
+		android:orientation="vertical">
+
+	    <Button
+			android:id="@+id/level0"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/map_level0"
+			style="@style/PushButton"/>
+			
+	    <Button
+			android:id="@+id/level1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/map_level1"
+			android:layout_marginTop="5dip"
+			style="@style/PushButton"/>
+
+	</LinearLayout>
+		
+	<LinearLayout
+		android:id="@+id/levels"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|right"
+		android:padding="10dip"
+		android:orientation="vertical">
+
+	    <Button
+			android:id="@+id/satellite"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/map_satellite"
+			style="@style/PushButton"/>
+
+	</LinearLayout>
+		
+</FrameLayout>

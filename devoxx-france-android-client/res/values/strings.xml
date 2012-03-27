@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Google Inc.
+    Copyright 2011 Peter Kuterna
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Devoxx France 2012</string>
+    <string name="short_app_name">Devoxx France</string>
+    <string name="no_app_name"></string>
+
+    <string name="maps_api_key">insert_your_maps_key_here</string>
+    
+    <string name="description_search">Recherche</string>
+    <string name="description_refresh">Rafraichir</string>
+    <string name="description_settings">Paramètres</string>
+    <string name="description_star">Star</string>
+    <string name="description_now">Aller maintenant</string>
+    <string name="description_share">Partager</string>
+    <string name="description_map">Plan</string>
+
+    <string name="title_now_playing">En ce moment</string>
+    <string name="title_schedule">Agenda</string>
+    <string name="title_tracks">Session</string>
+    <string name="title_search">Recherche</string>
+    <string name="title_sessions">Sessions</string>
+    <string name="title_sessions_for">Sessions pour \'<xliff:g id="title">%1$s</xliff:g>\'</string>
+    <string name="title_sessions_of">Sessions de <xliff:g id="title">%1$s</xliff:g></string>
+    <string name="title_sessions_in">Sessions à <xliff:g id="title">%1$s</xliff:g></string>
+    <string name="title_session_detail">Session Information</string>
+    <string name="title_starred">Starred</string>
+    <string name="title_twitter_stream">Twitter</string>
+    <string name="title_speakers">Speakers</string>
+    <string name="title_map">Plan</string>
+    <string name="title_settings">Paramètres</string>
+    <string name="title_new_sessions">Nouvelles Sessions</string>
+    <string name="title_bulletin">Bulletin</string>
+    <string name="title_all_starred">All Starred</string>
+    <string name="title_todays_starred">Aujourd\'hui Starred</string>
+
+    <string name="title_session_tracks">Session</string>
+
+    <string name="title_share">Partager avec</string>
+
+    <string name="title_search_query">Recherche pour \'<xliff:g id="query">%1$s</xliff:g>\'</string>
+
+    <string name="btn_schedule">Agenda</string>
+    <string name="btn_map">Plan</string>
+    <string name="btn_sessions">Sessions</string>
+    <string name="btn_starred">Starred</string>
+    <string name="btn_speakers">Speakers</string>
+    <string name="btn_announcements">Bulletin</string>
+
+    <string name="all_sessions_title">Toutes les sessions</string>
+    <string name="all_sessions_subtitle">Appuyer pour filtrer les sessions par track.</string>
+
+    <string name="empty_tracks">Pas de session trouvée</string>
+    <string name="empty_twitter_results">Pas de résultat twitter trouvé</string>
+    <string name="empty_bulletin_results">Pas de news Devoxx France trouvées</string>
+    <string name="empty_sessions">Pas de session trouvée</string>
+    <string name="empty_session_detail">Pas de détail de session trouvé</string>
+    <string name="empty_speakers">Pas de speaker trouvé</string>
+    <string name="empty_links">Pas de lien disponible</string>
+
+    <string name="session_summary">Résumé</string>
+    <string name="session_notes">Notes</string>
+    <string name="session_parallel">En parallèle</string>
+    <string name="session_keywords">Mots clées</string>
+    <string name="session_abstract">Résumé</string>
+    <string name="session_experience">Experience</string>
+    <string name="session_speakers">Speakers</string>
+    <string name="session_more">Plus</string>
+    <string name="session_less">Moins</string>
+
+    <string name="session_link_main">Lien</string>
+
+    <string name="session_subtitle"><xliff:g id="day">%1$s</xliff:g>, <xliff:g id="time">%2$s</xliff:g> dans <xliff:g id="room">%3$s</xliff:g></string>
+
+    <string name="starred_sessions">Sessions</string>
+    <string name="starred_speakers">Speakers</string>
+
+    <string name="search_sessions">Sessions</string>
+    <string name="search_speakers">Speakers</string>
+    <string name="search_label">Devoxx France</string>
+    <string name="search_hint">Recherche de mots clés</string>
+
+    <plurals name="whats_on_countdown_title">
+        <item quantity="zero"><xliff:g id="remaining_time">%2$s</xliff:g>\njusqu\'à Devoxx France.</item>
+        <item quantity="one"><xliff:g id="number_of_days">%1$s</xliff:g> jour, <xliff:g id="remaining_time">%2$s</xliff:g>\njusqu\'à Devoxx France.</item>
+        <item quantity="other"><xliff:g id="number_of_days">%1$s</xliff:g> jours, <xliff:g id="remaining_time">%2$s</xliff:g>\njusqu\'à Devoxx France.</item>
+    </plurals>
+
+    <string name="whats_on_stream_title">Twitter\nStream</string>
+    <string name="whats_on_now_playing_title">En ce moment</string>
+    <string name="whats_on_thank_you_title">A l\'année prochaine!</string>
+
+    <string name="toast_now_not_visible">Appuyez sur ce bouton durant Devoxx France pour afficher l\'heure courante.</string>
+
+    <!-- Notes integration -->
+    <string name="notes_catch_powered_by">Notes par <a href="http://www.catch.com/">Catch.com</a>.</string>
+    <string name="notes_catch_market_title">Installez Catch Notes</string>
+    <string name="notes_catch_market_subtitle">Vous pouvez prendre des notes durant Devoxx France en utilisant la dernière version de Catch Notes, disponible dans le Play Store.</string>
+    <string name="notes_catch_new_title">Créer une nouvelle note</string>
+    <string name="notes_catch_view_title">Voir les notes de la session</string>
+    <string name="toast_notes_error_invoking">Erreur Catch Notes.</string>
+
+    <string name="share_template">Checking out \'<xliff:g id="title">%1$s</xliff:g>\' at <xliff:g id="hashtags">%2$s</xliff:g> <xliff:g id="url">%3$s</xliff:g></string>
+
+    <string name="note_template">Session: <xliff:g id="title">%1$s</xliff:g>\n\n\n\n__________\nTags: <xliff:g id="hashtags">%2$s</xliff:g></string>
+    
+    <string name="settings_sync">Synchronisant</string>
+	<string name="settings_background_updates">Mise à jour en arrière plan</string>
+	<string name="settings_auto_update_wifi_only">Mise à jour automatique uniquement par WiFi</string>
+	<string name="settings_sync_google_account">Compte Google</string>
+    <string name="settings_google_account">Compte Google</string>
+    <string name="settings_no_google_account">Pas de compte selectionné</string>
+    <string name="settings_disconnect_google_account">Déconnecter du compte Google</string>
+    <string name="settings_connecting_account">En train de connecter au compte...</string>
+    <string name="settings_disconnecting_account">En train de se déconnecter du compte...</string>
+    <string name="settings_about">A propos</string>
+    <string name="settings_about_google_plus">https://plus.google.com/103201318769928627978/</string>
+    <string name="settings_about_blog">http://blog.peterkuterna.net/</string>
+    <string name="settings_about_twitter">http://twitter.com/peterkuterna/</string>
+    <string name="settings_about_source_code">http://code.google.com/p/devoxx-schedule/</string>
+    <string name="settings_version">Information sur la version</string>
+	<string name="settings_version_info">Version %1$s build %2$d</string>
+	
+	<string name="map_level0">Level -1</string>
+	<string name="map_level1">Level 0</string>
+	<string name="map_satellite">Satellite</string>
+	
+	<string name="sync_error">Une erreur s\'est produite en se connectant au compte.</string>
+	
+	<string name="new_sessions_notification_text">Nouvelle(s) session(s) Devoxx France.</string>
+	<string name="new_news_items_notification_text">Nouvelle actualité Devoxx France.</string>
+
+	<string name="pull_to_refresh_pull_label">Appuyez pour rafraichir...</string>
+	<string name="pull_to_refresh_release_label">Relachez pour rafraichir...</string>
+	<string name="pull_to_refresh_refreshing_label">Chargement...</string>
+	<string name="pull_to_refresh_tap_label">Appuyez pour rafraichir...</string>
+    
+</resources>

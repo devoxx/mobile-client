@@ -42,7 +42,7 @@ public class RequestMD5KeyServlet extends HttpServlet {
 
 		if (requestUri != null
 				&& (requestUri.startsWith("http://cfp.devoxx.com") || requestUri
-						.startsWith("https://cfp.devoxx.com"))) {
+						.startsWith("https://cfp.devoxx.com") && !requestUri.contains("/events/4/"))) {
 			final PersistenceManager pm = PMF.get().getPersistenceManager();
 
 			RequestHash requestHash = getRequestHash(requestUri);

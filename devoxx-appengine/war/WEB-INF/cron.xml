@@ -19,6 +19,6 @@
 	<cron>
 		<url>/cron/recalculatemd5</url>
 		<description>Recalculate md5 keys</description>
-		<schedule>every 10 minutes</schedule>
+		<schedule>every 20 minutes</schedule>
 	</cron>
 </cronentries>

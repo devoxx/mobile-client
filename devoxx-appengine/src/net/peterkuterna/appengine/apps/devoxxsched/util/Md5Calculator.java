@@ -24,10 +24,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.logging.Logger;
+
+import net.peterkuterna.appengine.apps.devoxxsched.c2dm.C2DMMessage;
 
 import org.apache.commons.io.IOUtils;
 
 public class Md5Calculator {
+
+	private static final Logger log = Logger.getLogger(Md5Calculator.class
+			.getName());
 
 	private String requestUri;
 
@@ -53,6 +59,7 @@ public class Md5Calculator {
 			URL url = new URL(requestUri);
 			HttpURLConnection connection = (HttpURLConnection) url
 					.openConnection();
+			connection.setRequestProperty("User-agent", "Devoxx Schedule AppEngine Backend");
 			connection.setDoOutput(true);
 			connection.setRequestMethod("GET");
 			connection.setConnectTimeout(5000);
@@ -61,6 +68,7 @@ public class Md5Calculator {
 					.setRequestProperty("Cache-Control", "no-cache,max-age=0");
 			connection.setRequestProperty("Pragma", "no-cache");
 			InputStream response = connection.getInputStream();
+			log.info("response = " + connection.getResponseCode());
 			if (connection.getResponseCode() == 200) {
 				return IOUtils.toByteArray(response);
 			}
